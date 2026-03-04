@@ -15,7 +15,7 @@ If you are a Data Scientist, building Pharma R&D pipelines, or developing AI Com
 ### ⚡ Get Full Access & High-Speed API
 Instead of scraping, you can get instant access to the complete 104k+ dataset via a Sub-Millisecond REST-API and MCP (Model Context Protocol) Server for LLMs.
 
-🔗 **[Get Instant API Key & Full Dataset Access (€99/mo)]([HIER_DEINEN_STRIPE_LINK_EINFÜGEN](https://buy.stripe.com/4gM6oG74HcAXcdI2HKebu00))**
+🔗 **[Get Instant API Key & Full Dataset Access (€99/mo)](https://buy.stripe.com/4gM6oG74HcAXcdI2HKebu00)**
 
 *Zero maintenance. Zero friction. Ready for production pipelines.*
 
