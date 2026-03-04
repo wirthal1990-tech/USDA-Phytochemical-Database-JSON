@@ -1,0 +1,2402 @@
+[
+  {
+    "chemical": "Squalene",
+    "plant_species": "Brassica Oleracea Var. Italica",
+    "application": "Antitumor",
+    "dosage": null
+  },
+  {
+    "chemical": "Methyl-Chavicol",
+    "plant_species": "Ocimum Basilicum",
+    "application": "Hepatocarcinogenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Beta-Carotene",
+    "plant_species": "Raphanus Sativus",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Methionine",
+    "plant_species": "Citrus Aurantiifolia",
+    "application": "Anticataract",
+    "dosage": null
+  },
+  {
+    "chemical": "Neral",
+    "plant_species": "Salvia Sclarea",
+    "application": "Antibacterial",
+    "dosage": null
+  },
+  {
+    "chemical": "Lutein",
+    "plant_species": "Vaccinium Myrtillus",
+    "application": "Anticancer (Breast)",
+    "dosage": null
+  },
+  {
+    "chemical": "Histidine",
+    "plant_species": "Lycopersicon Esculentum",
+    "application": "Antiarteriosclerotic",
+    "dosage": null
+  },
+  {
+    "chemical": "Calcium",
+    "plant_species": "Belamcanda Chinensis",
+    "application": "Antipms",
+    "dosage": "1 g/day"
+  },
+  {
+    "chemical": "Pufa",
+    "plant_species": "Allium Cepa",
+    "application": "Antims",
+    "dosage": null
+  },
+  {
+    "chemical": "Glutamic-Acid",
+    "plant_species": "Pisum Sativum",
+    "application": "Antialkali?",
+    "dosage": "500-1,000 mg/day/orl/man"
+  },
+  {
+    "chemical": "Myristic-Acid",
+    "plant_species": "Lens Culinaris",
+    "application": "Cancer-Preventive",
+    "dosage": null
+  },
+  {
+    "chemical": "Bornyl-Acetate",
+    "plant_species": "Tanacetum Parthenium",
+    "application": "Antifeedant",
+    "dosage": null
+  },
+  {
+    "chemical": "Myricetin",
+    "plant_species": "Rhus Coriaria",
+    "application": "Allelochemic",
+    "dosage": "IC82=1 mM"
+  },
+  {
+    "chemical": "Terpinen-4-Ol",
+    "plant_species": "Eucalyptus Astringens",
+    "application": "Antiallergic",
+    "dosage": null
+  },
+  {
+    "chemical": "Oxalic-Acid",
+    "plant_species": "Psidium Guajava",
+    "application": "Antiseptic",
+    "dosage": null
+  },
+  {
+    "chemical": "Campesterol",
+    "plant_species": "Allium Sativum Var. Sativum",
+    "application": "Antioxidant",
+    "dosage": "IC37=10 uM"
+  },
+  {
+    "chemical": "Calcium",
+    "plant_species": "Pinus Cembroides",
+    "application": "Antipms",
+    "dosage": "1 g/day"
+  },
+  {
+    "chemical": "Indicine-N-Oxide",
+    "plant_species": "Heliotropium Indicus",
+    "application": "Antileukemic",
+    "dosage": null
+  },
+  {
+    "chemical": "Fiber",
+    "plant_species": "Cassia Tora",
+    "application": "Antidiabetic",
+    "dosage": null
+  },
+  {
+    "chemical": "Camphor",
+    "plant_species": "Juniperus Communis",
+    "application": "Allelopathic",
+    "dosage": null
+  },
+  {
+    "chemical": "Folacin",
+    "plant_species": "Nasturtium Officinale",
+    "application": "Antispina-Bifida",
+    "dosage": null
+  },
+  {
+    "chemical": "Linoleic-Acid",
+    "plant_species": "Nicotiana Tabacum",
+    "application": "Antims",
+    "dosage": null
+  },
+  {
+    "chemical": "Cadinene",
+    "plant_species": "Cinnamomum Camphora",
+    "application": "Antifeedant",
+    "dosage": null
+  },
+  {
+    "chemical": "Citronellal",
+    "plant_species": "Aeolanthus Myriantha",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Adenosine",
+    "plant_species": "Citrus Limon",
+    "application": "Antiaggregant",
+    "dosage": null
+  },
+  {
+    "chemical": "Camphor",
+    "plant_species": "Ocimum Kilimandscharicum",
+    "application": "Allelopathic",
+    "dosage": null
+  },
+  {
+    "chemical": "Alpha-Terpineol",
+    "plant_species": "Pimpinella Anisum",
+    "application": "Anticariogenic",
+    "dosage": "MIC=800-1,600 ug/ml"
+  },
+  {
+    "chemical": "Benzaldehyde",
+    "plant_species": "Acacia Farnesiana",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Lupeol",
+    "plant_species": "Alnus Glutinosa",
+    "application": "Antiedemic",
+    "dosage": null
+  },
+  {
+    "chemical": "Palmitic-Acid",
+    "plant_species": "Rosa Canina",
+    "application": "Antifibrinolytic",
+    "dosage": null
+  },
+  {
+    "chemical": "Beta-Phellandrene",
+    "plant_species": "Trichostemma Dichotomum",
+    "application": "Expectorant",
+    "dosage": null
+  },
+  {
+    "chemical": "Friedelin",
+    "plant_species": "Melaleuca Leucadendra",
+    "application": "Antiinflammatory",
+    "dosage": "30 mg/kg"
+  },
+  {
+    "chemical": "Fraxetin",
+    "plant_species": "Lawsonia Inermis",
+    "application": "Antiarthritic",
+    "dosage": null
+  },
+  {
+    "chemical": "Alanine",
+    "plant_species": "Carum Carvi",
+    "application": "Antioxidant",
+    "dosage": null
+  },
+  {
+    "chemical": "Fraxin",
+    "plant_species": "Fraxinus Ornus",
+    "application": "Antiinflammatory",
+    "dosage": null
+  },
+  {
+    "chemical": "Potassium",
+    "plant_species": "Salix Alba",
+    "application": "Antiarrhythmic",
+    "dosage": null
+  },
+  {
+    "chemical": "Lysine",
+    "plant_species": "Solanum Melongena",
+    "application": "Antialkalotic",
+    "dosage": null
+  },
+  {
+    "chemical": "Abietic-Acid",
+    "plant_species": "Pinus Sylvestris",
+    "application": "Antifeedant",
+    "dosage": null
+  },
+  {
+    "chemical": "Alpha-Cadinol",
+    "plant_species": "Thymus Riatarum",
+    "application": "Acaricide",
+    "dosage": null
+  },
+  {
+    "chemical": "1,8-Cineole",
+    "plant_species": "Thymus Zygis Subsp. Sylvestris",
+    "application": "Allelopathic",
+    "dosage": null
+  },
+  {
+    "chemical": "Cadaverine",
+    "plant_species": "Glycine Max",
+    "application": "Phytohormonal",
+    "dosage": null
+  },
+  {
+    "chemical": "Arginine",
+    "plant_species": "Nelumbo Nucifera",
+    "application": "Antidiabetic?",
+    "dosage": null
+  },
+  {
+    "chemical": "Angelicin",
+    "plant_species": "Heracleum Laciniatum",
+    "application": "Anticonvulsant",
+    "dosage": null
+  },
+  {
+    "chemical": "Campesterol",
+    "plant_species": "Juglans Regia",
+    "application": "Antioxidant",
+    "dosage": "IC37=10 uM"
+  },
+  {
+    "chemical": "Ascorbic-Acid",
+    "plant_species": "Petroselinum Crispum",
+    "application": "Acidulant",
+    "dosage": "FEMA 6,000"
+  },
+  {
+    "chemical": "Iron",
+    "plant_species": "Kalmia Latifolia",
+    "application": "Antiakathisic",
+    "dosage": null
+  },
+  {
+    "chemical": "Protocatechuic-Acid",
+    "plant_species": "Taraxacum Officinale",
+    "application": "Antiarrhythmic",
+    "dosage": null
+  },
+  {
+    "chemical": "Coumarin",
+    "plant_species": "Artemisia Annua",
+    "application": "Allelochemic",
+    "dosage": "IC100=2 mM"
+  },
+  {
+    "chemical": "Caryophyllene-Epoxide",
+    "plant_species": "Chrysanthemum Parthenium",
+    "application": "Antifeedant",
+    "dosage": "1 mM (diet)"
+  },
+  {
+    "chemical": "1,4-Dicaffeoylquinic-Acid",
+    "plant_species": "Cynara Cardunculus Subsp. Cardunculus",
+    "application": "Choleretic",
+    "dosage": null
+  },
+  {
+    "chemical": "Citral",
+    "plant_species": "Thymus Vulgaris",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Brevifolin",
+    "plant_species": "Punica Granatum",
+    "application": "Antioxidant",
+    "dosage": null
+  },
+  {
+    "chemical": "Beta-Elemene",
+    "plant_species": "Eucalyptus Diversicolor",
+    "application": "Anticancer (Cervix)",
+    "dosage": null
+  },
+  {
+    "chemical": "Phosphorus",
+    "plant_species": "Cornus Florida",
+    "application": "Antiosteoporotic",
+    "dosage": null
+  },
+  {
+    "chemical": "Fiber",
+    "plant_species": "Gleditsia Triacanthos",
+    "application": "Antidiabetic",
+    "dosage": null
+  },
+  {
+    "chemical": "Alpha-Terpinene",
+    "plant_species": "Cunila Origanoides",
+    "application": "Flavor",
+    "dosage": "FEMA 1-40"
+  },
+  {
+    "chemical": "Pseudobaptigenin",
+    "plant_species": "Trifolium Pratense",
+    "application": "Antiarthritic",
+    "dosage": null
+  },
+  {
+    "chemical": "Linalool",
+    "plant_species": "Allium Sativum Var. Sativum",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Iron",
+    "plant_species": "Vaccinium Myrtillus",
+    "application": "Antiakathisic",
+    "dosage": null
+  },
+  {
+    "chemical": "Phosphorus",
+    "plant_species": "Pimenta Dioica",
+    "application": "Antiosteoporotic",
+    "dosage": null
+  },
+  {
+    "chemical": "Borneol",
+    "plant_species": "Thymus Serpyllum",
+    "application": "Allelochemic",
+    "dosage": null
+  },
+  {
+    "chemical": "Fiber",
+    "plant_species": "Basella Alba",
+    "application": "Antidiabetic",
+    "dosage": null
+  },
+  {
+    "chemical": "Beta-Carotene",
+    "plant_species": "Annona Glabra",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Diosmetin",
+    "plant_species": "Origanum Majorana",
+    "application": "Aldose-Reductase-Inhibitor",
+    "dosage": "IC17=10 uM"
+  },
+  {
+    "chemical": "Dopa",
+    "plant_species": "Portulaca Oleracea",
+    "application": "Antiparkinsonian",
+    "dosage": null
+  },
+  {
+    "chemical": "Menthol",
+    "plant_species": "Satureja Parvifolia",
+    "application": "Cns-Depressant",
+    "dosage": null
+  },
+  {
+    "chemical": "Quercitrin",
+    "plant_species": "Rosa Canina",
+    "application": "Aldose-Reductase-Inhibitor",
+    "dosage": "IC50=2 uM"
+  },
+  {
+    "chemical": "Limonene",
+    "plant_species": "Hesperis Matronalis",
+    "application": "Ache-Inhibitor",
+    "dosage": null
+  },
+  {
+    "chemical": "Oxalic-Acid",
+    "plant_species": "Glycine Max",
+    "application": "Antiseptic",
+    "dosage": null
+  },
+  {
+    "chemical": "Campesterol",
+    "plant_species": "Perilla Frutescens",
+    "application": "Antioxidant",
+    "dosage": "IC37=10 uM"
+  },
+  {
+    "chemical": "6,7-Dimethoxycoumarin",
+    "plant_species": "Citrus Aurantiifolia",
+    "application": "Analgesic",
+    "dosage": null
+  },
+  {
+    "chemical": "Linoleic-Acid",
+    "plant_species": "Vanilla Planifolia",
+    "application": "Antims",
+    "dosage": null
+  },
+  {
+    "chemical": "Acetic-Acid",
+    "plant_species": "Allium Cepa",
+    "application": "Acidulant",
+    "dosage": null
+  },
+  {
+    "chemical": "Chromium",
+    "plant_species": "Frangula Purshiana",
+    "application": "Amphiglycemic?",
+    "dosage": null
+  },
+  {
+    "chemical": "Manganese",
+    "plant_species": "Houttuynia Cordata",
+    "application": "Antialcoholic",
+    "dosage": null
+  },
+  {
+    "chemical": "Alpha-Humulene",
+    "plant_species": "Hyssopus Officinalis Subsp. Aristatus",
+    "application": "Antitumor",
+    "dosage": null
+  },
+  {
+    "chemical": "Trans-Beta-Farnesene",
+    "plant_species": "Vitex Agnus-Castus",
+    "application": "Insectifuge",
+    "dosage": null
+  },
+  {
+    "chemical": "Cadmium",
+    "plant_species": "Quercus Alba",
+    "application": "Hypertensive",
+    "dosage": null
+  },
+  {
+    "chemical": "Borneol",
+    "plant_species": "Cedrus Libani",
+    "application": "Allelochemic",
+    "dosage": null
+  },
+  {
+    "chemical": "Protocatechualdehyde",
+    "plant_species": "Vitis Vinifera",
+    "application": "Antioxidant",
+    "dosage": ">tocopherol"
+  },
+  {
+    "chemical": "Scopoletin",
+    "plant_species": "Helianthus Annuus",
+    "application": "Allelochemic",
+    "dosage": "IC89=2 mM"
+  },
+  {
+    "chemical": "Agnuside",
+    "plant_species": "Vitex Agnus-Castus",
+    "application": "Antiprolactin",
+    "dosage": null
+  },
+  {
+    "chemical": "Niacin",
+    "plant_species": "Beta Vulgaris Subsp. Subsp. Vulgaris",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Butyraldehyde",
+    "plant_species": "Eucalyptus Globulus",
+    "application": "Irritant",
+    "dosage": null
+  },
+  {
+    "chemical": "Sodium",
+    "plant_species": "Amomum Xanthioides",
+    "application": "Hypertensive",
+    "dosage": null
+  },
+  {
+    "chemical": "Xanthotoxin",
+    "plant_species": "Petroselinum Crispum",
+    "application": "Antidermatitic",
+    "dosage": null
+  },
+  {
+    "chemical": "Palmitoleic-Acid",
+    "plant_species": "Vicia Faba",
+    "application": "Soap",
+    "dosage": null
+  },
+  {
+    "chemical": "Alpha-Terpinene",
+    "plant_species": "Apium Graveolens",
+    "application": "Flavor",
+    "dosage": "FEMA 1-40"
+  },
+  {
+    "chemical": "Tannin",
+    "plant_species": "Acacia Nilotica",
+    "application": "Antidiarrheic",
+    "dosage": null
+  },
+  {
+    "chemical": "Betulinic-Acid",
+    "plant_species": "Cassinia Laevis",
+    "application": "Antihiv",
+    "dosage": "EC50=2.0 ug/ml"
+  },
+  {
+    "chemical": "Calcium-Oxalate",
+    "plant_species": "Pimenta Dioica",
+    "application": "Emetic",
+    "dosage": null
+  },
+  {
+    "chemical": "Pyridoxine",
+    "plant_species": "Medicago Sativa Subsp. Sativa",
+    "application": "Analgesic",
+    "dosage": "50 mg day"
+  },
+  {
+    "chemical": "Chlorogenic-Acid",
+    "plant_species": "Arnica Montana",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Maltose",
+    "plant_species": "Artemisia Dracunculus",
+    "application": "Sweetener",
+    "dosage": "0.32 x sucrose"
+  },
+  {
+    "chemical": "Tannin",
+    "plant_species": "Galium Odoratum",
+    "application": "Antidiarrheic",
+    "dosage": null
+  },
+  {
+    "chemical": "Niacin",
+    "plant_species": "Ribes Nigrum",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Protocatechuic-Acid",
+    "plant_species": "Coriandrum Sativum",
+    "application": "Antiarrhythmic",
+    "dosage": null
+  },
+  {
+    "chemical": "Leucine",
+    "plant_species": "Cnidoscolus Chayamansa",
+    "application": "Antiencephalopathic",
+    "dosage": null
+  },
+  {
+    "chemical": "Ferulic-Acid",
+    "plant_species": "Rubus Fruticosus",
+    "application": "Allelopathic",
+    "dosage": null
+  },
+  {
+    "chemical": "Phosphorus",
+    "plant_species": "Vigna Mungo",
+    "application": "Antiosteoporotic",
+    "dosage": null
+  },
+  {
+    "chemical": "Thiamin",
+    "plant_species": "Terminalia Catappa",
+    "application": "Analgesic",
+    "dosage": "1-4 g/day"
+  },
+  {
+    "chemical": "Carvone",
+    "plant_species": "Thymus Capitatus",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Beta-Pinene",
+    "plant_species": "Satureja Obovata",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Magnesium",
+    "plant_species": "Persea Americana",
+    "application": "Antipms",
+    "dosage": "400-800 mg/day/wmn/orl"
+  },
+  {
+    "chemical": "Biochanin-A",
+    "plant_species": "Glycine Max",
+    "application": "Antimutagenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Serine",
+    "plant_species": "Humulus Lupulus",
+    "application": "Cancer-Preventive",
+    "dosage": null
+  },
+  {
+    "chemical": "Fiber",
+    "plant_species": "Phyllanthus Emblica",
+    "application": "Antidiabetic",
+    "dosage": null
+  },
+  {
+    "chemical": "Astragalin",
+    "plant_species": "Maclura Pomifera",
+    "application": "Aldose-Reductase-Inhibitor",
+    "dosage": "IC30=1 uM"
+  },
+  {
+    "chemical": "Ionol",
+    "plant_species": "Thymus Longicaulis",
+    "application": "Antioxidant",
+    "dosage": null
+  },
+  {
+    "chemical": "Ursolic-Acid",
+    "plant_species": "Arbutus Unedo",
+    "application": "Antiarthritic",
+    "dosage": null
+  },
+  {
+    "chemical": "Linalool",
+    "plant_species": "Mentha Spicata",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Beta-Carotene",
+    "plant_species": "Tragopogon Porrifolius",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Sabinene",
+    "plant_species": "Eucalyptus Forrestiana",
+    "application": "Perfumery",
+    "dosage": null
+  },
+  {
+    "chemical": "Cadmium",
+    "plant_species": "Spinacia Oleracea",
+    "application": "Hypertensive",
+    "dosage": null
+  },
+  {
+    "chemical": "Germitrine",
+    "plant_species": "Veratrum Viride",
+    "application": "Hypotensive",
+    "dosage": null
+  },
+  {
+    "chemical": "Magnesium",
+    "plant_species": "Psidium Guajava",
+    "application": "Antipms",
+    "dosage": "400-800 mg/day/wmn/orl"
+  },
+  {
+    "chemical": "Pectin",
+    "plant_species": "Cichorium Intybus",
+    "application": "Antiatheromic",
+    "dosage": "15 g/man/day"
+  },
+  {
+    "chemical": "Daucosterol",
+    "plant_species": "Tribulus Terrestris",
+    "application": "Antileukemic",
+    "dosage": null
+  },
+  {
+    "chemical": "Camphene",
+    "plant_species": "Lavandula X Hybrida",
+    "application": "Antilithic?",
+    "dosage": null
+  },
+  {
+    "chemical": "Chromium",
+    "plant_species": "Ephedra Sinica",
+    "application": "Amphiglycemic?",
+    "dosage": null
+  },
+  {
+    "chemical": "Quercetin",
+    "plant_species": "Anastatica Hierochuntica",
+    "application": "5-Lipoxygenase-Inhibitor",
+    "dosage": "IC50 (uM)=4"
+  },
+  {
+    "chemical": "Xylose",
+    "plant_species": "Arundo Donax",
+    "application": "Antidiabetic",
+    "dosage": null
+  },
+  {
+    "chemical": "Coumestrol",
+    "plant_species": "Phaseolus Lunatus",
+    "application": "Antimicrobial",
+    "dosage": null
+  },
+  {
+    "chemical": "Alpha-Terpineol",
+    "plant_species": "Eucalyptus Desquamata",
+    "application": "Anticariogenic",
+    "dosage": "MIC=800-1,600 ug/ml"
+  },
+  {
+    "chemical": "Iron",
+    "plant_species": "Colocasia Esculenta",
+    "application": "Antiakathisic",
+    "dosage": null
+  },
+  {
+    "chemical": "Protocatechuic-Acid",
+    "plant_species": "Rosa Canina",
+    "application": "Antiarrhythmic",
+    "dosage": null
+  },
+  {
+    "chemical": "Pectin",
+    "plant_species": "Lagenaria Siceraria",
+    "application": "Antiatheromic",
+    "dosage": "15 g/man/day"
+  },
+  {
+    "chemical": "5,7-Dimethoxyflavone",
+    "plant_species": "Piper Methysticum",
+    "application": "Antiinflammatory",
+    "dosage": null
+  },
+  {
+    "chemical": "Trans-Carveol",
+    "plant_species": "Carum Carvi",
+    "application": "Antiasthmatic",
+    "dosage": null
+  },
+  {
+    "chemical": "Alpha-Terpinene",
+    "plant_species": "Rosmarinus Officinalis",
+    "application": "Flavor",
+    "dosage": "FEMA 1-40"
+  },
+  {
+    "chemical": "Glycine",
+    "plant_species": "Citrullus Lanatus",
+    "application": "Antiacid",
+    "dosage": null
+  },
+  {
+    "chemical": "Dopamine",
+    "plant_species": "Theobroma Cacao",
+    "application": "Adrenergic",
+    "dosage": null
+  },
+  {
+    "chemical": "Aluminum",
+    "plant_species": "Larrea Tridentata",
+    "application": "Antisilicotic",
+    "dosage": null
+  },
+  {
+    "chemical": "Ascorbic-Acid",
+    "plant_species": "Lycopersicon Esculentum",
+    "application": "Acidulant",
+    "dosage": "FEMA 6,000"
+  },
+  {
+    "chemical": "Alpha-Phellandrene",
+    "plant_species": "Eucalyptus Porosa",
+    "application": "Dermal",
+    "dosage": null
+  },
+  {
+    "chemical": "Linoleic-Acid",
+    "plant_species": "Ginkgo Biloba",
+    "application": "Antims",
+    "dosage": null
+  },
+  {
+    "chemical": "Copper",
+    "plant_species": "Pinus Echinata",
+    "application": "Antiarthritic",
+    "dosage": null
+  },
+  {
+    "chemical": "Skullcapflavone-Ii",
+    "plant_species": "Scutellaria Baicalensis",
+    "application": "Antiaggregant",
+    "dosage": null
+  },
+  {
+    "chemical": "Camphene",
+    "plant_species": "Chrysanthemum Parthenium",
+    "application": "Antilithic?",
+    "dosage": null
+  },
+  {
+    "chemical": "Alpha-Amyrin",
+    "plant_species": "Myrica Cerifera",
+    "application": "Antitumor",
+    "dosage": null
+  },
+  {
+    "chemical": "Cobalt",
+    "plant_species": "Hydrangea Arborescens",
+    "application": "Cardiomyopathogenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Glycine",
+    "plant_species": "Corchorus Olitorius",
+    "application": "Antiacid",
+    "dosage": null
+  },
+  {
+    "chemical": "Glucose",
+    "plant_species": "Ribes Nigrum",
+    "application": "Acetylcholinergic",
+    "dosage": null
+  },
+  {
+    "chemical": "Sodium",
+    "plant_species": "Petasites Japonicus",
+    "application": "Hypertensive",
+    "dosage": null
+  },
+  {
+    "chemical": "Sabinene",
+    "plant_species": "Myrtus Communis",
+    "application": "Perfumery",
+    "dosage": null
+  },
+  {
+    "chemical": "Prunetin",
+    "plant_species": "Prunus Cerasus",
+    "application": "Fungicide",
+    "dosage": "2.5 mM"
+  },
+  {
+    "chemical": "Behenic-Acid",
+    "plant_species": "Portulaca Oleracea",
+    "application": "Cosmetic",
+    "dosage": null
+  },
+  {
+    "chemical": "Beta-Carotene",
+    "plant_species": "Solanum Quitoensis",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Chrysophanic-Acid",
+    "plant_species": "Ruscus Aculeatus",
+    "application": "Fungicide",
+    "dosage": null
+  },
+  {
+    "chemical": "Choline",
+    "plant_species": "Capsicum Annuum",
+    "application": "Antialzheimeran",
+    "dosage": "5-16 g/man/day"
+  },
+  {
+    "chemical": "Shikimic-Acid",
+    "plant_species": "Fagopyrum Esculentum",
+    "application": "Analgesic",
+    "dosage": null
+  },
+  {
+    "chemical": "Potassium",
+    "plant_species": "Sechium Edule",
+    "application": "Antiarrhythmic",
+    "dosage": null
+  },
+  {
+    "chemical": "Cis-Ocimene",
+    "plant_species": "Glechoma Hederacea",
+    "application": "Antistaphylococcic",
+    "dosage": null
+  },
+  {
+    "chemical": "Limonene",
+    "plant_species": "Teucrium Polium Var. Valentinum",
+    "application": "Ache-Inhibitor",
+    "dosage": null
+  },
+  {
+    "chemical": "Myrtenol",
+    "plant_species": "Stevia Rebaudiana",
+    "application": "Antimalarial",
+    "dosage": "IC50=5-50 ug/ml"
+  },
+  {
+    "chemical": "Aluminum",
+    "plant_species": "Cnicus Benedictus",
+    "application": "Antisilicotic",
+    "dosage": null
+  },
+  {
+    "chemical": "Sodium",
+    "plant_species": "Cajanus Cajan",
+    "application": "Hypertensive",
+    "dosage": null
+  },
+  {
+    "chemical": "Ferulic-Acid",
+    "plant_species": "Brassica Oleracea Var. Capitata L. Var. Capitata",
+    "application": "Allelopathic",
+    "dosage": null
+  },
+  {
+    "chemical": "Glycine",
+    "plant_species": "Prunus Persica",
+    "application": "Antiacid",
+    "dosage": null
+  },
+  {
+    "chemical": "Manganese",
+    "plant_species": "Myristica Fragrans",
+    "application": "Antialcoholic",
+    "dosage": null
+  },
+  {
+    "chemical": "Linalyl-Acetate",
+    "plant_species": "Satureja Subspicata Subsp. Liburnica",
+    "application": "Flavor",
+    "dosage": "FEMA 2-15"
+  },
+  {
+    "chemical": "Limonene",
+    "plant_species": "Eucalyptus Intertexta",
+    "application": "Ache-Inhibitor",
+    "dosage": null
+  },
+  {
+    "chemical": "Ascorbic-Acid",
+    "plant_species": "Aesculus Hippocastanum",
+    "application": "Acidulant",
+    "dosage": "FEMA 6,000"
+  },
+  {
+    "chemical": "Beta-Carotene",
+    "plant_species": "Arachis Hypogaea",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Gamma-Terpinene",
+    "plant_species": "Canarium Indicum",
+    "application": "Antioxidant",
+    "dosage": null
+  },
+  {
+    "chemical": "Hcn",
+    "plant_species": "Duranta Repens",
+    "application": "Antiasthmatic",
+    "dosage": null
+  },
+  {
+    "chemical": "Salicylic-Acid",
+    "plant_species": "Melilotus Officinalis",
+    "application": "Analgesic",
+    "dosage": null
+  },
+  {
+    "chemical": "Pinocarvone",
+    "plant_species": "Tanacetum Parthenium",
+    "application": "Perfumery",
+    "dosage": null
+  },
+  {
+    "chemical": "Rutin",
+    "plant_species": "Phaseolus Aborigineus",
+    "application": "Aldose-Reductase-Inhibitor",
+    "dosage": "100 uM"
+  },
+  {
+    "chemical": "Schizandrin",
+    "plant_species": "Schisandra Chinensis",
+    "application": "Antioxidant",
+    "dosage": null
+  },
+  {
+    "chemical": "Allyl-Methyl-Trisulfide",
+    "plant_species": "Allium Sativum Var. Sativum",
+    "application": "Antiaggregant",
+    "dosage": "0.1-1 uM"
+  },
+  {
+    "chemical": "Phosphorus",
+    "plant_species": "Spondias Dulcis",
+    "application": "Antiosteoporotic",
+    "dosage": null
+  },
+  {
+    "chemical": "Berberrubine",
+    "plant_species": "Berberis Vulgaris",
+    "application": "Topoisomerase-Ii-Inhibitor",
+    "dosage": "2.5 uM"
+  },
+  {
+    "chemical": "Citrostadienol",
+    "plant_species": "Persea Americana",
+    "application": "Antirheumatic",
+    "dosage": "2-5 mg/man"
+  },
+  {
+    "chemical": "Cis-Ocimene",
+    "plant_species": "Hedeoma Hispida",
+    "application": "Antistaphylococcic",
+    "dosage": null
+  },
+  {
+    "chemical": "Caffeic-Acid",
+    "plant_species": "Brassica Oleracea Var. Italica",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Linalyl-Acetate",
+    "plant_species": "Citrus Limon",
+    "application": "Flavor",
+    "dosage": "FEMA 2-15"
+  },
+  {
+    "chemical": "Calcium",
+    "plant_species": "Aspalathus Linearis",
+    "application": "Antipms",
+    "dosage": "1 g/day"
+  },
+  {
+    "chemical": "Iron",
+    "plant_species": "Vitis Vinifera",
+    "application": "Antiakathisic",
+    "dosage": null
+  },
+  {
+    "chemical": "Carveol",
+    "plant_species": "Mentha X Piperita Subsp. Nothosubsp. Piperita",
+    "application": "Cns-Stimulant",
+    "dosage": null
+  },
+  {
+    "chemical": "Pinocembrin",
+    "plant_species": "Lippia Graveolens",
+    "application": "Anesthetic",
+    "dosage": null
+  },
+  {
+    "chemical": "Limonene",
+    "plant_species": "Hibiscus Sabdariffa",
+    "application": "Ache-Inhibitor",
+    "dosage": null
+  },
+  {
+    "chemical": "Calcium",
+    "plant_species": "Spirulina Spp.",
+    "application": "Antipms",
+    "dosage": "1 g/day"
+  },
+  {
+    "chemical": "Piperitone",
+    "plant_species": "Cinnamomum Verum",
+    "application": "Antiasthmatic",
+    "dosage": null
+  },
+  {
+    "chemical": "Pufa",
+    "plant_species": "Elettaria Cardamomum",
+    "application": "Antims",
+    "dosage": null
+  },
+  {
+    "chemical": "Guanine",
+    "plant_species": "Aesculus Hippocastanum",
+    "application": "Essential",
+    "dosage": null
+  },
+  {
+    "chemical": "Allantoin",
+    "plant_species": "Coffea Arabica",
+    "application": "Antidandruff",
+    "dosage": null
+  },
+  {
+    "chemical": "Fiber",
+    "plant_species": "Malpighia Glabra",
+    "application": "Antidiabetic",
+    "dosage": null
+  },
+  {
+    "chemical": "Lanatoside-B",
+    "plant_species": "Digitalis Lanata",
+    "application": "Anticarcinomic",
+    "dosage": "ED50=0.38 ppm"
+  },
+  {
+    "chemical": "Niacin",
+    "plant_species": "Aloe Vera",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Alpha-Terpineol",
+    "plant_species": "Salvia Dorisiana",
+    "application": "Anticariogenic",
+    "dosage": "MIC=800-1,600 ug/ml"
+  },
+  {
+    "chemical": "Methyl-Eugenol",
+    "plant_species": "Stevia Rebaudiana",
+    "application": "Anesthetic",
+    "dosage": null
+  },
+  {
+    "chemical": "Kaempferol",
+    "plant_species": "Lycopersicon Esculentum",
+    "application": "11B-Hsd-Inhibitor",
+    "dosage": null
+  },
+  {
+    "chemical": "Limonene",
+    "plant_species": "Illicium Verum",
+    "application": "Ache-Inhibitor",
+    "dosage": null
+  },
+  {
+    "chemical": "Caftaric-Acid",
+    "plant_species": "Echinacea Pallida",
+    "application": "Antiotitic",
+    "dosage": null
+  },
+  {
+    "chemical": "Bornyl-Acetate",
+    "plant_species": "Pinus Mugo",
+    "application": "Antifeedant",
+    "dosage": null
+  },
+  {
+    "chemical": "Fiber",
+    "plant_species": "Zizyphus Jujuba",
+    "application": "Antidiabetic",
+    "dosage": null
+  },
+  {
+    "chemical": "Isoimperatorin",
+    "plant_species": "Murraya Koenigii",
+    "application": "Antitumor-Promoter",
+    "dosage": "IC94=50 ug/ml"
+  },
+  {
+    "chemical": "Gamma-Terpinene",
+    "plant_species": "Citrus Sinensis",
+    "application": "Antioxidant",
+    "dosage": null
+  },
+  {
+    "chemical": "Ursolic-Acid",
+    "plant_species": "Thevetia Peruviana",
+    "application": "Antiarthritic",
+    "dosage": null
+  },
+  {
+    "chemical": "Glycine",
+    "plant_species": "Carum Carvi",
+    "application": "Antiacid",
+    "dosage": null
+  },
+  {
+    "chemical": "Benzyl-Propionate",
+    "plant_species": "Chrysanthemum Parthenium",
+    "application": "Flavor",
+    "dosage": "FEMA 40-150"
+  },
+  {
+    "chemical": "Choline",
+    "plant_species": "Abrus Precatorius",
+    "application": "Antialzheimeran",
+    "dosage": "5-16 g/man/day"
+  },
+  {
+    "chemical": "Niacin",
+    "plant_species": "Verbascum Thapsus",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Chromium",
+    "plant_species": "Actaea Racemosa",
+    "application": "Amphiglycemic?",
+    "dosage": null
+  },
+  {
+    "chemical": "Alpha-Pinene",
+    "plant_species": "Salvia Officinalis",
+    "application": "Allelochemic",
+    "dosage": null
+  },
+  {
+    "chemical": "Alpha-Pinene",
+    "plant_species": "Houttuynia Cordata",
+    "application": "Allelochemic",
+    "dosage": null
+  },
+  {
+    "chemical": "Sterculic-Acid",
+    "plant_species": "Hibiscus Sabdariffa",
+    "application": "Insecticide",
+    "dosage": null
+  },
+  {
+    "chemical": "Iron",
+    "plant_species": "Pisum Sativum",
+    "application": "Antiakathisic",
+    "dosage": null
+  },
+  {
+    "chemical": "Tannin",
+    "plant_species": "Rhizophora Mangle",
+    "application": "Antidiarrheic",
+    "dosage": null
+  },
+  {
+    "chemical": "Alpha-Amyrin",
+    "plant_species": "Morus Alba",
+    "application": "Antitumor",
+    "dosage": null
+  },
+  {
+    "chemical": "Raphanin",
+    "plant_species": "Raphanus Sativus",
+    "application": "Antibacterial",
+    "dosage": null
+  },
+  {
+    "chemical": "Isoamyl-Acetate",
+    "plant_species": "Thymus Longicaulis",
+    "application": "Perfumery",
+    "dosage": "Fragrance"
+  },
+  {
+    "chemical": "Calcium",
+    "plant_species": "Theobroma Bicolor",
+    "application": "Antipms",
+    "dosage": "1 g/day"
+  },
+  {
+    "chemical": "Carvacrol",
+    "plant_species": "Rosmarinus Officinalis",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Punicic-Acid",
+    "plant_species": "Trichosanthes Anguina",
+    "application": "Antieicosanoid",
+    "dosage": null
+  },
+  {
+    "chemical": "Thiamin",
+    "plant_species": "Vaccinium Corymbosum",
+    "application": "Analgesic",
+    "dosage": "1-4 g/day"
+  },
+  {
+    "chemical": "Betavulgarin",
+    "plant_species": "Beta Vulgaris Subsp. Subsp. Vulgaris",
+    "application": "Pesticide",
+    "dosage": null
+  },
+  {
+    "chemical": "Copaene",
+    "plant_species": "Piper Cubeba",
+    "application": "Carminative",
+    "dosage": null
+  },
+  {
+    "chemical": "Riboflavin",
+    "plant_species": "Stellaria Media",
+    "application": "Antiarabiflavinotic",
+    "dosage": "2-10 mg/day orl"
+  },
+  {
+    "chemical": "Selenium",
+    "plant_species": "Cucumis Sativus",
+    "application": "Analgesic",
+    "dosage": "200 ug/day"
+  },
+  {
+    "chemical": "Hispaglabridin-B",
+    "plant_species": "Glycyrrhiza Glabra",
+    "application": "Antiseptic",
+    "dosage": null
+  },
+  {
+    "chemical": "Beta-Eudesmol",
+    "plant_species": "Eucalyptus Brassiana",
+    "application": "Antianoxic",
+    "dosage": "ED60=300 orl mus"
+  },
+  {
+    "chemical": "Phosphatidyl-Choline",
+    "plant_species": "Urtica Dioica",
+    "application": "Antialzheimeran",
+    "dosage": "10-25 g/day/orl"
+  },
+  {
+    "chemical": "Beta-Selinene",
+    "plant_species": "Cinnamomum Aromaticum",
+    "application": "Perfumery",
+    "dosage": null
+  },
+  {
+    "chemical": "Neoxanthin",
+    "plant_species": "Panax Ginseng",
+    "application": "Colorant",
+    "dosage": null
+  },
+  {
+    "chemical": "Rutin",
+    "plant_species": "Olea Europaea Subsp. Europaea",
+    "application": "Aldose-Reductase-Inhibitor",
+    "dosage": "100 uM"
+  },
+  {
+    "chemical": "Quercetin",
+    "plant_species": "Trigonella Foenum-Graecum",
+    "application": "5-Lipoxygenase-Inhibitor",
+    "dosage": "IC50 (uM)=4"
+  },
+  {
+    "chemical": "Delta-3-Carene",
+    "plant_species": "Pinus Mugo",
+    "application": "Allergenic?",
+    "dosage": null
+  },
+  {
+    "chemical": "Thiamin",
+    "plant_species": "Zea Mays",
+    "application": "Analgesic",
+    "dosage": "1-4 g/day"
+  },
+  {
+    "chemical": "Sodium",
+    "plant_species": "Ribes Nigrum",
+    "application": "Hypertensive",
+    "dosage": null
+  },
+  {
+    "chemical": "Rutin",
+    "plant_species": "Sambucus Nigra",
+    "application": "Aldose-Reductase-Inhibitor",
+    "dosage": "100 uM"
+  },
+  {
+    "chemical": "Caffeic-Acid",
+    "plant_species": "Melissa Officinalis",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Zinc",
+    "plant_species": "Arctostaphylos Uva-Ursi",
+    "application": "Anticrohn'S",
+    "dosage": null
+  },
+  {
+    "chemical": "Cobalt",
+    "plant_species": "Rosa Canina",
+    "application": "Cardiomyopathogenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Copper",
+    "plant_species": "Satureja Montana",
+    "application": "Antiarthritic",
+    "dosage": null
+  },
+  {
+    "chemical": "Thymol",
+    "plant_species": "Chrysanthemum Parthenium",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Deoxyribonucleic-Acid",
+    "plant_species": "Allium Ampeloprasum",
+    "application": "Essential",
+    "dosage": null
+  },
+  {
+    "chemical": "Linalool",
+    "plant_species": "Rosmarinus Officinalis",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Lignans",
+    "plant_species": "Nandina Domestica",
+    "application": "Antiestrogenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Potassium",
+    "plant_species": "Hydrangea Arborescens",
+    "application": "Antiarrhythmic",
+    "dosage": null
+  },
+  {
+    "chemical": "Germacrene-D",
+    "plant_species": "Ballota Nigra",
+    "application": "Pesticide",
+    "dosage": null
+  },
+  {
+    "chemical": "Iron",
+    "plant_species": "Pinus Edulis",
+    "application": "Antiakathisic",
+    "dosage": null
+  },
+  {
+    "chemical": "Acetaldehyde",
+    "plant_species": "Malus Domestica",
+    "application": "Addictive",
+    "dosage": "8 ug/kg"
+  },
+  {
+    "chemical": "Panaxan-D",
+    "plant_species": "Panax Quinquefolius",
+    "application": "Hypoglycemic",
+    "dosage": null
+  },
+  {
+    "chemical": "Betulinic-Acid",
+    "plant_species": "Dillenia Indica",
+    "application": "Antihiv",
+    "dosage": "EC50=2.0 ug/ml"
+  },
+  {
+    "chemical": "Terpineol",
+    "plant_species": "Boswellia Serrata",
+    "application": "Antiallergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Amylase",
+    "plant_species": "Glycine Max",
+    "application": "Sedative",
+    "dosage": null
+  },
+  {
+    "chemical": "Fiber",
+    "plant_species": "Coffea Arabica",
+    "application": "Antidiabetic",
+    "dosage": null
+  },
+  {
+    "chemical": "Niacin",
+    "plant_species": "Camellia Sinensis",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Caryophyllene-Oxide",
+    "plant_species": "Eucalyptus Dolichorhyncha",
+    "application": "Antiedemic",
+    "dosage": null
+  },
+  {
+    "chemical": "Rutin",
+    "plant_species": "Apium Graveolens",
+    "application": "Aldose-Reductase-Inhibitor",
+    "dosage": "100 uM"
+  },
+  {
+    "chemical": "Chlorine",
+    "plant_species": "Avena Sativa",
+    "application": "Antiherpetic",
+    "dosage": null
+  },
+  {
+    "chemical": "Tyrosine",
+    "plant_species": "Panax Ginseng",
+    "application": "Antidepressant?",
+    "dosage": null
+  },
+  {
+    "chemical": "Leucine",
+    "plant_species": "Psophocarpus Tetragonolobus",
+    "application": "Antiencephalopathic",
+    "dosage": null
+  },
+  {
+    "chemical": "Chlorine",
+    "plant_species": "Polystichum Polyblepharum",
+    "application": "Antiherpetic",
+    "dosage": null
+  },
+  {
+    "chemical": "Neryl-Acetate",
+    "plant_species": "Cymbopogon Parkeri",
+    "application": "Antiflu",
+    "dosage": null
+  },
+  {
+    "chemical": "Geranyl-Propionate",
+    "plant_species": "Origanum Syriacum",
+    "application": "Flavor",
+    "dosage": "FEMA 1-70"
+  },
+  {
+    "chemical": "Iridin",
+    "plant_species": "Belamcanda Chinensis",
+    "application": "Cathartic",
+    "dosage": null
+  },
+  {
+    "chemical": "Beta-Pinene",
+    "plant_species": "Levisticum Officinale",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Terpinen-4-Ol",
+    "plant_species": "Origanum Majorana",
+    "application": "Antiallergic",
+    "dosage": null
+  },
+  {
+    "chemical": "Magnesium",
+    "plant_species": "Drynaria Fortunei",
+    "application": "Antipms",
+    "dosage": "400-800 mg/day/wmn/orl"
+  },
+  {
+    "chemical": "Limonene",
+    "plant_species": "Aloysia Citrodora",
+    "application": "Ache-Inhibitor",
+    "dosage": null
+  },
+  {
+    "chemical": "1,8-Cineole",
+    "plant_species": "Monarda Media",
+    "application": "Allelopathic",
+    "dosage": null
+  },
+  {
+    "chemical": "Casuarictin",
+    "plant_species": "Rubus Sp.",
+    "application": "Antihiv",
+    "dosage": null
+  },
+  {
+    "chemical": "Glabranin",
+    "plant_species": "Glycyrrhiza Glabra",
+    "application": "Antiseptic",
+    "dosage": null
+  },
+  {
+    "chemical": "Capric-Acid",
+    "plant_species": "Viburnum Opulus Subsp. Var. Opulus",
+    "application": "Fungicide",
+    "dosage": null
+  },
+  {
+    "chemical": "Inositol",
+    "plant_species": "Chamaemelum Nobile",
+    "application": "Antialopecic",
+    "dosage": null
+  },
+  {
+    "chemical": "Alpha-Linolenic-Acid",
+    "plant_species": "Vigna Radiata",
+    "application": "Antiaggregant",
+    "dosage": null
+  },
+  {
+    "chemical": "Caffeic-Acid",
+    "plant_species": "Vaccinium Myrtillus",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Lupeol",
+    "plant_species": "Arctostaphylos Uva-Ursi",
+    "application": "Antiedemic",
+    "dosage": null
+  },
+  {
+    "chemical": "Pufa",
+    "plant_species": "Asparagus Officinalis",
+    "application": "Antims",
+    "dosage": null
+  },
+  {
+    "chemical": "Oxypeucedanin",
+    "plant_species": "Angelica Dahurica",
+    "application": "Antitumor-Promoter",
+    "dosage": "IC32=50 ug/ml"
+  },
+  {
+    "chemical": "Araboglycyrrhizin",
+    "plant_species": "Glycyrrhiza Glabra",
+    "application": "Sweetener",
+    "dosage": "93 x sucrose"
+  },
+  {
+    "chemical": "Erysothiovine",
+    "plant_species": "Erythrina Fusca",
+    "application": "Anticonvulsant",
+    "dosage": null
+  },
+  {
+    "chemical": "Solasodine",
+    "plant_species": "Solanum Dulcamara",
+    "application": "Antiandrogenic",
+    "dosage": "20 mg/kg"
+  },
+  {
+    "chemical": "Cadinene",
+    "plant_species": "Pogostemon Cablin",
+    "application": "Antifeedant",
+    "dosage": null
+  },
+  {
+    "chemical": "Alpha-Terpineol",
+    "plant_species": "Eucalyptus Occidentalis",
+    "application": "Anticariogenic",
+    "dosage": "MIC=800-1,600 ug/ml"
+  },
+  {
+    "chemical": "Alpha-Pinene",
+    "plant_species": "Ocimum Basilicum",
+    "application": "Allelochemic",
+    "dosage": null
+  },
+  {
+    "chemical": "Alpha-Linolenic-Acid",
+    "plant_species": "Cucurbita Pepo",
+    "application": "Antiaggregant",
+    "dosage": null
+  },
+  {
+    "chemical": "Sodium",
+    "plant_species": "Sophora Subprostrata",
+    "application": "Hypertensive",
+    "dosage": null
+  },
+  {
+    "chemical": "Isobutyl-Alcohol",
+    "plant_species": "Cymbopogon Winterianus",
+    "application": "Irritant",
+    "dosage": null
+  },
+  {
+    "chemical": "Fiber",
+    "plant_species": "Bacopa Monnieri",
+    "application": "Antidiabetic",
+    "dosage": null
+  },
+  {
+    "chemical": "Alpha-Pinene",
+    "plant_species": "Lippia Alba",
+    "application": "Allelochemic",
+    "dosage": null
+  },
+  {
+    "chemical": "Antheraxanthin",
+    "plant_species": "Capsicum Frutescens",
+    "application": "Colorant",
+    "dosage": null
+  },
+  {
+    "chemical": "Alpha-Amyrin",
+    "plant_species": "Sesamum Indicum",
+    "application": "Antitumor",
+    "dosage": null
+  },
+  {
+    "chemical": "Sinapaldehyde",
+    "plant_species": "Juglans Nigra",
+    "application": "Antiedemic",
+    "dosage": null
+  },
+  {
+    "chemical": "Linoleic-Acid",
+    "plant_species": "Crocus Sativus",
+    "application": "Antims",
+    "dosage": null
+  },
+  {
+    "chemical": "Tin",
+    "plant_species": "Medicago Sativa Subsp. Sativa",
+    "application": "Antiacne",
+    "dosage": null
+  },
+  {
+    "chemical": "Methionine",
+    "plant_species": "Artocarpus Altilis",
+    "application": "Anticataract",
+    "dosage": null
+  },
+  {
+    "chemical": "Chlorine",
+    "plant_species": "Abelmoschus Esculentus",
+    "application": "Antiherpetic",
+    "dosage": null
+  },
+  {
+    "chemical": "Geranyl-Butyrate",
+    "plant_species": "Thymus X Citriodorus",
+    "application": "Flavor",
+    "dosage": "FEMA 1-10"
+  },
+  {
+    "chemical": "Saponins",
+    "plant_species": "Quillaja Saponaria",
+    "application": "Antihepatomic",
+    "dosage": null
+  },
+  {
+    "chemical": "Methyl-Chavicol",
+    "plant_species": "Artemisia Dracunculus",
+    "application": "Hepatocarcinogenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Linoleic-Acid",
+    "plant_species": "Fagopyrum Esculentum",
+    "application": "Antims",
+    "dosage": null
+  },
+  {
+    "chemical": "Trimethylamine",
+    "plant_species": "Crataegus Laevigata",
+    "application": "Antioxidant",
+    "dosage": null
+  },
+  {
+    "chemical": "Panaxic-Acid",
+    "plant_species": "Panax Quinquefolius",
+    "application": "Cardiotonic",
+    "dosage": null
+  },
+  {
+    "chemical": "Coumestrol",
+    "plant_species": "Medicago Sativa Subsp. Sativa",
+    "application": "Antimicrobial",
+    "dosage": null
+  },
+  {
+    "chemical": "Silicon",
+    "plant_species": "Symphytum Officinale",
+    "application": "Antiarteriosclerotic",
+    "dosage": null
+  },
+  {
+    "chemical": "Esculetin",
+    "plant_species": "Prunella Vulgaris",
+    "application": "Analgesic",
+    "dosage": null
+  },
+  {
+    "chemical": "(-)-Sparteine",
+    "plant_species": "Lupinus Albus",
+    "application": "Abortifacient",
+    "dosage": null
+  },
+  {
+    "chemical": "Riboflavin",
+    "plant_species": "Eleocharis Dulcis",
+    "application": "Antiarabiflavinotic",
+    "dosage": "2-10 mg/day orl"
+  },
+  {
+    "chemical": "Tannin",
+    "plant_species": "Medicago Sativa Subsp. Sativa",
+    "application": "Antidiarrheic",
+    "dosage": null
+  },
+  {
+    "chemical": "Abietic-Acid",
+    "plant_species": "Pinus Kesiya",
+    "application": "Antifeedant",
+    "dosage": null
+  },
+  {
+    "chemical": "Arabinogalactan",
+    "plant_species": "Echinacea Purpurea",
+    "application": "Anticomplementary",
+    "dosage": null
+  },
+  {
+    "chemical": "Isoquercitrin",
+    "plant_species": "Urtica Dioica",
+    "application": "Aldose-Reductase-Inhibitor",
+    "dosage": null
+  },
+  {
+    "chemical": "Vanillic-Acid",
+    "plant_species": "Ficus Carica",
+    "application": "Anthelmintic",
+    "dosage": null
+  },
+  {
+    "chemical": "Cinnamaldehyde",
+    "plant_species": "Lavandula Sp",
+    "application": "Allelochemic",
+    "dosage": "IC100=2.5 mM"
+  },
+  {
+    "chemical": "Arjunolic-Acid",
+    "plant_species": "Terminalia Arjuna",
+    "application": "Anticarcinogenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Vanillic-Acid",
+    "plant_species": "Zingiber Officinale",
+    "application": "Anthelmintic",
+    "dosage": null
+  },
+  {
+    "chemical": "Fiber",
+    "plant_species": "Aegle Marmelos",
+    "application": "Antidiabetic",
+    "dosage": null
+  },
+  {
+    "chemical": "Sabinene",
+    "plant_species": "Helianthus Annuus",
+    "application": "Perfumery",
+    "dosage": null
+  },
+  {
+    "chemical": "Behenic-Acid",
+    "plant_species": "Capsicum Frutescens",
+    "application": "Cosmetic",
+    "dosage": null
+  },
+  {
+    "chemical": "Caryophyllene-Oxide",
+    "plant_species": "Eucalyptus Erythrandra",
+    "application": "Antiedemic",
+    "dosage": null
+  },
+  {
+    "chemical": "Sucrose",
+    "plant_species": "Tulipa Gesneriana",
+    "application": "Aggregant",
+    "dosage": null
+  },
+  {
+    "chemical": "Alpha-Pinene",
+    "plant_species": "Micromeria Congesta",
+    "application": "Allelochemic",
+    "dosage": null
+  },
+  {
+    "chemical": "Orientin",
+    "plant_species": "Limonia Acidissima",
+    "application": "Antiinflammatory",
+    "dosage": null
+  },
+  {
+    "chemical": "Sucrose",
+    "plant_species": "Stevia Rebaudiana",
+    "application": "Aggregant",
+    "dosage": null
+  },
+  {
+    "chemical": "Valine",
+    "plant_species": "Mucuna Pruriens",
+    "application": "Antiencephalopathic",
+    "dosage": null
+  },
+  {
+    "chemical": "Phosphorus",
+    "plant_species": "Panax Quinquefolius",
+    "application": "Antiosteoporotic",
+    "dosage": null
+  },
+  {
+    "chemical": "Alpha-Terpineol",
+    "plant_species": "Satureja Obovata",
+    "application": "Anticariogenic",
+    "dosage": "MIC=800-1,600 ug/ml"
+  },
+  {
+    "chemical": "Nonacosane",
+    "plant_species": "Prunus Spinosa",
+    "application": "Antimutagenic",
+    "dosage": "250 ug/mL"
+  },
+  {
+    "chemical": "Betulin",
+    "plant_species": "Alphitonia Macrocarpa",
+    "application": "Antifeedant",
+    "dosage": null
+  },
+  {
+    "chemical": "Genistein",
+    "plant_species": "Dolichos Biflorus",
+    "application": "Abortifacient",
+    "dosage": null
+  },
+  {
+    "chemical": "Niacin",
+    "plant_species": "Papaver Somniferum",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "P-Coumaric-Acid",
+    "plant_species": "Salvia Officinalis",
+    "application": "Allelopathic",
+    "dosage": null
+  },
+  {
+    "chemical": "Scolymoside",
+    "plant_species": "Cynara Cardunculus Subsp. Cardunculus",
+    "application": "Choleretic",
+    "dosage": null
+  },
+  {
+    "chemical": "Alpha-Terpinene",
+    "plant_species": "Anethum Graveolens",
+    "application": "Flavor",
+    "dosage": "FEMA 1-40"
+  },
+  {
+    "chemical": "Lutein",
+    "plant_species": "Asparagus Officinalis",
+    "application": "Anticancer (Breast)",
+    "dosage": null
+  },
+  {
+    "chemical": "Betulinic-Acid",
+    "plant_species": "Diospyros Melanoxylon",
+    "application": "Antihiv",
+    "dosage": "EC50=2.0 ug/ml"
+  },
+  {
+    "chemical": "Potassium",
+    "plant_species": "Phaseolus Vulgaris Subsp. Var. Vulgaris",
+    "application": "Antiarrhythmic",
+    "dosage": null
+  },
+  {
+    "chemical": "Mannitol",
+    "plant_species": "Serenoa Repens",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Beta-Pinene",
+    "plant_species": "Eucalyptus Astringens",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Glutamic-Acid",
+    "plant_species": "Arctium Lappa",
+    "application": "Antialkali?",
+    "dosage": "500-1,000 mg/day/orl/man"
+  },
+  {
+    "chemical": "Terpinen-4-Ol",
+    "plant_species": "Juniperus Communis",
+    "application": "Antiallergic",
+    "dosage": null
+  },
+  {
+    "chemical": "Quebrachine",
+    "plant_species": "Pausinystalia Johimbe",
+    "application": "Hypotensive",
+    "dosage": null
+  },
+  {
+    "chemical": "Riboflavin",
+    "plant_species": "Cichorium Intybus",
+    "application": "Antiarabiflavinotic",
+    "dosage": "2-10 mg/day orl"
+  },
+  {
+    "chemical": "Threonine",
+    "plant_species": "Oenothera Biennis",
+    "application": "Antioxidant?",
+    "dosage": null
+  },
+  {
+    "chemical": "Paraffin",
+    "plant_species": "Persea Americana",
+    "application": "Antihemorrhoidal",
+    "dosage": null
+  },
+  {
+    "chemical": "Lactic-Acid",
+    "plant_species": "Helianthus Annuus",
+    "application": "Antileukorrheic",
+    "dosage": null
+  },
+  {
+    "chemical": "Ar-Curcumene",
+    "plant_species": "Angelica Archangelica",
+    "application": "Antirhinoviral",
+    "dosage": "IC50=1,750?"
+  },
+  {
+    "chemical": "Toluene",
+    "plant_species": "Mentha Spicata",
+    "application": "Encephalopathic",
+    "dosage": null
+  },
+  {
+    "chemical": "Lactic-Acid",
+    "plant_species": "Zea Mays",
+    "application": "Antileukorrheic",
+    "dosage": null
+  },
+  {
+    "chemical": "Alpha-Amyrin",
+    "plant_species": "Oenothera Biennis",
+    "application": "Antitumor",
+    "dosage": null
+  },
+  {
+    "chemical": "Linoleic-Acid",
+    "plant_species": "Carica Papaya",
+    "application": "Antims",
+    "dosage": null
+  },
+  {
+    "chemical": "Lysine",
+    "plant_species": "Calathea Allouia",
+    "application": "Antialkalotic",
+    "dosage": null
+  },
+  {
+    "chemical": "Alpha-Phellandrene",
+    "plant_species": "Hyptis Suaveolens",
+    "application": "Dermal",
+    "dosage": null
+  },
+  {
+    "chemical": "Alanine",
+    "plant_species": "Cucurbita Pepo",
+    "application": "Antioxidant",
+    "dosage": null
+  },
+  {
+    "chemical": "Alpha-Pinene",
+    "plant_species": "Boswellia Serrata",
+    "application": "Allelochemic",
+    "dosage": null
+  },
+  {
+    "chemical": "Mufa",
+    "plant_species": "Phaseolus Vulgaris Subsp. Var. Vulgaris",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Oleic-Acid",
+    "plant_species": "Citrus Aurantiifolia",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Thymol",
+    "plant_species": "Nepeta Racemosa",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Fluoride",
+    "plant_species": "Houttuynia Cordata",
+    "application": "Anticariogenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Quinic-Acid",
+    "plant_species": "Opuntia Ficus-Indica",
+    "application": "Choleretic",
+    "dosage": null
+  },
+  {
+    "chemical": "Zinc",
+    "plant_species": "Urtica Dioica",
+    "application": "Anticrohn'S",
+    "dosage": null
+  },
+  {
+    "chemical": "Chrysazin",
+    "plant_species": "Aloe Vera",
+    "application": "Cathartic",
+    "dosage": null
+  },
+  {
+    "chemical": "Glucuronic-Acid",
+    "plant_species": "Serenoa Repens",
+    "application": "Antidote (Camphor)",
+    "dosage": null
+  },
+  {
+    "chemical": "Delta-Cadinene",
+    "plant_species": "Rosmarinus Officinalis",
+    "application": "Anticariogenic",
+    "dosage": "MIC800 ug/ml"
+  },
+  {
+    "chemical": "Carposide",
+    "plant_species": "Carica Papaya",
+    "application": "Anthelmintic",
+    "dosage": null
+  },
+  {
+    "chemical": "Thiamin",
+    "plant_species": "Corylus Avellana",
+    "application": "Analgesic",
+    "dosage": "1-4 g/day"
+  },
+  {
+    "chemical": "Vitexin",
+    "plant_species": "Marrubium Vulgare",
+    "application": "Aldose-Reductase-Inhibitor",
+    "dosage": "IC15=10 uM"
+  },
+  {
+    "chemical": "Casbene",
+    "plant_species": "Ricinus Communis",
+    "application": "Fungicide",
+    "dosage": null
+  },
+  {
+    "chemical": "Stigmasterol",
+    "plant_species": "Cnicus Benedictus",
+    "application": "Antihepatotoxic",
+    "dosage": null
+  },
+  {
+    "chemical": "Aromadendrene",
+    "plant_species": "Eucalyptus Erythrandra",
+    "application": "Antiseptic",
+    "dosage": null
+  },
+  {
+    "chemical": "Rutin",
+    "plant_species": "Lycopersicon Esculentum",
+    "application": "Aldose-Reductase-Inhibitor",
+    "dosage": "100 uM"
+  },
+  {
+    "chemical": "Ginsenoside-Rf",
+    "plant_species": "Panax Ginseng",
+    "application": "Antitumor",
+    "dosage": null
+  },
+  {
+    "chemical": "Sabinol",
+    "plant_species": "Salvia Officinalis",
+    "application": "Anthelmintic",
+    "dosage": null
+  },
+  {
+    "chemical": "Calcium",
+    "plant_species": "Acrocomia Totai",
+    "application": "Antipms",
+    "dosage": "1 g/day"
+  },
+  {
+    "chemical": "Stearic-Acid",
+    "plant_species": "Hyoscyamus Niger",
+    "application": "Cosmetic",
+    "dosage": null
+  },
+  {
+    "chemical": "Mannitol",
+    "plant_species": "Glycyrrhiza Uralensis",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Cryptocavine",
+    "plant_species": "Eschscholzia Californica Subsp. Californica",
+    "application": "Uterotonic",
+    "dosage": null
+  },
+  {
+    "chemical": "Campesterol",
+    "plant_species": "Trifolium Pratense",
+    "application": "Antioxidant",
+    "dosage": "IC37=10 uM"
+  },
+  {
+    "chemical": "Calcium",
+    "plant_species": "Rumex Crispus",
+    "application": "Antipms",
+    "dosage": "1 g/day"
+  },
+  {
+    "chemical": "Gamma-Terpinene",
+    "plant_species": "Croton Eluteria",
+    "application": "Antioxidant",
+    "dosage": null
+  },
+  {
+    "chemical": "Paraffin",
+    "plant_species": "Cistus Ladaniferus",
+    "application": "Antihemorrhoidal",
+    "dosage": null
+  },
+  {
+    "chemical": "Apigenin",
+    "plant_species": "Coriandrum Sativum",
+    "application": "11B-Hsd-Inhibitor",
+    "dosage": null
+  },
+  {
+    "chemical": "P-Cymene",
+    "plant_species": "Chrysanthemum Parthenium",
+    "application": "Analgesic",
+    "dosage": null
+  },
+  {
+    "chemical": "Potassium",
+    "plant_species": "Ophiopogon Japonicus",
+    "application": "Antiarrhythmic",
+    "dosage": null
+  },
+  {
+    "chemical": "Threonine",
+    "plant_species": "Psophocarpus Tetragonolobus",
+    "application": "Antioxidant?",
+    "dosage": null
+  },
+  {
+    "chemical": "Succinic-Acid",
+    "plant_species": "Sarcostemma Acidum",
+    "application": "Antifeedant",
+    "dosage": null
+  },
+  {
+    "chemical": "Isoborneol",
+    "plant_species": "Salvia Officinalis",
+    "application": "Insectifuge",
+    "dosage": null
+  },
+  {
+    "chemical": "Physcion",
+    "plant_species": "Frangula Purshiana",
+    "application": "Antiseptic",
+    "dosage": null
+  },
+  {
+    "chemical": "Beta-Bisabolene",
+    "plant_species": "Panax Quinquefolius",
+    "application": "Abortifacient",
+    "dosage": null
+  },
+  {
+    "chemical": "Shikimic-Acid",
+    "plant_species": "Ammi Visnaga",
+    "application": "Analgesic",
+    "dosage": null
+  },
+  {
+    "chemical": "Citric-Acid",
+    "plant_species": "Physalis Peruviana",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Zinc",
+    "plant_species": "Vaccinium Myrtillus",
+    "application": "Anticrohn'S",
+    "dosage": null
+  },
+  {
+    "chemical": "Zinc",
+    "plant_species": "Zea Mays",
+    "application": "Anticrohn'S",
+    "dosage": null
+  },
+  {
+    "chemical": "Rutin",
+    "plant_species": "Aesculus Hippocastanum",
+    "application": "Aldose-Reductase-Inhibitor",
+    "dosage": "100 uM"
+  },
+  {
+    "chemical": "Alpha-Terpineol",
+    "plant_species": "Citrus Limon",
+    "application": "Anticariogenic",
+    "dosage": "MIC=800-1,600 ug/ml"
+  },
+  {
+    "chemical": "Geranyl-Geraniol",
+    "plant_species": "Serenoa Repens",
+    "application": "Cancer-Preventive",
+    "dosage": null
+  },
+  {
+    "chemical": "Valine",
+    "plant_species": "Cicer Arietinum",
+    "application": "Antiencephalopathic",
+    "dosage": null
+  },
+  {
+    "chemical": "Carvacrol",
+    "plant_species": "Angelica Sinensis",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Avicularin",
+    "plant_species": "Malus Domestica",
+    "application": "Aldose-Reductase-Inhibitor",
+    "dosage": "IC32=1 uM"
+  },
+  {
+    "chemical": "Phosphorus",
+    "plant_species": "Allium Sativum Var. Sativum",
+    "application": "Antiosteoporotic",
+    "dosage": null
+  },
+  {
+    "chemical": "Arsenic",
+    "plant_species": "Anacardium Occidentale",
+    "application": "Anorexic",
+    "dosage": null
+  },
+  {
+    "chemical": "Chlorogenic-Acid",
+    "plant_species": "Capsicum Frutescens",
+    "application": "Allergenic",
+    "dosage": null
+  },
+  {
+    "chemical": "Hordenine",
+    "plant_species": "Pancratium Maritimum",
+    "application": "Antiasthmatic",
+    "dosage": null
+  },
+  {
+    "chemical": "Dihydrocarvyl-Acetate",
+    "plant_species": "Carum Carvi",
+    "application": "Flavor",
+    "dosage": "FEMA 5-500"
+  },
+  {
+    "chemical": "Zinc",
+    "plant_species": "Eriocaulon Sp",
+    "application": "Anticrohn'S",
+    "dosage": null
+  },
+  {
+    "chemical": "Camphene",
+    "plant_species": "Thymus Zygis",
+    "application": "Antilithic?",
+    "dosage": null
+  }
+]
