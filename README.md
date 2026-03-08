@@ -1,30 +1,47 @@
-# USDA Phytochemical Database (Cleaned JSON)
+---
+license: cc-by-nc-4.0
+task_categories:
+  - text-generation
+  - question-answering
+  - feature-extraction
+  - table-question-answering
+language:
+  - en
+tags:
+  - phytochemistry
+  - ethnobotany
+  - drug-discovery
+  - pubmed
+  - rag
+  - pharmacology
+  - natural-products
+  - usda
+  - bioactivity
+pretty_name: "EthnoBotany Phytochemical Dataset (400-Row Sample)"
+size_categories:
+  - n<1K
+dataset_info:
+  features:
+    - name: chemical
+      dtype: string
+    - name: plant_species
+      dtype: string
+    - name: application
+      dtype: string
+    - name: dosage
+      dtype: string
+    - name: pubmed_mentions_2026
+      dtype: int64
+  splits:
+    - name: sample
+      num_examples: 400
+---
 
-This repository contains a **free 400-record sample** of the highly unstructured USDA Dr. Duke's Phytochemical and Ethnobotanical Databases, transformed into a clean, relational, and machine-readable JSON format.
+# EthnoBotany Phytochemical Dataset — 400-Row Sample Pack
 
-## The Problem
-Historically, accessing and structuring pharmacological, ethnobotanical, and toxicological plant data required hundreds of hours of manual CSV scraping, data cleansing, and mapping. 
+> The **400 most heavily researched** phytochemical compounds from Dr. Duke's USDA Phytochemical & Ethnobotanical Database, enriched with 2026 PubMed publication mention counts.
 
-## The Solution
-I have completely cleaned, normalized, and mapped the entire dataset. 
-
-If you are a Data Scientist, building Pharma R&D pipelines, or developing AI Compliance Agents for Nutraceuticals, you do not need to waste time cleaning data. 
-
-**The full database contains 104,388 exact phytochemical records (2,315 plant species, 24,771 chemicals).**
-
-### ⚡ Get Full Access & High-Speed API
-Instead of scraping, you can get instant access to the complete 104k+ dataset via a Sub-Millisecond REST-API and MCP (Model Context Protocol) Server for LLMs.
-
-🔗 **[Get Instant API Key & Full Dataset Access (€99/mo)](https://buy.stripe.com/4gM6oG74HcAXcdI2HKebu00)**
-
-*Zero maintenance. Zero friction. Ready for production pipelines.*
-
-## Sample Structure
-The included `usda_phytochemical_sample_400.json` demonstrates the clean entity mapping:
-```json
-{
-  "chemical": "patentiflorin a",
-  "plant_species": "justicia gendarussa",
-  "application": "hiv inhibition",
-  "dosage": "high"
-}
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+[![Dataset: 400 rows](https://img.shields.io/badge/Sample-400%20rows-blue.svg)](#)
+[![Full Dataset: 104k rows](https://img.shields.io/badge/Full%20Dataset-104%2C388%20rows-green.svg)](https://buy.stripe.com/4gM6oG74HcAXcdI2HKebu00)
+[![Format: JSON + Parquet](https://img.shields.io/badge/Format-JSON%20%2B%20Parquet-orange.svg)](#formats)
