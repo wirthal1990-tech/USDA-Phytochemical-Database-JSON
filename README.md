@@ -1,8 +1,22 @@
 ---
+annotations_creators:
+- machine-generated
+language_creators:
+- found
 language:
 - en
-license: other
-license_name: commercial-single-entity
+license: cc-by-nc-4.0
+multilinguality: monolingual
+pretty_name: "USDA Phytochemical & Ethnobotanical Database — Enriched v2.0"
+size_categories:
+- 100K<n<1M
+source_datasets:
+- original
+task_categories:
+- tabular-classification
+- feature-extraction
+- text-classification
+- question-answering
 tags:
 - phytochemistry
 - ethnobotany
@@ -16,14 +30,31 @@ tags:
 - mlops
 - parquet
 - pubmed
-pretty_name: "USDA Phytochemical & Ethnobotanical Database — Enriched v2.0"
-size_categories:
-- 100K<n<1M
-task_categories:
-- tabular-classification
-- feature-extraction
-- text-classification
-- question-answering
+- usda
+- llm-grounding
+- biotech
+dataset_info:
+  features:
+    - name: chemical
+      dtype: string
+    - name: plant_species
+      dtype: string
+    - name: application
+      dtype: string
+    - name: dosage
+      dtype: string
+    - name: pubmed_mentions_2026
+      dtype: int32
+    - name: clinical_trials_count_2026
+      dtype: int32
+    - name: chembl_bioactivity_count
+      dtype: int32
+    - name: patent_count_since_2020
+      dtype: int32
+  splits:
+    - name: sample
+      num_examples: 400
+  config_name: default
 ---
 
 <div align="center">
@@ -33,9 +64,10 @@ task_categories:
 **The only phytochemical dataset combining USDA botanical records, PubMed citation counts, ClinicalTrials.gov study counts, ChEMBL bioactivity scores, and USPTO patent density — in production-ready JSON + Parquet.**
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/Sample-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
-[![Sample](https://img.shields.io/badge/Sample-400%20rows-brightgreen)]()
+[![Sample](https://img.shields.io/badge/Sample-400%20rows-brightgreen)](https://huggingface.co/datasets/wirthal1990-tech/USDA-Phytochemical-Database-JSON)
 [![Full Dataset](https://img.shields.io/badge/Full%20Dataset-104%2C388%20rows-blue)](https://ethno-api.com)
-[![Format](https://img.shields.io/badge/Format-JSON%20%2B%20Parquet-orange)]()
+[![Format](https://img.shields.io/badge/Format-JSON%20%2B%20Parquet-orange)](https://ethno-api.com)
+[![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-Dataset-yellow)](https://huggingface.co/datasets/wirthal1990-tech/USDA-Phytochemical-Database-JSON)
 
 [**Free 400-Row Sample**](#quickstart) · [**Full Dataset (€699)**](https://ethno-api.com) · [**Quickstart Notebook**](quickstart.ipynb)
 
@@ -43,14 +75,9 @@ task_categories:
 
 ---
 
-<table>
-<tr>
-<td align="center"><strong>104,388</strong><br/>Records</td>
-<td align="center"><strong>24,771</strong><br/>Compounds</td>
-<td align="center"><strong>2,315</strong><br/>Species</td>
-<td align="center"><strong>4</strong><br/>Enrichment Layers</td>
-</tr>
-</table>
+| Records | Compounds | Species | Enrichment Layers |
+|--------:|----------:|--------:|------------------:|
+| **104,388** | **24,771** | **2,315** | **4** |
 
 ---
 
@@ -138,9 +165,19 @@ result.show()
 ```python
 from datasets import load_dataset
 
-ds = load_dataset("wirthal1990-tech/USDA-Phytochemical-Database-JSON", split="sample")
-ds.to_pandas().head()
+# Load the free 400-row sample directly from HuggingFace Hub
+ds = load_dataset(
+    "wirthal1990-tech/USDA-Phytochemical-Database-JSON",
+    split="sample",
+    trust_remote_code=False
+)
+df = ds.to_pandas()
+print(f"Records: {len(df)} | Columns: {list(df.columns)}")
+df.head()
 ```
+
+> **Note:** The `split="sample"` loads `ethno_sample_400.json` (400 rows, 8 columns).
+> The full 104,388-row dataset is available at [ethno-api.com](https://ethno-api.com).
 
 ## Sample Record
 
@@ -190,36 +227,20 @@ All enrichment scripts are deterministic, checkpoint-resumable, and respect API 
 
 ## Use Cases
 
-<table>
-<tr>
-<td width="50%">
+- **RAG Pipelines** — Ground LLM responses with verified phytochemical data. Each record has a PubMed evidence score — use it to weight retrieval results and filter hallucinations.
+- **Drug Discovery** — Prioritise natural product leads by combining PubMed citations, clinical trial presence, ChEMBL bioactivity depth, and patent landscape. One query replaces weeks of manual lit review.
+- **Market Intelligence** — Patent density score reveals which compounds are attracting commercial investment. Cross-reference with clinical trials to identify underexplored compounds with IP whitespace.
+- **Academic Research** — Pre-computed evidence scores save months of PubMed searching. The BibTeX citation block below makes this dataset citable in peer-reviewed publications.
 
-### RAG Pipelines
-Ground LLM responses with verified phytochemical data. Each record has a PubMed evidence score — use it to weight retrieval results and filter hallucinations.
+## Dataset Versions
 
-</td>
-<td width="50%">
+| Version | Records | Schema | Status |
+|---------|--------:|--------|--------|
+| v1.0 | 104,388 | 5 columns (USDA baseline) | Deprecated |
+| **v2.0** | **104,388** | **8 columns (+ PubMed, ClinicalTrials, ChEMBL, Patents)** | **Current** |
 
-### Drug Discovery
-Prioritise natural product leads by combining PubMed citations, clinical trial presence, ChEMBL bioactivity depth, and patent landscape. One query replaces weeks of manual lit review.
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### Market Intelligence
-Patent density score reveals which compounds are attracting commercial investment. Cross-reference with clinical trials to identify underexplored compounds with IP whitespace.
-
-</td>
-<td width="50%">
-
-### Academic Research
-Pre-computed evidence scores save months of PubMed searching. The BibTeX citation block below makes this dataset citable in peer-reviewed publications.
-
-</td>
-</tr>
-</table>
+The free sample (`ethno_sample_400.json`) uses the v2.0 schema.
+Enrichment fields contain representative values pending completion of the full enrichment pipeline.
 
 ## License & Commercial Access
 
