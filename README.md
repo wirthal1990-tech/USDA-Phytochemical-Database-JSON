@@ -57,6 +57,7 @@ dataset_info:
   config_name: default
 ---
 
+
 <div align="center">
 
 # USDA Phytochemical & Ethnobotanical Database — Enriched v2.0
@@ -67,9 +68,9 @@ dataset_info:
 [![Sample](https://img.shields.io/badge/Sample-400%20rows-brightgreen)](https://huggingface.co/datasets/wirthal1990-tech/USDA-Phytochemical-Database-JSON)
 [![Full Dataset](https://img.shields.io/badge/Full%20Dataset-104%2C388%20rows-blue)](https://ethno-api.com)
 [![Format](https://img.shields.io/badge/Format-JSON%20%2B%20Parquet-orange)](https://ethno-api.com)
-[![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-Dataset-yellow)](https://huggingface.co/datasets/wirthal1990-tech/USDA-Phytochemical-Database-JSON)
+[![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Dataset-yellow)](https://huggingface.co/datasets/wirthal1990-tech/USDA-Phytochemical-Database-JSON)
 
-[**Free 400-Row Sample**](#quickstart) · [**Full Dataset (€699)**](https://ethno-api.com) · [**Quickstart Notebook**](quickstart.ipynb)
+[**Free 400-Row Sample ↓**](#quickstart) · [**Single Entity €699 →**](https://buy.stripe.com/00w6oGgFh58v6Toeqsebu02) · [**Team €1.349 →**](https://buy.stripe.com/dRm7sK9cP1Wj0v06Y0ebu03) · [**Enterprise €1.699 →**](https://buy.stripe.com/dRm28q0Gj1WjdhM6Y0ebu04)
 
 </div>
 
@@ -85,14 +86,28 @@ dataset_info:
 
 | Column | Type | Nulls | Description |
 |--------|------|-------|-------------|
-| `chemical` | `string` | 0% | Standardised compound name (USDA Duke's nomenclature) |
+| `chemical` | `string` | 0% | Standardised compound name (USDA Duke’s nomenclature) |
 | `plant_species` | `string` | 0% | Binomial Latin species name |
-| `application` | `string` | ~40% | Traditional medicinal application (e.g. "Antiinflammatory") |
+| `application` | `string` | ~40% | Traditional medicinal application (e.g. “Antiinflammatory”) |
 | `dosage` | `string` | ~55% | Reported dosage, concentration, or IC50 value |
 | `pubmed_mentions_2026` | `int32` | 0% | Total PubMed publications mentioning this compound (March 2026 snapshot) |
 | `clinical_trials_count_2026` | `int32` | 0% | ClinicalTrials.gov study count per compound (March 2026) |
 | `chembl_bioactivity_count` | `int32` | 0% | ChEMBL documented bioactivity measurement count |
 | `patent_count_since_2020` | `int32` | 0% | US patents since 2020-01-01 mentioning compound (USPTO PatentsView) |
+
+---
+
+## Pricing & Licensing
+
+| Tier | Price | Includes | Purchase |
+|------|-------|----------|----------|
+| **Single Entity** | **€699** netto | JSON + Parquet + SHA-256 Manifest. 1 juristische Person, interne Nutzung. Perpetual license. | [**Buy Now →**](https://buy.stripe.com/00w6oGgFh58v6Toeqsebu02) |
+| **Team** | **€1.349** netto | Alles aus Single + `duckdb_queries.sql` (20 Queries, 5 Kategorien) + `compound_priority_score.py` + 4 Pre-computed Views (Top-500 nach PubMed, Trials, Patent-Dichte, Anti-Inflammatory Panel). Unbegrenzte interne Nutzer einer juristischen Person. | [**Buy Now →**](https://buy.stripe.com/dRm7sK9cP1Wj0v06Y0ebu03) |
+| **Enterprise** | **€1.699** netto | Alles aus Team + `snowflake_load.sql` + `chromadb_ingest.py` + `pinecone_ingest.py` + `embedding_guide.md` (ClinicalBERT, RAG-Pipelines) + Compound Opportunity Matrix + Clinical Pipeline Gaps CSV + Pre-chunked RAG JSONL. Multi-Entity / Konzernnutzung, interne Produktintegration erlaubt. | [**Buy Now →**](https://buy.stripe.com/dRm28q0Gj1WjdhM6Y0ebu04) |
+
+> Gemäß § 19 UStG wird keine Umsatzsteuer berechnet. Alle Preise netto. One-time purchase — keine Subscription, keine wiederkehrenden Kosten.
+
+---
 
 ## Why Not Build This Yourself?
 
@@ -112,9 +127,9 @@ Normalising and cross-referencing 24,771 phytochemicals against four authoritati
 
 ## Why This Dataset Exists
 
-Large language models hallucinate botanical taxonomy. A biotech team's RAG pipeline confidently outputting "Quercetin found in 450 species at 2.3 mg/g" sounds plausible — but the real number of species in our data is 215, and dosage varies by three orders of magnitude depending on the plant part.
+Large language models hallucinate botanical taxonomy. A biotech team’s RAG pipeline confidently outputting “Quercetin found in 450 species at 2.3 mg/g” sounds plausible — but the real number of species in our data is 215, and dosage varies by three orders of magnitude depending on the plant part.
 
-The raw USDA Dr. Duke's database is spread across 16 relational tables. Joining them correctly requires understanding non-obvious foreign keys, handling >40% null values in application fields, and normalising species names against accepted binomial nomenclature. Most teams give up after a week.
+The raw USDA Dr. Duke’s database is spread across 16 relational tables. Joining them correctly requires understanding non-obvious foreign keys, handling >40% null values in application fields, and normalising species names against accepted binomial nomenclature. Most teams give up after a week.
 
 ## Quickstart
 
@@ -139,7 +154,7 @@ print(f"Schema: {table.schema}")
 print(f"Rows: {table.num_rows}  Memory: {table.nbytes / 1e6:.1f} MB")
 ```
 
-### DuckDB (analytical queries, no install required)
+### DuckDB (analytical queries — sample included)
 
 ```python
 import duckdb
@@ -147,12 +162,11 @@ import duckdb
 result = duckdb.sql("""
     SELECT
         chemical,
-        MAX(pubmed_mentions_2026)      AS pubmed_score,
+        MAX(pubmed_mentions_2026)       AS pubmed_score,
         MAX(clinical_trials_count_2026) AS trial_count,
-        MAX(chembl_bioactivity_count)  AS bioassays,
-        COUNT(DISTINCT plant_species)  AS species_count
-    FROM read_json_auto('ethno_dataset_v2.json')
-    WHERE application ILIKE '%anti-inflam%'
+        MAX(chembl_bioactivity_count)   AS bioassays,
+        COUNT(DISTINCT plant_species)   AS species_count
+    FROM read_json_auto('ethno_sample_400.json')
     GROUP BY chemical
     ORDER BY trial_count DESC
     LIMIT 20
@@ -165,7 +179,6 @@ result.show()
 ```python
 from datasets import load_dataset
 
-# Load the free 400-row sample directly from HuggingFace Hub
 ds = load_dataset(
     "wirthal1990-tech/USDA-Phytochemical-Database-JSON",
     split="sample",
@@ -206,22 +219,28 @@ completion of the full enrichment run.
 
 | File | Size | Format | Access |
 |------|------|--------|--------|
-| `ethno_sample_400.json` | 67 KB | JSON | Free (this repo) |
-| `ethno_sample_400.parquet` | 15 KB | Parquet | Free (this repo) |
-| `ethno_dataset_2026_v2.json` | ~18 MB | JSON | [Commercial (€699)](https://ethno-api.com) |
-| `ethno_dataset_2026_v2.parquet` | ~900 KB | Parquet | [Commercial (€699)](https://ethno-api.com) |
-| `MANIFEST_v2.json` | ~1 KB | JSON | Included with purchase |
-| `quickstart.ipynb` | 6 KB | Notebook | Free (this repo) |
+| `ethno_sample_400.json` | 108 KB | JSON | Free (this repo) |
+| `ethno_sample_400.parquet` | 20 KB | Parquet | Free (this repo) |
+| `quickstart.ipynb` | 9 KB | Notebook | Free (this repo) |
+| `ethno_dataset_2026_v2.json` | ~18 MB | JSON | Included in all tiers |
+| `ethno_dataset_2026_v2.parquet` | ~900 KB | Parquet | Included in all tiers |
+| `MANIFEST_v2.json` (SHA-256) | ~1 KB | JSON | Included in all tiers |
+| `duckdb_queries.sql` (20 Queries) | ~13 KB | SQL | Team + Enterprise |
+| `compound_priority_score.py` | ~5 KB | Python | Team + Enterprise |
+| `snowflake_load.sql` | ~6 KB | SQL | Enterprise |
+| `chromadb_ingest.py` | ~6 KB | Python | Enterprise |
+| `pinecone_ingest.py` | ~6 KB | Python | Enterprise |
+| `embedding_guide.md` | ~7 KB | Markdown | Enterprise |
 
 ## Data Sources & Methodology
 
 | Source | Access | Date | Method |
 |--------|--------|------|--------|
-| [USDA Dr. Duke's Phytochemical and Ethnobotanical Databases](https://phytochem.nal.usda.gov/) | Public domain | 2026 | Full 16-table PostgreSQL import, normalized |
+| [USDA Dr. Duke’s Phytochemical and Ethnobotanical Databases](https://phytochem.nal.usda.gov/) | Public domain | 2026 | Full 16-table PostgreSQL import, normalized |
 | [NCBI PubMed](https://pubmed.ncbi.nlm.nih.gov/) | E-utilities API | March 2026 | `esearch` per compound, total publication count |
 | [ClinicalTrials.gov](https://clinicaltrials.gov/) | v2 API | March 2026 | Study count per compound name |
 | [ChEMBL](https://www.ebi.ac.uk/chembl/) | REST API (v34) | March 2026 | Bioactivity measurement count via molecule search |
-| [USPTO PatentsView](https://patentsview.org/) | REST API v1 (`search.patentsview.org/api/v1/patent/`) with `X-Api-Key` header, querying US patent counts since 2020-01-01 | March 2026 | US patents since 2020-01-01 mentioning compound |
+| [USPTO PatentsView](https://patentsview.org/) | REST API v1 | March 2026 | US patents since 2020-01-01 mentioning compound |
 
 All enrichment scripts are deterministic, checkpoint-resumable, and respect API rate limits. Source code available upon request for enterprise customers.
 
@@ -245,7 +264,11 @@ Enrichment fields contain representative values pending completion of the full e
 ## License & Commercial Access
 
 - **Free 400-row sample**: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — use for evaluation, academic research, and prototyping.
-- **Full 104,388-row dataset**: Single-entity commercial license, **€699 one-time purchase** at [ethno-api.com](https://ethno-api.com). Redistribution, resale, and derivative dataset publication are prohibited.
+- **Single Entity License — €699** one-time: [**Buy →**](https://buy.stripe.com/00w6oGgFh58v6Toeqsebu02) — 1 legal entity, internal use, perpetual. No redistribution.
+- **Team License — €1.349** one-time: [**Buy →**](https://buy.stripe.com/dRm7sK9cP1Wj0v06Y0ebu03) — all employees of 1 legal entity, unlimited internal users, includes analytics toolkit.
+- **Enterprise License — €1.699** one-time: [**Buy →**](https://buy.stripe.com/dRm28q0Gj1WjdhM6Y0ebu04) — multi-entity / group use, internal product integration rights, full RAG integration toolkit.
+
+> Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.
 
 ## Citation
 
