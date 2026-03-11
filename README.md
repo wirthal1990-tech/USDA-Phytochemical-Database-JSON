@@ -72,7 +72,7 @@ dataset_info:
 
 [**Free 400-Row Sample ↓**](#quickstart) · [**Single Entity €699 →**](https://buy.stripe.com/00w6oGgFh58v6Toeqsebu02?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) · [**Team €1.349 →**](https://buy.stripe.com/dRm7sK9cP1Wj0v06Y0ebu03?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) · [**Enterprise €1.699 →**](https://buy.stripe.com/dRm28q0Gj1WjdhM6Y0ebu04?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03)
 
-> **Enrichment status (March 2026):** PubMed counts are complete and final. ChEMBL bioactivity enrichment is ~27 % done (ETA: ~25 March 2026). ClinicalTrials and PatentsView layers follow. The free sample contains real PubMed data; remaining layers show representative placeholders until each run completes.
+> **Enrichment status (March 2026):** All four enrichment layers (PubMed, ClinicalTrials.gov, ChEMBL, PatentsView) are **complete and final**. The free 400-row sample contains real enrichment values.
 
 </div>
 
@@ -201,23 +201,18 @@ Below is a real record from the dataset — QUERCETIN, one of the most-studied p
 ```json
 {
   "chemical": "QUERCETIN",
-  "plant_species": "Abelmoschus esculentus",
+  "plant_species": "Drimys winteri",
   "application": "5-Lipoxygenase-Inhibitor",
   "dosage": "IC50 (uM)=4",
   "pubmed_mentions_2026": 31310,
-  "clinical_trials_count_2026": 847,
-  "chembl_bioactivity_count": 4231,
-  "patent_count_since_2020": 312
+  "clinical_trials_count_2026": 81,
+  "chembl_bioactivity_count": 2871,
+  "patent_count_since_2020": 73
 }
 ```
 
 All 8 fields are populated for all 104,388 records in the full dataset.
-The free 400-row sample contains real values for `pubmed_mentions_2026`; the
-three enrichment fields (`clinical_trials_count_2026`, `chembl_bioactivity_count`,
-`patent_count_since_2020`) contain representative placeholder values pending
-completion of the full enrichment run.
-
-> **Enrichment status (March 2026):** PubMed counts are complete and final. ChEMBL bioactivity enrichment is ~27 % done (ETA: ~25 March 2026). ClinicalTrials and PatentsView layers follow. The free sample contains real PubMed data; remaining layers show representative placeholders until each run completes.
+The free 400-row sample contains real, final enrichment values across all four layers.
 
 ## File Manifest
 
@@ -262,8 +257,7 @@ All enrichment scripts are deterministic, checkpoint-resumable, and respect API 
 | v1.0 | 104,388 | 5 columns (USDA baseline) | Deprecated |
 | **v2.0** | **104,388** | **8 columns (+ PubMed, ClinicalTrials, ChEMBL, Patents)** | **Current** |
 
-The free sample (`ethno_sample_400.json`) uses the v2.0 schema.
-Enrichment fields contain representative values pending completion of the full enrichment pipeline.
+The free sample (`ethno_sample_400.json`) uses the v2.0 schema with final enrichment values across all four layers.
 
 ## License & Commercial Access
 

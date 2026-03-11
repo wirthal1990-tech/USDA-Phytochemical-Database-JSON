@@ -1,7 +1,67 @@
 [
   {
-    "chemical": "GLUTATHIONE",
+    "chemical": "CHOLESTEROL",
     "plant_species": "Allium cepa",
+    "application": "Antioxidant",
+    "dosage": "IC43=10 uM",
+    "pubmed_mentions_2026": 313849,
+    "clinical_trials_count_2026": 70,
+    "chembl_bioactivity_count": 135,
+    "patent_count_since_2020": 383
+  },
+  {
+    "chemical": "AMINO-ACIDS",
+    "plant_species": "Panax quinquefolius",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 265380,
+    "clinical_trials_count_2026": 1,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 4
+  },
+  {
+    "chemical": "TYROSINE",
+    "plant_species": "Zingiber officinale",
+    "application": "Antidepressant?",
+    "dosage": null,
+    "pubmed_mentions_2026": 222127,
+    "clinical_trials_count_2026": 86,
+    "chembl_bioactivity_count": 198,
+    "patent_count_since_2020": 578
+  },
+  {
+    "chemical": "ALBUMIN",
+    "plant_species": "Aloe vera",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 199616,
+    "clinical_trials_count_2026": 710,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 342
+  },
+  {
+    "chemical": "FATTY-ACIDS",
+    "plant_species": "Duboisia myoporoides",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 196805,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 0
+  },
+  {
+    "chemical": "PHOSPHATASE",
+    "plant_species": "Castanea sativa",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 180957,
+    "clinical_trials_count_2026": 14,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 195
+  },
+  {
+    "chemical": "GLUTATHIONE",
+    "plant_species": "Arachis hypogaea",
     "application": "Anticytotoxic",
     "dosage": null,
     "pubmed_mentions_2026": 173533,
@@ -10,8 +70,18 @@
     "patent_count_since_2020": 130
   },
   {
+    "chemical": "CREATININE",
+    "plant_species": "Aloe vera",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 154206,
+    "clinical_trials_count_2026": 68,
+    "chembl_bioactivity_count": 58,
+    "patent_count_since_2020": 63
+  },
+  {
     "chemical": "DOPAMINE",
-    "plant_species": "Annona reticulata",
+    "plant_species": "Musa x paradisiaca",
     "application": "Adrenergic",
     "dosage": null,
     "pubmed_mentions_2026": 151646,
@@ -20,8 +90,48 @@
     "patent_count_since_2020": 218
   },
   {
+    "chemical": "ESTROGEN",
+    "plant_species": "Phoenix dactylifera",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 147976,
+    "clinical_trials_count_2026": 142,
+    "chembl_bioactivity_count": 22,
+    "patent_count_since_2020": 201
+  },
+  {
+    "chemical": "CARBOHYDRATE",
+    "plant_species": "Ocimum basilicum",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 142231,
+    "clinical_trials_count_2026": 551,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 596
+  },
+  {
+    "chemical": "PROTEASE",
+    "plant_species": "Zingiber officinale",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 140377,
+    "clinical_trials_count_2026": 30,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 742
+  },
+  {
+    "chemical": "OXIDASE",
+    "plant_species": "Cynara cardunculus subsp. cardunculus",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 138809,
+    "clinical_trials_count_2026": 18,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 250
+  },
+  {
     "chemical": "ADENOSINE",
-    "plant_species": "Aesculus hippocastanum",
+    "plant_species": "Crataegus rhipidophylla",
     "application": "Antiaggregant",
     "dosage": null,
     "pubmed_mentions_2026": 134798,
@@ -30,14 +140,174 @@
     "patent_count_since_2020": 273
   },
   {
+    "chemical": "PEROXIDASE",
+    "plant_species": "Anogeissus latifolia",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 124254,
+    "clinical_trials_count_2026": 1,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 68
+  },
+  {
+    "chemical": "SERINE",
+    "plant_species": "Panax ginseng",
+    "application": "Cancer-Preventive",
+    "dosage": null,
+    "pubmed_mentions_2026": 123763,
+    "clinical_trials_count_2026": 53,
+    "chembl_bioactivity_count": 79,
+    "patent_count_since_2020": 336
+  },
+  {
+    "chemical": "AMYLOID",
+    "plant_species": "Annona muricata",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 120722,
+    "clinical_trials_count_2026": 42,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 335
+  },
+  {
+    "chemical": "CYSTEINE",
+    "plant_species": "Zingiber officinale",
+    "application": "AntiAddisonian",
+    "dosage": null,
+    "pubmed_mentions_2026": 116291,
+    "clinical_trials_count_2026": 183,
+    "chembl_bioactivity_count": 17,
+    "patent_count_since_2020": 423
+  },
+  {
+    "chemical": "HISTONE",
+    "plant_species": "Rosa canina",
+    "application": "Antitumor",
+    "dosage": null,
+    "pubmed_mentions_2026": 116185,
+    "clinical_trials_count_2026": 8,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 268
+  },
+  {
+    "chemical": "ARGININE",
+    "plant_species": "Prunus armeniaca",
+    "application": "Antidiabetic?",
+    "dosage": null,
+    "pubmed_mentions_2026": 115707,
+    "clinical_trials_count_2026": 283,
+    "chembl_bioactivity_count": 167,
+    "patent_count_since_2020": 433
+  },
+  {
+    "chemical": "STEROIDS",
+    "plant_species": "Aloe vera",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 115624,
+    "clinical_trials_count_2026": 110,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 55
+  },
+  {
+    "chemical": "REDUCTASE",
+    "plant_species": "Ricinus communis",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 114171,
+    "clinical_trials_count_2026": 16,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 204
+  },
+  {
+    "chemical": "ALANINE",
+    "plant_species": "Panax ginseng",
+    "application": "Antioxidant",
+    "dosage": null,
+    "pubmed_mentions_2026": 110184,
+    "clinical_trials_count_2026": 68,
+    "chembl_bioactivity_count": 48,
+    "patent_count_since_2020": 200
+  },
+  {
     "chemical": "SEROTONIN",
-    "plant_species": "Ananas comosus",
+    "plant_species": "Theobroma cacao",
     "application": "Abortifacient",
     "dosage": null,
     "pubmed_mentions_2026": 109686,
     "clinical_trials_count_2026": 54,
     "chembl_bioactivity_count": 985,
     "patent_count_since_2020": 165
+  },
+  {
+    "chemical": "SUPEROXIDE-DISMUTASE",
+    "plant_species": "Panax ginseng",
+    "application": "Anticystitic",
+    "dosage": null,
+    "pubmed_mentions_2026": 101600,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 0
+  },
+  {
+    "chemical": "TESTOSTERONE",
+    "plant_species": "Punica granatum",
+    "application": "Anabolic",
+    "dosage": null,
+    "pubmed_mentions_2026": 101052,
+    "clinical_trials_count_2026": 427,
+    "chembl_bioactivity_count": 1648,
+    "patent_count_since_2020": 126
+  },
+  {
+    "chemical": "PROGESTERONE",
+    "plant_species": "Vitex agnus-castus",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 100306,
+    "clinical_trials_count_2026": 416,
+    "chembl_bioactivity_count": 1605,
+    "patent_count_since_2020": 76
+  },
+  {
+    "chemical": "(+)-L-LACTIC-ACID",
+    "plant_species": "Pueraria montana subsp. var. lobata",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 98714,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 0
+  },
+  {
+    "chemical": "ESTRADIOL",
+    "plant_species": "Panax quinquefolius",
+    "application": "Carcinogenic",
+    "dosage": "(Breast)",
+    "pubmed_mentions_2026": 95847,
+    "clinical_trials_count_2026": 570,
+    "chembl_bioactivity_count": 3493,
+    "patent_count_since_2020": 67
+  },
+  {
+    "chemical": "HEPARIN",
+    "plant_species": "Filipendula ulmaria",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 90903,
+    "clinical_trials_count_2026": 547,
+    "chembl_bioactivity_count": 17,
+    "patent_count_since_2020": 119
+  },
+  {
+    "chemical": "LYSINE",
+    "plant_species": "Thymus vulgaris",
+    "application": "Antialkalotic",
+    "dosage": null,
+    "pubmed_mentions_2026": 89966,
+    "clinical_trials_count_2026": 57,
+    "chembl_bioactivity_count": 54,
+    "patent_count_since_2020": 435
   },
   {
     "chemical": "VITAMIN-D",
@@ -50,8 +320,18 @@
     "patent_count_since_2020": 3
   },
   {
+    "chemical": "PROSTAGLANDIN",
+    "plant_species": "Lepidium meyenii",
+    "application": "Antiulcer",
+    "dosage": null,
+    "pubmed_mentions_2026": 89084,
+    "clinical_trials_count_2026": 44,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 98
+  },
+  {
     "chemical": "ADENINE",
-    "plant_species": "Achillea millefolium",
+    "plant_species": "Crataegus monogyna",
     "application": "Antianemic",
     "dosage": "1.5 g/day",
     "pubmed_mentions_2026": 88648,
@@ -60,14 +340,174 @@
     "patent_count_since_2020": 110
   },
   {
+    "chemical": "ALKALINE-PHOSPHATASE",
+    "plant_species": "Erythroxylum coca var. coca",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 88018,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 0
+  },
+  {
+    "chemical": "TRIGLYCERIDES",
+    "plant_species": "Annona cherimola",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 85715,
+    "clinical_trials_count_2026": 36,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 219
+  },
+  {
+    "chemical": "CATALASE",
+    "plant_species": "Theobroma cacao",
+    "application": "Antioxidant",
+    "dosage": null,
+    "pubmed_mentions_2026": 83723,
+    "clinical_trials_count_2026": 2,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 41
+  },
+  {
+    "chemical": "TRIGLYCERIDE",
+    "plant_species": "Malus domestica",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 83722,
+    "clinical_trials_count_2026": 42,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 251
+  },
+  {
+    "chemical": "GLYCINE",
+    "plant_species": "Juglans cinerea",
+    "application": "Antiacid",
+    "dosage": null,
+    "pubmed_mentions_2026": 75125,
+    "clinical_trials_count_2026": 60,
+    "chembl_bioactivity_count": 621,
+    "patent_count_since_2020": 285
+  },
+  {
+    "chemical": "ALKALOIDS",
+    "plant_species": "Justicia adhatoda",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 73372,
+    "clinical_trials_count_2026": 3,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 120
+  },
+  {
+    "chemical": "IODINE",
+    "plant_species": "Trachyspermum ammi",
+    "application": "Acnegenic",
+    "dosage": null,
+    "pubmed_mentions_2026": 69966,
+    "clinical_trials_count_2026": 407,
+    "chembl_bioactivity_count": 14,
+    "patent_count_since_2020": 436
+  },
+  {
+    "chemical": "ESTERS",
+    "plant_species": "Jasminum officinale",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 68756,
+    "clinical_trials_count_2026": 65,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 1051
+  },
+  {
+    "chemical": "LEUCINE",
+    "plant_species": "Lactuca sativa",
+    "application": "Antiencephalopathic",
+    "dosage": null,
+    "pubmed_mentions_2026": 67153,
+    "clinical_trials_count_2026": 100,
+    "chembl_bioactivity_count": 108,
+    "patent_count_since_2020": 209
+  },
+  {
     "chemical": "GABA",
-    "plant_species": "Achyranthes bidentata",
+    "plant_species": "Viscum album",
     "application": "Analeptic",
     "dosage": null,
     "pubmed_mentions_2026": 67128,
     "clinical_trials_count_2026": 28,
     "chembl_bioactivity_count": 0,
     "patent_count_since_2020": 78
+  },
+  {
+    "chemical": "POLYSACCHARIDE",
+    "plant_species": "Glycyrrhiza glabra",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 66595,
+    "clinical_trials_count_2026": 222,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 847
+  },
+  {
+    "chemical": "HISTAMINE",
+    "plant_species": "Sarracenia sp.",
+    "application": "Allergenic",
+    "dosage": null,
+    "pubmed_mentions_2026": 64921,
+    "clinical_trials_count_2026": 58,
+    "chembl_bioactivity_count": 598,
+    "patent_count_since_2020": 42
+  },
+  {
+    "chemical": "NOREPINEPHRINE",
+    "plant_species": "Solanum tuberosum",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 64839,
+    "clinical_trials_count_2026": 244,
+    "chembl_bioactivity_count": 939,
+    "patent_count_since_2020": 55
+  },
+  {
+    "chemical": "TRYPTOPHAN",
+    "plant_species": "Ocimum basilicum",
+    "application": "Analgesic",
+    "dosage": "750 mg/4x/day/orl/man",
+    "pubmed_mentions_2026": 63856,
+    "clinical_trials_count_2026": 47,
+    "chembl_bioactivity_count": 301,
+    "patent_count_since_2020": 190
+  },
+  {
+    "chemical": "ALCOHOLS",
+    "plant_species": "Jasminum officinale",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 63333,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 720
+  },
+  {
+    "chemical": "PARAFFIN",
+    "plant_species": "Althaea officinalis",
+    "application": "Antihemorrhoidal",
+    "dosage": null,
+    "pubmed_mentions_2026": 62406,
+    "clinical_trials_count_2026": 55,
+    "chembl_bioactivity_count": 19,
+    "patent_count_since_2020": 369
+  },
+  {
+    "chemical": "PHOSPHOLIPIDS",
+    "plant_species": "Cucurbita pepo",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 61972,
+    "clinical_trials_count_2026": 11,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 123
   },
   {
     "chemical": "MORPHINE",
@@ -78,6 +518,96 @@
     "clinical_trials_count_2026": 964,
     "chembl_bioactivity_count": 1601,
     "patent_count_since_2020": 22
+  },
+  {
+    "chemical": "METHIONINE",
+    "plant_species": "Lupinus albus",
+    "application": "Anticataract",
+    "dosage": null,
+    "pubmed_mentions_2026": 60486,
+    "clinical_trials_count_2026": 53,
+    "chembl_bioactivity_count": 121,
+    "patent_count_since_2020": 165
+  },
+  {
+    "chemical": "TRYPSIN",
+    "plant_species": "Croton tiglium",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 59155,
+    "clinical_trials_count_2026": 4,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 61
+  },
+  {
+    "chemical": "HYDROCARBONS",
+    "plant_species": "Artemisia pallens",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 57155,
+    "clinical_trials_count_2026": 2,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 1911
+  },
+  {
+    "chemical": "LACTATE-DEHYDROGENASE",
+    "plant_species": "Papaver somniferum",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 56789,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 0
+  },
+  {
+    "chemical": "FLUORIDE",
+    "plant_species": "Zingiber officinale",
+    "application": "Anticariogenic",
+    "dosage": null,
+    "pubmed_mentions_2026": 56753,
+    "clinical_trials_count_2026": 532,
+    "chembl_bioactivity_count": 37,
+    "patent_count_since_2020": 1310
+  },
+  {
+    "chemical": "FLAVONOIDS",
+    "plant_species": "Cissus verticillata",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 56675,
+    "clinical_trials_count_2026": 19,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 80
+  },
+  {
+    "chemical": "CYTOCHROME-C",
+    "plant_species": "Triticum aestivum",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 56469,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 0
+  },
+  {
+    "chemical": "PHOSPHOLIPASE",
+    "plant_species": "Solanum tuberosum",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 55844,
+    "clinical_trials_count_2026": 1,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 63
+  },
+  {
+    "chemical": "PROLINE",
+    "plant_species": "Bertholletia excelsa",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 54725,
+    "clinical_trials_count_2026": 14,
+    "chembl_bioactivity_count": 169,
+    "patent_count_since_2020": 192
   },
   {
     "chemical": "THYMIDINE",
@@ -91,13 +621,83 @@
   },
   {
     "chemical": "NICOTINE",
-    "plant_species": "Apium graveolens",
+    "plant_species": "Juglans regia",
     "application": "ANS-Paralytic",
     "dosage": null,
     "pubmed_mentions_2026": 53974,
     "clinical_trials_count_2026": 823,
     "chembl_bioactivity_count": 1761,
     "patent_count_since_2020": 418
+  },
+  {
+    "chemical": "AMIDE",
+    "plant_species": "Juncus effusus",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 53703,
+    "clinical_trials_count_2026": 16,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 1208
+  },
+  {
+    "chemical": "CREATINE",
+    "plant_species": "Eriobotrya japonica",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 53166,
+    "clinical_trials_count_2026": 177,
+    "chembl_bioactivity_count": 54,
+    "patent_count_since_2020": 60
+  },
+  {
+    "chemical": "CYCLOOXYGENASE",
+    "plant_species": "Aloe vera",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 53126,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 24
+  },
+  {
+    "chemical": "THREONINE",
+    "plant_species": "Brassica nigra",
+    "application": "Antioxidant?",
+    "dosage": null,
+    "pubmed_mentions_2026": 51487,
+    "clinical_trials_count_2026": 4,
+    "chembl_bioactivity_count": 53,
+    "patent_count_since_2020": 158
+  },
+  {
+    "chemical": "ALDEHYDE",
+    "plant_species": "Viola odorata",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 51419,
+    "clinical_trials_count_2026": 2,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 618
+  },
+  {
+    "chemical": "POLYSACCHARIDES",
+    "plant_species": "Trigonella foenum-graecum",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 50875,
+    "clinical_trials_count_2026": 7,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 318
+  },
+  {
+    "chemical": "LACTIC-ACID",
+    "plant_species": "Nicotiana tabacum",
+    "application": "Antileukorrheic",
+    "dosage": null,
+    "pubmed_mentions_2026": 50100,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 5
   },
   {
     "chemical": "(-)-INOSITOL",
@@ -110,8 +710,38 @@
     "patent_count_since_2020": 0
   },
   {
+    "chemical": "GLYCOPROTEINS",
+    "plant_species": "Lycium barbarum",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 49816,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 122
+  },
+  {
+    "chemical": "HISTIDINE",
+    "plant_species": "Calathea allouia",
+    "application": "Antiarteriosclerotic",
+    "dosage": null,
+    "pubmed_mentions_2026": 48975,
+    "clinical_trials_count_2026": 12,
+    "chembl_bioactivity_count": 138,
+    "patent_count_since_2020": 177
+  },
+  {
+    "chemical": "GLOBULIN",
+    "plant_species": "Bertholletia excelsa",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 48451,
+    "clinical_trials_count_2026": 418,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 26
+  },
+  {
     "chemical": "CHOLINE",
-    "plant_species": "Abrus precatorius",
+    "plant_species": "Urtica dioica",
     "application": "Antialzheimeran",
     "dosage": "5-16 g/man/day",
     "pubmed_mentions_2026": 48407,
@@ -120,8 +750,18 @@
     "patent_count_since_2020": 145
   },
   {
+    "chemical": "NUCLEIC-ACIDS",
+    "plant_species": "Pinus strobus",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 48205,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 0
+  },
+  {
     "chemical": "CHLOROPHYLL",
-    "plant_species": "Allium sativum var. sativum",
+    "plant_species": "Spinacia oleracea",
     "application": "Antidecubitic",
     "dosage": null,
     "pubmed_mentions_2026": 47659,
@@ -130,8 +770,48 @@
     "patent_count_since_2020": 84
   },
   {
+    "chemical": "GLUTAMINE",
+    "plant_species": "Lycium chinense",
+    "application": "Antialcoholic",
+    "dosage": "1,000 mg/man/day/orl",
+    "pubmed_mentions_2026": 47625,
+    "clinical_trials_count_2026": 156,
+    "chembl_bioactivity_count": 65,
+    "patent_count_since_2020": 153
+  },
+  {
+    "chemical": "AMINES",
+    "plant_species": "Crataegus laevigata",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 47552,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 432
+  },
+  {
+    "chemical": "LIPASE",
+    "plant_species": "Glycine max",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 47150,
+    "clinical_trials_count_2026": 13,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 214
+  },
+  {
+    "chemical": "PHENYLALANINE",
+    "plant_species": "Vicia faba",
+    "application": "AntiADD",
+    "dosage": "587 mg/day/orl",
+    "pubmed_mentions_2026": 46946,
+    "clinical_trials_count_2026": 24,
+    "chembl_bioactivity_count": 254,
+    "patent_count_since_2020": 128
+  },
+  {
     "chemical": "LECTIN",
-    "plant_species": "Elytrigia repens",
+    "plant_species": "Urtica dioica",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 46775,
@@ -140,14 +820,34 @@
     "patent_count_since_2020": 96
   },
   {
+    "chemical": "ALDEHYDES",
+    "plant_species": "Lantana camara",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 45804,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 261
+  },
+  {
     "chemical": "COCAINE",
-    "plant_species": "Erythroxylum amazonicum",
+    "plant_species": "Erythroxylum cataractarum",
     "application": "Anesthetic",
     "dosage": null,
     "pubmed_mentions_2026": 44705,
     "clinical_trials_count_2026": 57,
     "chembl_bioactivity_count": 871,
     "patent_count_since_2020": 38
+  },
+  {
+    "chemical": "EPINEPHRINE",
+    "plant_species": "Crataegus rhipidophylla",
+    "application": "Adrenergic",
+    "dosage": null,
+    "pubmed_mentions_2026": 43541,
+    "clinical_trials_count_2026": 432,
+    "chembl_bioactivity_count": 2116,
+    "patent_count_since_2020": 81
   },
   {
     "chemical": "ASCORBIC",
@@ -161,7 +861,7 @@
   },
   {
     "chemical": "PHENOL",
-    "plant_species": "Achillea millefolium",
+    "plant_species": "Nicotiana tabacum",
     "application": "Anesthetic",
     "dosage": null,
     "pubmed_mentions_2026": 43099,
@@ -171,7 +871,7 @@
   },
   {
     "chemical": "ARACHIDONIC-ACID",
-    "plant_species": "Allium sativum var. sativum",
+    "plant_species": "Morus alba",
     "application": "Antidermatitic",
     "dosage": null,
     "pubmed_mentions_2026": 43086,
@@ -181,7 +881,7 @@
   },
   {
     "chemical": "INOSITOL",
-    "plant_species": "Achillea millefolium",
+    "plant_species": "Chamaemelum nobile",
     "application": "Antialopecic",
     "dosage": null,
     "pubmed_mentions_2026": 42979,
@@ -191,7 +891,7 @@
   },
   {
     "chemical": "ASCORBIC-ACID",
-    "plant_species": "Abelmoschus esculentus",
+    "plant_species": "Pereskia aculeata",
     "application": "Acidulant",
     "dosage": "FEMA 6,000",
     "pubmed_mentions_2026": 42639,
@@ -210,14 +910,34 @@
     "patent_count_since_2020": 98
   },
   {
+    "chemical": "URIC-ACID",
+    "plant_species": "Crataegus laevigata",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 41400,
+    "clinical_trials_count_2026": 2,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 0
+  },
+  {
     "chemical": "GUANINE",
-    "plant_species": "Aesculus hippocastanum",
+    "plant_species": "Beta vulgaris subsp. subsp. vulgaris",
     "application": "Essential",
     "dosage": null,
     "pubmed_mentions_2026": 41379,
     "clinical_trials_count_2026": 0,
     "chembl_bioactivity_count": 46,
     "patent_count_since_2020": 62
+  },
+  {
+    "chemical": "PYRIDINE",
+    "plant_species": "Centella asiatica",
+    "application": "CNS-Depressant",
+    "dosage": null,
+    "pubmed_mentions_2026": 40995,
+    "clinical_trials_count_2026": 2,
+    "chembl_bioactivity_count": 204,
+    "patent_count_since_2020": 431
   },
   {
     "chemical": "PHORBOL",
@@ -230,8 +950,38 @@
     "patent_count_since_2020": 10
   },
   {
+    "chemical": "ALANINE-AMINOTRANSFERASE",
+    "plant_species": "Erythroxylum coca var. coca",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 39915,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 0
+  },
+  {
+    "chemical": "AMYLASE",
+    "plant_species": "Ricinus communis",
+    "application": "Sedative",
+    "dosage": null,
+    "pubmed_mentions_2026": 39618,
+    "clinical_trials_count_2026": 13,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 192
+  },
+  {
+    "chemical": "ESTROGENS",
+    "plant_species": "Prunus armeniaca",
+    "application": "Antiacromegalic (biphasic)",
+    "dosage": null,
+    "pubmed_mentions_2026": 38880,
+    "clinical_trials_count_2026": 56,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 8
+  },
+  {
     "chemical": "L-ARGININE",
-    "plant_species": "Eriobotrya japonica",
+    "plant_species": "Malus domestica",
     "application": "ACE-Inhibitor",
     "dosage": "500 mg/kg ivn adult hmn",
     "pubmed_mentions_2026": 37703,
@@ -241,13 +991,23 @@
   },
   {
     "chemical": "INDOLE",
-    "plant_species": "Brassica oleracea var. gongylodes",
+    "plant_species": "Zea mays",
     "application": "Anticariogenic",
     "dosage": "MIC=800 ug/ml",
     "pubmed_mentions_2026": 37693,
     "clinical_trials_count_2026": 10,
     "chembl_bioactivity_count": 91,
     "patent_count_since_2020": 174
+  },
+  {
+    "chemical": "ACID-PHOSPHATASE",
+    "plant_species": "Glycine max",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 37488,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 0
   },
   {
     "chemical": "DIPHENYL",
@@ -261,7 +1021,7 @@
   },
   {
     "chemical": "CAFFEINE",
-    "plant_species": "Annona cherimola",
+    "plant_species": "Theobroma bicolor",
     "application": "Analeptic",
     "dosage": "200 scu mus",
     "pubmed_mentions_2026": 36416,
@@ -280,6 +1040,16 @@
     "patent_count_since_2020": 1
   },
   {
+    "chemical": "POLYPHENOLS",
+    "plant_species": "Arctium lappa",
+    "application": "Anthelmintic",
+    "dosage": null,
+    "pubmed_mentions_2026": 36264,
+    "clinical_trials_count_2026": 54,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 89
+  },
+  {
     "chemical": "ADENOSINE-DIPHOSPHATE",
     "plant_species": "Vigna radiata",
     "application": null,
@@ -290,8 +1060,38 @@
     "patent_count_since_2020": 0
   },
   {
+    "chemical": "PHOSPHODIESTERASE",
+    "plant_species": "Triticum aestivum",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 34822,
+    "clinical_trials_count_2026": 12,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 129
+  },
+  {
+    "chemical": "MELATONIN",
+    "plant_species": "Scutellaria baicalensis",
+    "application": "Anaphrodisiac",
+    "dosage": null,
+    "pubmed_mentions_2026": 34598,
+    "clinical_trials_count_2026": 460,
+    "chembl_bioactivity_count": 1755,
+    "patent_count_since_2020": 105
+  },
+  {
+    "chemical": "HYDROLASE",
+    "plant_species": "Theobroma cacao",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 34110,
+    "clinical_trials_count_2026": 2,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 164
+  },
+  {
     "chemical": "CALMODULIN",
-    "plant_species": "Hordeum vulgare",
+    "plant_species": "Zea mays",
     "application": "Cancer-Preventive",
     "dosage": null,
     "pubmed_mentions_2026": 33983,
@@ -300,8 +1100,18 @@
     "patent_count_since_2020": 19
   },
   {
+    "chemical": "MANNOSE",
+    "plant_species": "Capsella bursa-pastoris",
+    "application": "Anticystitic",
+    "dosage": "0.25-1 tsp 3-4 x/day orl man",
+    "pubmed_mentions_2026": 33977,
+    "clinical_trials_count_2026": 17,
+    "chembl_bioactivity_count": 40,
+    "patent_count_since_2020": 98
+  },
+  {
     "chemical": "VITAMIN-E",
-    "plant_species": "Angelica sinensis",
+    "plant_species": "Capparis spinosa",
     "application": "Circulatory-Stimulant",
     "dosage": null,
     "pubmed_mentions_2026": 33916,
@@ -320,6 +1130,16 @@
     "patent_count_since_2020": 77
   },
   {
+    "chemical": "DECARBOXYLASE",
+    "plant_species": "Theobroma cacao",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 33469,
+    "clinical_trials_count_2026": 2,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 131
+  },
+  {
     "chemical": "(+)-VALINE",
     "plant_species": "Citrullus lanatus",
     "application": null,
@@ -331,7 +1151,7 @@
   },
   {
     "chemical": "PROTEINASE",
-    "plant_species": "Aloe vera",
+    "plant_species": "Carica papaya",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 32640,
@@ -341,7 +1161,7 @@
   },
   {
     "chemical": "BIOTIN",
-    "plant_species": "Allium sativum var. sativum",
+    "plant_species": "Panax ginseng",
     "application": "Antialopecic",
     "dosage": null,
     "pubmed_mentions_2026": 32594,
@@ -350,14 +1170,34 @@
     "patent_count_since_2020": 112
   },
   {
+    "chemical": "PURINE",
+    "plant_species": "Aloe vera",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 32579,
+    "clinical_trials_count_2026": 5,
+    "chembl_bioactivity_count": 2,
+    "patent_count_since_2020": 83
+  },
+  {
     "chemical": "ATROPINE",
-    "plant_species": "Anisodus tanguticus",
+    "plant_species": "Solanum dulcamara",
     "application": "Allergenic",
     "dosage": null,
     "pubmed_mentions_2026": 32096,
     "clinical_trials_count_2026": 199,
     "chembl_bioactivity_count": 1253,
     "patent_count_since_2020": 20
+  },
+  {
+    "chemical": "OXYGENASE",
+    "plant_species": "Musa x paradisiaca",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 31886,
+    "clinical_trials_count_2026": 1,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 39
   },
   {
     "chemical": "VITAMIN-C",
@@ -371,7 +1211,7 @@
   },
   {
     "chemical": "QUERCETIN",
-    "plant_species": "Abelmoschus esculentus",
+    "plant_species": "Drimys winteri",
     "application": "5-Lipoxygenase-Inhibitor",
     "dosage": "IC50 (uM)=4",
     "pubmed_mentions_2026": 31310,
@@ -401,7 +1241,7 @@
   },
   {
     "chemical": "GAMMA-AMINOBUTYRIC-ACID",
-    "plant_species": "Ananas comosus",
+    "plant_species": "Humulus lupulus",
     "application": "Analeptic",
     "dosage": null,
     "pubmed_mentions_2026": 30399,
@@ -411,7 +1251,7 @@
   },
   {
     "chemical": "NICOTINAMIDE",
-    "plant_species": "Agrimonia eupatoria",
+    "plant_species": "Linum usitatissimum",
     "application": "Cancer-Preventive",
     "dosage": null,
     "pubmed_mentions_2026": 29683,
@@ -421,7 +1261,7 @@
   },
   {
     "chemical": "VITAMIN-A",
-    "plant_species": "Angelica sinensis",
+    "plant_species": "Medicago sativa subsp. sativa",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 29643,
@@ -451,7 +1291,7 @@
   },
   {
     "chemical": "GLUTAMIC-ACID",
-    "plant_species": "Abelmoschus esculentus",
+    "plant_species": "Nigella sativa",
     "application": "Antialkali?",
     "dosage": "500-1,000 mg/day/orl/man",
     "pubmed_mentions_2026": 28787,
@@ -461,7 +1301,7 @@
   },
   {
     "chemical": "FOLIC-ACID",
-    "plant_species": "Achillea millefolium",
+    "plant_species": "Juglans regia",
     "application": "AntiSpina-Bifida",
     "dosage": null,
     "pubmed_mentions_2026": 28228,
@@ -481,7 +1321,7 @@
   },
   {
     "chemical": "GUANOSINE",
-    "plant_species": "Allium sativum var. sativum",
+    "plant_species": "Cucurbita pepo",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 27801,
@@ -490,8 +1330,18 @@
     "patent_count_since_2020": 39
   },
   {
+    "chemical": "GLYCOSIDES",
+    "plant_species": "Ammi majus",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 27632,
+    "clinical_trials_count_2026": 11,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 181
+  },
+  {
     "chemical": "CURCUMIN",
-    "plant_species": "Costus speciosus",
+    "plant_species": "Curcuma longa",
     "application": "5-Lipoxygenase-Inhibitor",
     "dosage": null,
     "pubmed_mentions_2026": 27072,
@@ -501,7 +1351,7 @@
   },
   {
     "chemical": "QUINONE",
-    "plant_species": "Aloe vera",
+    "plant_species": "Vitex agnus-castus",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 26705,
@@ -530,8 +1380,48 @@
     "patent_count_since_2020": 9
   },
   {
+    "chemical": "ESTERASE",
+    "plant_species": "Triticum aestivum",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 25826,
+    "clinical_trials_count_2026": 32,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 69
+  },
+  {
+    "chemical": "PEPTIDASE",
+    "plant_species": "Triticum aestivum",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 25646,
+    "clinical_trials_count_2026": 23,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 74
+  },
+  {
+    "chemical": "FLUORINE",
+    "plant_species": "Daucus carota",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 25362,
+    "clinical_trials_count_2026": 68,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 2009
+  },
+  {
+    "chemical": "DNA-POLYMERASE",
+    "plant_species": "Oryza sativa",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 24730,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 0
+  },
+  {
     "chemical": "D-GLUCOSE",
-    "plant_species": "Acacia decurrens",
+    "plant_species": "Plantago major",
     "application": "Antisecretory",
     "dosage": null,
     "pubmed_mentions_2026": 24670,
@@ -550,8 +1440,18 @@
     "patent_count_since_2020": 0
   },
   {
+    "chemical": "CHLORINE",
+    "plant_species": "Psidium guajava",
+    "application": "Antiherpetic",
+    "dosage": null,
+    "pubmed_mentions_2026": 24182,
+    "clinical_trials_count_2026": 15,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 973
+  },
+  {
     "chemical": "GLUCOSIDASE",
-    "plant_species": "Apium graveolens",
+    "plant_species": "Glycine max",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 24127,
@@ -570,6 +1470,16 @@
     "patent_count_since_2020": 0
   },
   {
+    "chemical": "RESINS",
+    "plant_species": "Commiphora myrrha",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 23820,
+    "clinical_trials_count_2026": 4,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 1000
+  },
+  {
     "chemical": "STEROL",
     "plant_species": "Bacopa monnieri",
     "application": null,
@@ -581,7 +1491,7 @@
   },
   {
     "chemical": "5-HYDROXYTRYPTAMINE",
-    "plant_species": "Ananas comosus",
+    "plant_species": "Prosopis juliflora",
     "application": "Allergenic",
     "dosage": null,
     "pubmed_mentions_2026": 23319,
@@ -591,7 +1501,7 @@
   },
   {
     "chemical": "(+)-CATECHOL",
-    "plant_species": "Acacia farnesiana",
+    "plant_species": "Arctostaphylos uva-ursi",
     "application": "Antihepatitic",
     "dosage": null,
     "pubmed_mentions_2026": 23307,
@@ -601,7 +1511,7 @@
   },
   {
     "chemical": "LINOLEIC-ACID",
-    "plant_species": "Abelmoschus esculentus",
+    "plant_species": "Pimpinella anisum",
     "application": "AntiMS",
     "dosage": null,
     "pubmed_mentions_2026": 23108,
@@ -611,13 +1521,33 @@
   },
   {
     "chemical": "TOCOPHEROL",
-    "plant_species": "Actinidia chinensis",
+    "plant_species": "Capsicum annuum",
     "application": "Allergenic",
     "dosage": null,
     "pubmed_mentions_2026": 22812,
     "clinical_trials_count_2026": 59,
     "chembl_bioactivity_count": 615,
     "patent_count_since_2020": 81
+  },
+  {
+    "chemical": "KETONES",
+    "plant_species": "Mentha arvensis var. piperascens",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 22760,
+    "clinical_trials_count_2026": 9,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 167
+  },
+  {
+    "chemical": "CAROTENOIDS",
+    "plant_species": "Prunus cerasus",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 22543,
+    "clinical_trials_count_2026": 10,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 42
   },
   {
     "chemical": "MELANIN",
@@ -651,7 +1581,7 @@
   },
   {
     "chemical": "(+)-EPICATECHIN",
-    "plant_species": "Fagopyrum esculentum",
+    "plant_species": "Malus domestica",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 21992,
@@ -671,7 +1601,7 @@
   },
   {
     "chemical": "DOPA",
-    "plant_species": "Mucuna pruriens",
+    "plant_species": "Vicia faba",
     "application": "Antiparkinsonian",
     "dosage": null,
     "pubmed_mentions_2026": 21921,
@@ -680,8 +1610,28 @@
     "patent_count_since_2020": 51
   },
   {
+    "chemical": "FATS",
+    "plant_species": "Lycium barbarum",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 21853,
+    "clinical_trials_count_2026": 9,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 150
+  },
+  {
+    "chemical": "PHENOLS",
+    "plant_species": "Trachyspermum ammi",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 21745,
+    "clinical_trials_count_2026": 3,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 111
+  },
+  {
     "chemical": "DIAZEPAM",
-    "plant_species": "Solanum tuberosum",
+    "plant_species": "Triticum aestivum",
     "application": "Amnesigenic",
     "dosage": null,
     "pubmed_mentions_2026": 21741,
@@ -691,7 +1641,7 @@
   },
   {
     "chemical": "(+)-CATECHIN",
-    "plant_species": "Abutilon theophrasti",
+    "plant_species": "Rumex crispus",
     "application": "Anticoagulant",
     "dosage": null,
     "pubmed_mentions_2026": 21724,
@@ -700,8 +1650,18 @@
     "patent_count_since_2020": 5
   },
   {
+    "chemical": "VALINE",
+    "plant_species": "Zingiber officinale",
+    "application": "Antiencephalopathic",
+    "dosage": null,
+    "pubmed_mentions_2026": 21718,
+    "clinical_trials_count_2026": 8,
+    "chembl_bioactivity_count": 57,
+    "patent_count_since_2020": 109
+  },
+  {
     "chemical": "MANNITOL",
-    "plant_species": "Achillea millefolium",
+    "plant_species": "Glycyrrhiza uralensis",
     "application": "Allergenic",
     "dosage": null,
     "pubmed_mentions_2026": 21661,
@@ -720,6 +1680,16 @@
     "patent_count_since_2020": 21
   },
   {
+    "chemical": "GLYCOSIDE",
+    "plant_species": "Acacia leucophloea",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 21533,
+    "clinical_trials_count_2026": 3,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 235
+  },
+  {
     "chemical": "CALCIUM-PHOSPHATE",
     "plant_species": "Althaea officinalis",
     "application": null,
@@ -731,7 +1701,7 @@
   },
   {
     "chemical": "VITAMIN-K",
-    "plant_species": "Anethum graveolens",
+    "plant_species": "Medicago sativa subsp. sativa",
     "application": "Coagulant",
     "dosage": null,
     "pubmed_mentions_2026": 21244,
@@ -761,7 +1731,7 @@
   },
   {
     "chemical": "OLEIC-ACID",
-    "plant_species": "Abelmoschus esculentus",
+    "plant_species": "Saussurea lappa",
     "application": "Allergenic",
     "dosage": null,
     "pubmed_mentions_2026": 21202,
@@ -781,7 +1751,7 @@
   },
   {
     "chemical": "CAROTENE",
-    "plant_species": "Alliaria petiolata",
+    "plant_species": "Ficus carica",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 20932,
@@ -790,8 +1760,18 @@
     "patent_count_since_2020": 24
   },
   {
+    "chemical": "CYANIDE",
+    "plant_species": "Prunus armeniaca",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 20864,
+    "clinical_trials_count_2026": 1,
+    "chembl_bioactivity_count": 41,
+    "patent_count_since_2020": 254
+  },
+  {
     "chemical": "OLIGOSACCHARIDE",
-    "plant_species": "Aloe vera",
+    "plant_species": "Phaseolus acutifolius",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 20777,
@@ -811,7 +1791,7 @@
   },
   {
     "chemical": "RESVERATROL",
-    "plant_species": "Eucalyptus wandoo",
+    "plant_species": "Polygonum multiflorum",
     "application": "Artemicide",
     "dosage": null,
     "pubmed_mentions_2026": 20397,
@@ -861,7 +1841,7 @@
   },
   {
     "chemical": "XANTHINE",
-    "plant_species": "Camellia sinensis",
+    "plant_species": "Oryza sativa",
     "application": "Carcinogenic",
     "dosage": null,
     "pubmed_mentions_2026": 19772,
@@ -881,7 +1861,7 @@
   },
   {
     "chemical": "COLCHICINE",
-    "plant_species": "Colchicum autumnale",
+    "plant_species": "Gloriosa superba",
     "application": "AntiBehcet's",
     "dosage": null,
     "pubmed_mentions_2026": 19595,
@@ -891,7 +1871,7 @@
   },
   {
     "chemical": "ORGANIC-ACIDS",
-    "plant_species": "Lagochilus inebrians",
+    "plant_species": "Rubus idaeus",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 19571,
@@ -901,13 +1881,23 @@
   },
   {
     "chemical": "ORNITHINE",
-    "plant_species": "Allium sativum var. sativum",
+    "plant_species": "Cucurbita pepo",
     "application": "Anticholesteremic",
     "dosage": null,
     "pubmed_mentions_2026": 19459,
     "clinical_trials_count_2026": 26,
     "chembl_bioactivity_count": 38,
     "patent_count_since_2020": 65
+  },
+  {
+    "chemical": "LIPOXYGENASE",
+    "plant_species": "Glycine max",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 19410,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 21
   },
   {
     "chemical": "IRON-OXIDE",
@@ -918,6 +1908,16 @@
     "clinical_trials_count_2026": 0,
     "chembl_bioactivity_count": 0,
     "patent_count_since_2020": 6
+  },
+  {
+    "chemical": "CITRIC-ACID",
+    "plant_species": "Lactuca sativa",
+    "application": "Allergenic",
+    "dosage": null,
+    "pubmed_mentions_2026": 19296,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 2
   },
   {
     "chemical": "(+)-ABSCISSIC-ACID",
@@ -941,7 +1941,7 @@
   },
   {
     "chemical": "ABSCISIC-ACID",
-    "plant_species": "Allium cepa",
+    "plant_species": "Helianthus annuus",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 19141,
@@ -951,7 +1951,7 @@
   },
   {
     "chemical": "SALICYLIC-ACID",
-    "plant_species": "Abies alba",
+    "plant_species": "Hedeoma pulegioides",
     "application": "Analgesic",
     "dosage": null,
     "pubmed_mentions_2026": 19123,
@@ -961,7 +1961,7 @@
   },
   {
     "chemical": "THEOPHYLLINE",
-    "plant_species": "Camellia sinensis",
+    "plant_species": "Coffea arabica",
     "application": "Allergenic",
     "dosage": null,
     "pubmed_mentions_2026": 18874,
@@ -991,7 +1991,7 @@
   },
   {
     "chemical": "LECTINS",
-    "plant_species": "Ricinus communis",
+    "plant_species": "Urtica dioica",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 18428,
@@ -1011,7 +2011,7 @@
   },
   {
     "chemical": "BETA-CAROTENE",
-    "plant_species": "Acacia decurrens",
+    "plant_species": "Corylus avellana",
     "application": "Allergenic",
     "dosage": null,
     "pubmed_mentions_2026": 17942,
@@ -1021,7 +2021,7 @@
   },
   {
     "chemical": "ALPHA-TOCOPHEROL",
-    "plant_species": "Abelmoschus esculentus",
+    "plant_species": "Lactuca sativa",
     "application": "Anticonvulsant",
     "dosage": "Synergen",
     "pubmed_mentions_2026": 17928,
@@ -1030,8 +2030,18 @@
     "patent_count_since_2020": 11
   },
   {
+    "chemical": "GLUTEN",
+    "plant_species": "Zea mays",
+    "application": "Dermatitigenic",
+    "dosage": null,
+    "pubmed_mentions_2026": 17913,
+    "clinical_trials_count_2026": 158,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 111
+  },
+  {
     "chemical": "OXALATE",
-    "plant_species": "Alocasia macrorrhiza",
+    "plant_species": "Colocasia esculenta",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 17754,
@@ -1060,8 +2070,28 @@
     "patent_count_since_2020": 3
   },
   {
+    "chemical": "CARBOXYLASE",
+    "plant_species": "Glycine max",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 17513,
+    "clinical_trials_count_2026": 1,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 78
+  },
+  {
+    "chemical": "PHENOLICS",
+    "plant_species": "Cynara cardunculus subsp. cardunculus",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 17450,
+    "clinical_trials_count_2026": 8,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 17
+  },
+  {
     "chemical": "CATECHOL",
-    "plant_species": "Allium cepa",
+    "plant_species": "Paullinia cupana",
     "application": "Allelochemic",
     "dosage": "IC50=0.65 mM",
     "pubmed_mentions_2026": 17418,
@@ -1071,7 +2101,7 @@
   },
   {
     "chemical": "ALKANES",
-    "plant_species": "Hypericum perforatum",
+    "plant_species": "Sambucus nigra",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 17308,
@@ -1081,7 +2111,7 @@
   },
   {
     "chemical": "CARBONIC-ANHYDRASE",
-    "plant_species": "Spinacia oleracea",
+    "plant_species": "Stellaria media",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 17263,
@@ -1110,6 +2140,16 @@
     "patent_count_since_2020": 174
   },
   {
+    "chemical": "RIBONUCLEASE",
+    "plant_species": "Triticum aestivum",
+    "application": "Analgesic",
+    "dosage": null,
+    "pubmed_mentions_2026": 17109,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 18
+  },
+  {
     "chemical": "ALPHA-AMYLASE",
     "plant_species": "Brassica oleracea var. capitata l. var. capitata",
     "application": null,
@@ -1128,6 +2168,16 @@
     "clinical_trials_count_2026": 0,
     "chembl_bioactivity_count": 0,
     "patent_count_since_2020": 0
+  },
+  {
+    "chemical": "CERAMIDE",
+    "plant_species": "Oryza sativa",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 16869,
+    "clinical_trials_count_2026": 7,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 63
   },
   {
     "chemical": "DOCOSAHEXAENOIC-ACID",
@@ -1150,8 +2200,18 @@
     "patent_count_since_2020": 93
   },
   {
+    "chemical": "ASPARAGINE",
+    "plant_species": "Santalum album",
+    "application": "Antisickling",
+    "dosage": null,
+    "pubmed_mentions_2026": 16430,
+    "clinical_trials_count_2026": 1,
+    "chembl_bioactivity_count": 55,
+    "patent_count_since_2020": 107
+  },
+  {
     "chemical": "CAPSAICIN",
-    "plant_species": "Capsicum annuum",
+    "plant_species": "Zingiber officinale",
     "application": "5-Lipoxygenase-Inhibitor",
     "dosage": null,
     "pubmed_mentions_2026": 16375,
@@ -1160,8 +2220,18 @@
     "patent_count_since_2020": 45
   },
   {
+    "chemical": "FORMIC-ACID",
+    "plant_species": "Stevia rebaudiana",
+    "application": "Antiseptic",
+    "dosage": null,
+    "pubmed_mentions_2026": 16336,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 1
+  },
+  {
     "chemical": "GLUCOSAMINE",
-    "plant_species": "Aloe vera",
+    "plant_species": "Juncus roemerianus",
     "application": "Antiarthritic",
     "dosage": null,
     "pubmed_mentions_2026": 16220,
@@ -1170,8 +2240,18 @@
     "patent_count_since_2020": 84
   },
   {
+    "chemical": "ISOLEUCINE",
+    "plant_species": "Juglans regia",
+    "application": "Antiencephalopathic?",
+    "dosage": null,
+    "pubmed_mentions_2026": 15905,
+    "clinical_trials_count_2026": 6,
+    "chembl_bioactivity_count": 20,
+    "patent_count_since_2020": 95
+  },
+  {
     "chemical": "STYRENE",
-    "plant_species": "Carica papaya",
+    "plant_species": "Liquidambar orientalis",
     "application": "Irritant",
     "dosage": null,
     "pubmed_mentions_2026": 15773,
@@ -1181,13 +2261,33 @@
   },
   {
     "chemical": "COUMARIN",
-    "plant_species": "Acacia farnesiana",
+    "plant_species": "Cinnamomum verum",
     "application": "Allelochemic",
     "dosage": "IC100=2 mM",
     "pubmed_mentions_2026": 15665,
     "clinical_trials_count_2026": 3,
     "chembl_bioactivity_count": 2331,
     "patent_count_since_2020": 42
+  },
+  {
+    "chemical": "HYDROXYPROLINE",
+    "plant_species": "Ceratonia siliqua",
+    "application": "Vulnerary",
+    "dosage": null,
+    "pubmed_mentions_2026": 15447,
+    "clinical_trials_count_2026": 2,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 14
+  },
+  {
+    "chemical": "SILICATE",
+    "plant_species": "Echinacea spp",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 15342,
+    "clinical_trials_count_2026": 42,
+    "chembl_bioactivity_count": 5,
+    "patent_count_since_2020": 1007
   },
   {
     "chemical": "DIACYLGLYCEROL",
@@ -1231,7 +2331,7 @@
   },
   {
     "chemical": "PHOSPHORYLASE",
-    "plant_species": "Solanum tuberosum",
+    "plant_species": "Vigna unguiculata subsp. unguiculata",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 14932,
@@ -1241,7 +2341,7 @@
   },
   {
     "chemical": "ANTHRACENE",
-    "plant_species": "Aloe vera",
+    "plant_species": "Rumex acetosa",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 14650,
@@ -1251,13 +2351,53 @@
   },
   {
     "chemical": "CHLOROPHYLL-A",
-    "plant_species": "Avena sativa",
+    "plant_species": "Mentha arvensis var. piperascens",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 14431,
     "clinical_trials_count_2026": 0,
     "chembl_bioactivity_count": 0,
     "patent_count_since_2020": 5
+  },
+  {
+    "chemical": "ANTHOCYANINS",
+    "plant_species": "Abrus precatorius",
+    "application": "Antimyopic",
+    "dosage": "600 mg/man orl",
+    "pubmed_mentions_2026": 14277,
+    "clinical_trials_count_2026": 10,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 34
+  },
+  {
+    "chemical": "ALCOHOL-DEHYDROGENASE",
+    "plant_species": "Glycine max",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 14209,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 0
+  },
+  {
+    "chemical": "UREASE",
+    "plant_species": "Glycine max",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 14116,
+    "clinical_trials_count_2026": 5,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 83
+  },
+  {
+    "chemical": "GLUCOSE-6-PHOSPHATE-DEHYDROGENASE",
+    "plant_species": "Triticum aestivum",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 14084,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 0
   },
   {
     "chemical": "CARBOXYLIC-ACIDS",
@@ -1271,7 +2411,7 @@
   },
   {
     "chemical": "ANTHOCYANIN",
-    "plant_species": "Fragaria spp",
+    "plant_species": "Parthenocissus quinquefolia",
     "application": "Antiviral",
     "dosage": null,
     "pubmed_mentions_2026": 13835,
@@ -1281,7 +2421,7 @@
   },
   {
     "chemical": "L-DOPA",
-    "plant_species": "Cytisus scoparius",
+    "plant_species": "Euphorbia lathyris",
     "application": "Analgesic",
     "dosage": null,
     "pubmed_mentions_2026": 13719,
@@ -1300,8 +2440,28 @@
     "patent_count_since_2020": 15
   },
   {
+    "chemical": "GLUTATHIONE-REDUCTASE",
+    "plant_species": "Erythroxylum coca var. coca",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 13671,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 0
+  },
+  {
+    "chemical": "SAPONINS",
+    "plant_species": "Panax ginseng",
+    "application": "Antihepatomic",
+    "dosage": null,
+    "pubmed_mentions_2026": 13629,
+    "clinical_trials_count_2026": 5,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 43
+  },
+  {
     "chemical": "PALMITIC-ACID",
-    "plant_species": "Abelmoschus esculentus",
+    "plant_species": "Centaurium erythraea",
     "application": "Antifibrinolytic",
     "dosage": null,
     "pubmed_mentions_2026": 13545,
@@ -1311,7 +2471,7 @@
   },
   {
     "chemical": "URACIL",
-    "plant_species": "Angelica sinensis",
+    "plant_species": "Oryza sativa",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 13476,
@@ -1321,7 +2481,7 @@
   },
   {
     "chemical": "RIBOFLAVIN",
-    "plant_species": "Abelmoschus esculentus",
+    "plant_species": "Avena sativa",
     "application": "Antiarabiflavinotic",
     "dosage": "2-10 mg/day orl",
     "pubmed_mentions_2026": 13392,
@@ -1331,7 +2491,7 @@
   },
   {
     "chemical": "HYDROGEN-SULFIDE",
-    "plant_species": "Coffea arabica",
+    "plant_species": "Solanum tuberosum",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 13378,
@@ -1351,7 +2511,7 @@
   },
   {
     "chemical": "GALLIC-ACID",
-    "plant_species": "Abrus precatorius",
+    "plant_species": "Euphorbia hirta",
     "application": "ACE-Inhibitor",
     "dosage": "IC50=7.7 mM/l",
     "pubmed_mentions_2026": 13122,
@@ -1361,7 +2521,7 @@
   },
   {
     "chemical": "BIPHENYL",
-    "plant_species": "Daucus carota",
+    "plant_species": "Zea mays",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 12971,
@@ -1371,7 +2531,7 @@
   },
   {
     "chemical": "THIAMINE",
-    "plant_species": "Achillea millefolium",
+    "plant_species": "Zingiber officinale",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 12924,
@@ -1381,7 +2541,7 @@
   },
   {
     "chemical": "TYROSINASE",
-    "plant_species": "Allium sativum var. sativum",
+    "plant_species": "Lablab purpureus",
     "application": "Antihypertensive",
     "dosage": null,
     "pubmed_mentions_2026": 12901,
@@ -1421,7 +2581,7 @@
   },
   {
     "chemical": "GENISTEIN",
-    "plant_species": "Adenocarpus decorticans",
+    "plant_species": "Glycine max",
     "application": "Abortifacient",
     "dosage": null,
     "pubmed_mentions_2026": 12782,
@@ -1440,6 +2600,16 @@
     "patent_count_since_2020": 0
   },
   {
+    "chemical": "L-LYSINE",
+    "plant_species": "Plantago ovata",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 12697,
+    "clinical_trials_count_2026": 14,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 51
+  },
+  {
     "chemical": "L-(+)-LYSINE",
     "plant_species": "Aesculus hippocastanum",
     "application": null,
@@ -1450,14 +2620,14 @@
     "patent_count_since_2020": 0
   },
   {
-    "chemical": "L-LYSINE",
-    "plant_species": "Plantago ovata",
+    "chemical": "STEROLS",
+    "plant_species": "Sesamum indicum",
     "application": null,
     "dosage": null,
-    "pubmed_mentions_2026": 12697,
-    "clinical_trials_count_2026": 14,
+    "pubmed_mentions_2026": 12696,
+    "clinical_trials_count_2026": 29,
     "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 51
+    "patent_count_since_2020": 44
   },
   {
     "chemical": "BETA-GLUCURONIDASE",
@@ -1471,7 +2641,7 @@
   },
   {
     "chemical": "ANILINE",
-    "plant_species": "Allium sativum var. sativum",
+    "plant_species": "Malus domestica",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 12558,
@@ -1501,7 +2671,7 @@
   },
   {
     "chemical": "LINOLENIC-ACID",
-    "plant_species": "Abrus precatorius",
+    "plant_species": "Crataegus laevigata",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 12431,
@@ -1511,7 +2681,7 @@
   },
   {
     "chemical": "PHYTOHEMAGGLUTININ",
-    "plant_species": "Glycine max",
+    "plant_species": "Pisum sativum",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 12382,
@@ -1521,7 +2691,7 @@
   },
   {
     "chemical": "LECITHIN",
-    "plant_species": "Alisma plantago-aquatica",
+    "plant_species": "Polygonum multiflorum",
     "application": "AntiTourette's",
     "dosage": "20-50 g/man/day/orl",
     "pubmed_mentions_2026": 12317,
@@ -1531,7 +2701,7 @@
   },
   {
     "chemical": "NICOTINIC-ACID",
-    "plant_species": "Alisma plantago-aquatica",
+    "plant_species": "Anemarrhena asphodeloides",
     "application": "AntiCrohn's",
     "dosage": null,
     "pubmed_mentions_2026": 12292,
@@ -1560,6 +2730,16 @@
     "patent_count_since_2020": 0
   },
   {
+    "chemical": "CYSTINE",
+    "plant_species": "Allium cepa",
+    "application": "Adjuvant",
+    "dosage": null,
+    "pubmed_mentions_2026": 12210,
+    "clinical_trials_count_2026": 2,
+    "chembl_bioactivity_count": 42,
+    "patent_count_since_2020": 62
+  },
+  {
     "chemical": "QUINOLINE",
     "plant_species": "Camellia sinensis",
     "application": "Antimalarial",
@@ -1581,7 +2761,7 @@
   },
   {
     "chemical": "GUANIDINE",
-    "plant_species": "Alisma plantago-aquatica",
+    "plant_species": "Panax quinquefolius",
     "application": "Antimyasthenic",
     "dosage": "10-35 mg/kg/day",
     "pubmed_mentions_2026": 12026,
@@ -1591,7 +2771,7 @@
   },
   {
     "chemical": "SPHINGOMYELIN",
-    "plant_species": "Aloe vera",
+    "plant_species": "Angelica sinensis",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 11952,
@@ -1610,18 +2790,18 @@
     "patent_count_since_2020": 38
   },
   {
-    "chemical": "YTTRIUM",
-    "plant_species": "Brassica oleracea var. capitata l. var. capitata",
+    "chemical": "TREHALOSE",
+    "plant_species": "Ganoderma lucidum",
     "application": null,
     "dosage": null,
-    "pubmed_mentions_2026": 11551,
-    "clinical_trials_count_2026": 172,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 398
+    "pubmed_mentions_2026": 11522,
+    "clinical_trials_count_2026": 24,
+    "chembl_bioactivity_count": 48,
+    "patent_count_since_2020": 141
   },
   {
     "chemical": "BENZOIC-ACID",
-    "plant_species": "Acacia farnesiana",
+    "plant_species": "Morinda citrifolia",
     "application": "Allergenic",
     "dosage": null,
     "pubmed_mentions_2026": 11496,
@@ -1631,7 +2811,7 @@
   },
   {
     "chemical": "SORBITOL",
-    "plant_species": "Althaea officinalis",
+    "plant_species": "Nicotiana tabacum",
     "application": "Antidiabetic",
     "dosage": "(Insulin-Sparing) 30 g/man/day",
     "pubmed_mentions_2026": 11465,
@@ -1650,8 +2830,18 @@
     "patent_count_since_2020": 0
   },
   {
+    "chemical": "CELLULASE",
+    "plant_species": "Panax ginseng",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 11378,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 78
+  },
+  {
     "chemical": "(-)-EPIGALLOCATECHIN",
-    "plant_species": "Acacia nilotica",
+    "plant_species": "Gossypium sp",
     "application": "Aldose-Reductase-Inhibitor",
     "dosage": null,
     "pubmed_mentions_2026": 11343,
@@ -1661,10 +2851,20 @@
   },
   {
     "chemical": "GLYCOLIC-ACID",
-    "plant_species": "Allium cepa",
+    "plant_species": "Foeniculum vulgare",
     "application": "Cholesterolytic",
     "dosage": null,
     "pubmed_mentions_2026": 11277,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 0
+  },
+  {
+    "chemical": "BUTYRIC-ACID",
+    "plant_species": "Myristica fragrans",
+    "application": "Anticancer",
+    "dosage": null,
+    "pubmed_mentions_2026": 11269,
     "clinical_trials_count_2026": 0,
     "chembl_bioactivity_count": 0,
     "patent_count_since_2020": 0
@@ -1680,8 +2880,18 @@
     "patent_count_since_2020": 0
   },
   {
+    "chemical": "CYTOCHROME-OXIDASE",
+    "plant_species": "Erythroxylum coca var. coca",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 11189,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 0
+  },
+  {
     "chemical": "PYRROLE",
-    "plant_species": "Aloysia citrodora",
+    "plant_species": "Zea mays",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 11175,
@@ -1691,7 +2901,7 @@
   },
   {
     "chemical": "PENTOSE",
-    "plant_species": "Anogeissus latifolia",
+    "plant_species": "Nicotiana tabacum",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 11100,
@@ -1701,7 +2911,7 @@
   },
   {
     "chemical": "HYPOXANTHINE",
-    "plant_species": "Apium graveolens",
+    "plant_species": "Camellia sinensis",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 10978,
@@ -1731,7 +2941,7 @@
   },
   {
     "chemical": "SAPONIN",
-    "plant_species": "Acacia nilotica",
+    "plant_species": "Chrysophyllum cainito",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 10874,
@@ -1751,7 +2961,7 @@
   },
   {
     "chemical": "INULIN",
-    "plant_species": "Achillea millefolium",
+    "plant_species": "Platycodon grandiflorum",
     "application": "Antidiabetic",
     "dosage": null,
     "pubmed_mentions_2026": 10830,
@@ -1761,7 +2971,7 @@
   },
   {
     "chemical": "CATECHIN",
-    "plant_species": "Agrimonia eupatoria",
+    "plant_species": "Vanilla planifolia",
     "application": "Hepatoprotective",
     "dosage": null,
     "pubmed_mentions_2026": 10815,
@@ -1771,7 +2981,7 @@
   },
   {
     "chemical": "EPIGALLOCATECHIN",
-    "plant_species": "Camellia sinensis",
+    "plant_species": "Croton lechleri",
     "application": "Antimutagenic",
     "dosage": null,
     "pubmed_mentions_2026": 10782,
@@ -1781,7 +2991,7 @@
   },
   {
     "chemical": "FUCOSE",
-    "plant_species": "Carum carvi",
+    "plant_species": "Linum usitatissimum",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 10740,
@@ -1801,7 +3011,7 @@
   },
   {
     "chemical": "NITRATES",
-    "plant_species": "Silybum marianum",
+    "plant_species": "Urtica dioica",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 10670,
@@ -1811,7 +3021,7 @@
   },
   {
     "chemical": "SPERMIDINE",
-    "plant_species": "Avena sativa",
+    "plant_species": "Panax ginseng",
     "application": "Antioxidant",
     "dosage": null,
     "pubmed_mentions_2026": 10647,
@@ -1850,8 +3060,18 @@
     "patent_count_since_2020": 55
   },
   {
+    "chemical": "HEXOKINASE",
+    "plant_species": "Vitis vinifera",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 10408,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 13
+  },
+  {
     "chemical": "SPERMINE",
-    "plant_species": "Avena sativa",
+    "plant_species": "Coffea arabica",
     "application": "Antioxidant",
     "dosage": null,
     "pubmed_mentions_2026": 10407,
@@ -1860,8 +3080,18 @@
     "patent_count_since_2020": 14
   },
   {
+    "chemical": "TERPENOIDS",
+    "plant_species": "Trichilia hirta",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 10376,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 42
+  },
+  {
     "chemical": "ANDROSTENEDIONE",
-    "plant_species": "Pinus sylvestris",
+    "plant_species": "Vitex agnus-castus",
     "application": "Androgenic",
     "dosage": null,
     "pubmed_mentions_2026": 10375,
@@ -1878,6 +3108,16 @@
     "clinical_trials_count_2026": 43,
     "chembl_bioactivity_count": 876,
     "patent_count_since_2020": 8
+  },
+  {
+    "chemical": "PHOSPHORIC-ACID",
+    "plant_species": "Rehmannia glutinosa",
+    "application": "Acidulant",
+    "dosage": null,
+    "pubmed_mentions_2026": 10299,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 2
   },
   {
     "chemical": "APOMORPHINE",
@@ -1900,8 +3140,28 @@
     "patent_count_since_2020": 4
   },
   {
+    "chemical": "PAPAIN",
+    "plant_species": "Carica papaya",
+    "application": "Allergenic",
+    "dosage": null,
+    "pubmed_mentions_2026": 10183,
+    "clinical_trials_count_2026": 7,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 12
+  },
+  {
+    "chemical": "PROPIONIC-ACID",
+    "plant_species": "Pelargonium graveolens",
+    "application": "FLavor",
+    "dosage": "FEMA 1-36,000",
+    "pubmed_mentions_2026": 10156,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 0
+  },
+  {
     "chemical": "KAEMPFEROL",
-    "plant_species": "Abelmoschus moschatus",
+    "plant_species": "Melilotus officinalis",
     "application": "11B-HSD-Inhibitor",
     "dosage": null,
     "pubmed_mentions_2026": 10131,
@@ -1921,7 +3181,7 @@
   },
   {
     "chemical": "THIOPHENE",
-    "plant_species": "Tagetes lucida",
+    "plant_species": "Tagetes minuta",
     "application": "Antiseptic",
     "dosage": null,
     "pubmed_mentions_2026": 9941,
@@ -1931,7 +3191,7 @@
   },
   {
     "chemical": "LACTONES",
-    "plant_species": "Inonotus obliquus",
+    "plant_species": "Saussurea lappa",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 9934,
@@ -1941,7 +3201,7 @@
   },
   {
     "chemical": "RUTIN",
-    "plant_species": "Acacia catechu",
+    "plant_species": "Rheum officinale",
     "application": "Aldose-Reductase-Inhibitor",
     "dosage": "100 uM",
     "pubmed_mentions_2026": 9913,
@@ -1961,7 +3221,7 @@
   },
   {
     "chemical": "PROTOPORPHYRIN",
-    "plant_species": "Beta vulgaris subsp. subsp. vulgaris",
+    "plant_species": "Urtica dioica",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 9832,
@@ -1970,14 +3230,34 @@
     "patent_count_since_2020": 13
   },
   {
+    "chemical": "PYRUVATE-KINASE",
+    "plant_species": "Erythroxylum coca var. coca",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 9828,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 0
+  },
+  {
     "chemical": "UBIQUINONE",
-    "plant_species": "Brassica oleracea var. capitata l. var. capitata",
+    "plant_species": "Calendula officinalis",
     "application": "Antigingivitic",
     "dosage": null,
     "pubmed_mentions_2026": 9749,
     "clinical_trials_count_2026": 6,
     "chembl_bioactivity_count": 104,
     "patent_count_since_2020": 7
+  },
+  {
+    "chemical": "GLYCOLIPIDS",
+    "plant_species": "Brassica juncea",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 9718,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 24
   },
   {
     "chemical": "INOSINE",
@@ -2001,7 +3281,7 @@
   },
   {
     "chemical": "SCOPOLAMINE",
-    "plant_species": "Anisodus tanguticus",
+    "plant_species": "Datura metel",
     "application": "Allergenic",
     "dosage": null,
     "pubmed_mentions_2026": 9539,
@@ -2010,8 +3290,28 @@
     "patent_count_since_2020": 6
   },
   {
+    "chemical": "SUCCINATE-DEHYDROGENASE",
+    "plant_species": "Papaver somniferum",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 9539,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 0
+  },
+  {
+    "chemical": "PROPANOL",
+    "plant_species": "Malus domestica",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 9494,
+    "clinical_trials_count_2026": 4,
+    "chembl_bioactivity_count": 33,
+    "patent_count_since_2020": 87
+  },
+  {
     "chemical": "CAFFEIC-ACID",
-    "plant_species": "Achillea millefolium",
+    "plant_species": "Crataegus laevigata",
     "application": "Allergenic",
     "dosage": null,
     "pubmed_mentions_2026": 9490,
@@ -2041,7 +3341,7 @@
   },
   {
     "chemical": "BETAINE",
-    "plant_species": "Achillea millefolium",
+    "plant_species": "Ganoderma lucidum",
     "application": "Abortifacient",
     "dosage": null,
     "pubmed_mentions_2026": 9345,
@@ -2061,7 +3361,7 @@
   },
   {
     "chemical": "PUTRESCINE",
-    "plant_species": "Avena sativa",
+    "plant_species": "Triticum aestivum",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 9118,
@@ -2111,7 +3411,7 @@
   },
   {
     "chemical": "CHLOROGENIC-ACID",
-    "plant_species": "Acacia nilotica",
+    "plant_species": "Convallaria majalis",
     "application": "Allergenic",
     "dosage": null,
     "pubmed_mentions_2026": 8778,
@@ -2131,7 +3431,7 @@
   },
   {
     "chemical": "FREE-AMINO-ACIDS",
-    "plant_species": "Astragalus membranaceus",
+    "plant_species": "Lycium barbarum",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 8688,
@@ -2151,7 +3451,7 @@
   },
   {
     "chemical": "ALIZARIN",
-    "plant_species": "Cinchona pubescens",
+    "plant_species": "Morinda citrifolia",
     "application": "Allergenic",
     "dosage": null,
     "pubmed_mentions_2026": 8636,
@@ -2161,7 +3461,7 @@
   },
   {
     "chemical": "PILOCARPINE",
-    "plant_species": "Pilocarpus jaborandi",
+    "plant_species": "Pilocarpus microphyllus",
     "application": "Alzheimerigenic",
     "dosage": null,
     "pubmed_mentions_2026": 8636,
@@ -2181,13 +3481,33 @@
   },
   {
     "chemical": "PIPERIDINE",
-    "plant_species": "Anabasis aphylla",
+    "plant_species": "Piper nigrum",
     "application": "CNS-Depressant",
     "dosage": null,
     "pubmed_mentions_2026": 8511,
     "clinical_trials_count_2026": 0,
     "chembl_bioactivity_count": 19,
     "patent_count_since_2020": 158
+  },
+  {
+    "chemical": "ISOCITRATE-DEHYDROGENASE",
+    "plant_species": "Papaver somniferum",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 8490,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 0
+  },
+  {
+    "chemical": "CHOLINE-ACETYLTRANSFERASE",
+    "plant_species": "Urtica dioica",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 8435,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 0
   },
   {
     "chemical": "ARGINASE",
@@ -2211,7 +3531,7 @@
   },
   {
     "chemical": "OCTANOL",
-    "plant_species": "Aloysia citrodora",
+    "plant_species": "Eruca sativa",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 8392,
@@ -2220,18 +3540,8 @@
     "patent_count_since_2020": 25
   },
   {
-    "chemical": "CERIUM",
-    "plant_species": "Bertholletia excelsa",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 8391,
-    "clinical_trials_count_2026": 1,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 456
-  },
-  {
     "chemical": "TAXOL",
-    "plant_species": "Cephalotaxus mannii",
+    "plant_species": "Taxus sumatrana",
     "application": "Antiangiogenic",
     "dosage": null,
     "pubmed_mentions_2026": 8379,
@@ -2241,7 +3551,7 @@
   },
   {
     "chemical": "FERULIC-ACID",
-    "plant_species": "Achillea millefolium",
+    "plant_species": "Coix lacryma-jobi",
     "application": "Allelopathic",
     "dosage": null,
     "pubmed_mentions_2026": 8286,
@@ -2251,7 +3561,7 @@
   },
   {
     "chemical": "MYO-INOSITOL",
-    "plant_species": "Aesculus hippocastanum",
+    "plant_species": "Thuja occidentalis",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 8174,
@@ -2261,7 +3571,7 @@
   },
   {
     "chemical": "BETA-GLUCOSIDASE",
-    "plant_species": "Alocasia macrorrhiza",
+    "plant_species": "Prunus armeniaca",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 8158,
@@ -2270,18 +3580,8 @@
     "patent_count_since_2020": 11
   },
   {
-    "chemical": "HEMICELLULOSE",
-    "plant_species": "Ailanthus altissima",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 8140,
-    "clinical_trials_count_2026": 1,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 114
-  },
-  {
     "chemical": "JASMONIC-ACID",
-    "plant_species": "Allium sativum var. sativum",
+    "plant_species": "Solanum tuberosum",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 8123,
@@ -2291,7 +3591,7 @@
   },
   {
     "chemical": "LUTEOLIN",
-    "plant_species": "Achillea millefolium",
+    "plant_species": "Equisetum arvense",
     "application": "Aldose-Reductase-Inhibitor",
     "dosage": "EC=3 ppm",
     "pubmed_mentions_2026": 8074,
@@ -2300,8 +3600,18 @@
     "patent_count_since_2020": 10
   },
   {
+    "chemical": "TERPENES",
+    "plant_species": "Trilisa odoratissima",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 8024,
+    "clinical_trials_count_2026": 2,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 140
+  },
+  {
     "chemical": "CITRULLINE",
-    "plant_species": "Allium sativum var. sativum",
+    "plant_species": "Cucumis sativus",
     "application": "Antiasthenic",
     "dosage": "180 mg/kg/day",
     "pubmed_mentions_2026": 8012,
@@ -2311,13 +3621,23 @@
   },
   {
     "chemical": "YOHIMBINE",
-    "plant_species": "Alchornea floribunda",
+    "plant_species": "Catharanthus lanceus",
     "application": "Adrenergic-Blocker",
     "dosage": null,
     "pubmed_mentions_2026": 8008,
     "clinical_trials_count_2026": 30,
     "chembl_bioactivity_count": 718,
     "patent_count_since_2020": 5
+  },
+  {
+    "chemical": "CYCLOHEXANE",
+    "plant_species": "Brassica oleracea var. gongylodes",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 8002,
+    "clinical_trials_count_2026": 1,
+    "chembl_bioactivity_count": 22,
+    "patent_count_since_2020": 136
   },
   {
     "chemical": "CANNABIDIOL",
@@ -2330,6 +3650,16 @@
     "patent_count_since_2020": 328
   },
   {
+    "chemical": "SULFURIC-ACID",
+    "plant_species": "Calea zacatechichi",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 7988,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 0
+  },
+  {
     "chemical": "TOLUIDINE",
     "plant_species": "Apium graveolens",
     "application": null,
@@ -2338,6 +3668,16 @@
     "clinical_trials_count_2026": 9,
     "chembl_bioactivity_count": 0,
     "patent_count_since_2020": 10
+  },
+  {
+    "chemical": "PURINES",
+    "plant_species": "Medicago sativa subsp. sativa",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 7955,
+    "clinical_trials_count_2026": 1,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 11
   },
   {
     "chemical": "SULFIDES",
@@ -2361,7 +3701,7 @@
   },
   {
     "chemical": "PYRROLIDINE",
-    "plant_species": "Apium graveolens",
+    "plant_species": "Capsicum annuum",
     "application": "Perfumery",
     "dosage": null,
     "pubmed_mentions_2026": 7928,
@@ -2391,7 +3731,7 @@
   },
   {
     "chemical": "BERBERINE",
-    "plant_species": "Adonis vernalis",
+    "plant_species": "Berberis vulgaris",
     "application": "Abortifacient",
     "dosage": null,
     "pubmed_mentions_2026": 7871,
@@ -2411,13 +3751,33 @@
   },
   {
     "chemical": "ETHANOLAMINE",
-    "plant_species": "Allium sativum var. sativum",
+    "plant_species": "Crataegus laevigata",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 7783,
     "clinical_trials_count_2026": 2,
     "chembl_bioactivity_count": 0,
     "patent_count_since_2020": 42
+  },
+  {
+    "chemical": "QUINONES",
+    "plant_species": "Catalpa longissima",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 7689,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 19
+  },
+  {
+    "chemical": "POTASSIUM-CHLORIDE",
+    "plant_species": "Physalis peruviana",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 7666,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 0
   },
   {
     "chemical": "QUINIDINE",
@@ -2471,7 +3831,7 @@
   },
   {
     "chemical": "HYDROXYLAMINE",
-    "plant_species": "Vigna mungo",
+    "plant_species": "Vigna radiata",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 7448,
@@ -2481,7 +3841,7 @@
   },
   {
     "chemical": "CALCIUM-OXALATE",
-    "plant_species": "Acalypha indica",
+    "plant_species": "Malus domestica",
     "application": "Emetic",
     "dosage": null,
     "pubmed_mentions_2026": 7416,
@@ -2501,7 +3861,7 @@
   },
   {
     "chemical": "LYCOPENE",
-    "plant_species": "Aglaonema commutatum",
+    "plant_species": "Solanum melongena",
     "application": "Antioxidant",
     "dosage": null,
     "pubmed_mentions_2026": 7259,
@@ -2511,7 +3871,7 @@
   },
   {
     "chemical": "D-GALACTOSE",
-    "plant_species": "Acacia catechu",
+    "plant_species": "Hydrastis canadensis",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 7250,
@@ -2521,7 +3881,7 @@
   },
   {
     "chemical": "STEARIC-ACID",
-    "plant_species": "Abelmoschus esculentus",
+    "plant_species": "Portulaca oleracea",
     "application": "Cosmetic",
     "dosage": null,
     "pubmed_mentions_2026": 7236,
@@ -2531,7 +3891,7 @@
   },
   {
     "chemical": "LUTEIN",
-    "plant_species": "Actinidia chinensis",
+    "plant_species": "Musa x paradisiaca",
     "application": "Anticancer (Breast)",
     "dosage": null,
     "pubmed_mentions_2026": 7221,
@@ -2541,7 +3901,7 @@
   },
   {
     "chemical": "BROMINE",
-    "plant_species": "Allium cepa",
+    "plant_species": "Cocos nucifera",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 7202,
@@ -2560,18 +3920,8 @@
     "patent_count_since_2020": 0
   },
   {
-    "chemical": "LANTHANUM",
-    "plant_species": "Anacardium occidentale",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 7166,
-    "clinical_trials_count_2026": 47,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 292
-  },
-  {
     "chemical": "PYRIDOXINE",
-    "plant_species": "Alisma plantago-aquatica",
+    "plant_species": "Pisum sativum",
     "application": "Analgesic",
     "dosage": "50 mg day",
     "pubmed_mentions_2026": 7084,
@@ -2581,7 +3931,7 @@
   },
   {
     "chemical": "AMYLOSE",
-    "plant_species": "Alocasia macrorrhiza",
+    "plant_species": "Vigna unguiculata subsp. unguiculata",
     "application": null,
     "dosage": null,
     "pubmed_mentions_2026": 7061,
@@ -2591,7 +3941,7 @@
   },
   {
     "chemical": "HYDROQUINONE",
-    "plant_species": "Acacia nilotica",
+    "plant_species": "Pyrus communis",
     "application": "Allelochemic",
     "dosage": "IC100=2.7 mM",
     "pubmed_mentions_2026": 7043,
@@ -2630,1373 +3980,23 @@
     "patent_count_since_2020": 89
   },
   {
+    "chemical": "ISOFLAVONES",
+    "plant_species": "Glycine max",
+    "application": null,
+    "dosage": null,
+    "pubmed_mentions_2026": 6943,
+    "clinical_trials_count_2026": 39,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 8
+  },
+  {
     "chemical": "TYRAMINE",
-    "plant_species": "Acacia farnesiana",
+    "plant_species": "Lycopersicon esculentum",
     "application": "Adrenergic",
     "dosage": null,
     "pubmed_mentions_2026": 6930,
     "clinical_trials_count_2026": 5,
     "chembl_bioactivity_count": 127,
     "patent_count_since_2020": 10
-  },
-  {
-    "chemical": "GINSENOSIDE",
-    "plant_species": "Panax ginseng",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 6922,
-    "clinical_trials_count_2026": 10,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 42
-  },
-  {
-    "chemical": "CAMPTOTHECIN",
-    "plant_species": "Camptotheca acuminata",
-    "application": "Anticarcinomic",
-    "dosage": "70 ppb",
-    "pubmed_mentions_2026": 6913,
-    "clinical_trials_count_2026": 7,
-    "chembl_bioactivity_count": 5838,
-    "patent_count_since_2020": 20
-  },
-  {
-    "chemical": "L-ALANINE",
-    "plant_species": "Ceratonia siliqua",
-    "application": "Antihypoglycemic",
-    "dosage": null,
-    "pubmed_mentions_2026": 6882,
-    "clinical_trials_count_2026": 9,
-    "chembl_bioactivity_count": 72,
-    "patent_count_since_2020": 17
-  },
-  {
-    "chemical": "APIGENIN",
-    "plant_species": "Achillea millefolium",
-    "application": "11B-HSD-Inhibitor",
-    "dosage": null,
-    "pubmed_mentions_2026": 6878,
-    "clinical_trials_count_2026": 7,
-    "chembl_bioactivity_count": 1216,
-    "patent_count_since_2020": 11
-  },
-  {
-    "chemical": "SITOSTEROL",
-    "plant_species": "Acacia farnesiana",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 6877,
-    "clinical_trials_count_2026": 3,
-    "chembl_bioactivity_count": 69,
-    "patent_count_since_2020": 12
-  },
-  {
-    "chemical": "BETA-GLUCAN",
-    "plant_species": "Hordeum vulgare",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 6874,
-    "clinical_trials_count_2026": 43,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 17
-  },
-  {
-    "chemical": "GALACTOSAMINE",
-    "plant_species": "Capsicum annuum",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 6872,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 17
-  },
-  {
-    "chemical": "3,4-DIHYDROXYPHENYLACETIC-ACID",
-    "plant_species": "Centaurium erythraea",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 6832,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "NUCLEOTIDASE",
-    "plant_species": "Triticum aestivum",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 6788,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 19
-  },
-  {
-    "chemical": "ALPHA-LINOLENIC-ACID",
-    "plant_species": "Alliaria petiolata",
-    "application": "Antiaggregant",
-    "dosage": null,
-    "pubmed_mentions_2026": 6783,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "L-(-)-PHENYLALANINE",
-    "plant_species": "Citrullus lanatus",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 6736,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "BENZALDEHYDE",
-    "plant_species": "Acacia farnesiana",
-    "application": "Allergenic",
-    "dosage": null,
-    "pubmed_mentions_2026": 6684,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 68,
-    "patent_count_since_2020": 37
-  },
-  {
-    "chemical": "ROTENONE",
-    "plant_species": "Pachyrhizus erosus",
-    "application": "Acaricide",
-    "dosage": null,
-    "pubmed_mentions_2026": 6640,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 2063,
-    "patent_count_since_2020": 2
-  },
-  {
-    "chemical": "TANNIC-ACID",
-    "plant_species": "Achillea millefolium",
-    "application": "Allergenic",
-    "dosage": null,
-    "pubmed_mentions_2026": 6596,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "GLUCURONIC-ACID",
-    "plant_species": "Acacia senegal",
-    "application": "Antidote (Camphor)",
-    "dosage": null,
-    "pubmed_mentions_2026": 6582,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "TRIMETHYLAMINE",
-    "plant_species": "Acorus calamus",
-    "application": "Antioxidant",
-    "dosage": null,
-    "pubmed_mentions_2026": 6568,
-    "clinical_trials_count_2026": 1,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 37
-  },
-  {
-    "chemical": "EUGENOL",
-    "plant_species": "Acacia farnesiana",
-    "application": "Allergenic",
-    "dosage": null,
-    "pubmed_mentions_2026": 6526,
-    "clinical_trials_count_2026": 18,
-    "chembl_bioactivity_count": 571,
-    "patent_count_since_2020": 27
-  },
-  {
-    "chemical": "(-)-EPICATECHIN",
-    "plant_species": "Abutilon theophrasti",
-    "application": "Allelochemic",
-    "dosage": null,
-    "pubmed_mentions_2026": 6519,
-    "clinical_trials_count_2026": 6,
-    "chembl_bioactivity_count": 414,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "EPICATECHIN",
-    "plant_species": "Aesculus hippocastanum",
-    "application": "Lipoxygenase-Inhibitor",
-    "dosage": "IC50=140 uM",
-    "pubmed_mentions_2026": 6471,
-    "clinical_trials_count_2026": 27,
-    "chembl_bioactivity_count": 50,
-    "patent_count_since_2020": 14
-  },
-  {
-    "chemical": "L-(-)-TRYPTOPHAN",
-    "plant_species": "Aesculus hippocastanum",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 6464,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "L-TRYPTOPHAN",
-    "plant_species": "Apium graveolens",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 6464,
-    "clinical_trials_count_2026": 11,
-    "chembl_bioactivity_count": 301,
-    "patent_count_since_2020": 20
-  },
-  {
-    "chemical": "(+)-LIMONENE",
-    "plant_species": "Agathosma betulina",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 6446,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 1
-  },
-  {
-    "chemical": "INDOLE-3-ACETIC-ACID",
-    "plant_species": "Glycine max",
-    "application": "Allelochemic",
-    "dosage": null,
-    "pubmed_mentions_2026": 6431,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "(-)-LIMONENE",
-    "plant_species": "Anethum graveolens",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 6426,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 4,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "2-PROPANOL",
-    "plant_species": "Malus domestica",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 6410,
-    "clinical_trials_count_2026": 1,
-    "chembl_bioactivity_count": 28,
-    "patent_count_since_2020": 26
-  },
-  {
-    "chemical": "HEMIN",
-    "plant_species": "Hippophae rhamnoides",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 6375,
-    "clinical_trials_count_2026": 5,
-    "chembl_bioactivity_count": 1,
-    "patent_count_since_2020": 10
-  },
-  {
-    "chemical": "FERREDOXIN",
-    "plant_species": "Taxus baccata",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 6351,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 13
-  },
-  {
-    "chemical": "CYTOKININ",
-    "plant_species": "Rumex acetosella",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 6333,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 15
-  },
-  {
-    "chemical": "TRITERPENOIDS",
-    "plant_species": "Crescentia alata",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 6321,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 16
-  },
-  {
-    "chemical": "ANTHRAQUINONE",
-    "plant_species": "Rheum palmatum",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 6318,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 70,
-    "patent_count_since_2020": 39
-  },
-  {
-    "chemical": "LIMONENE",
-    "plant_species": "Abies alba",
-    "application": "AChE-Inhibitor",
-    "dosage": null,
-    "pubmed_mentions_2026": 6286,
-    "clinical_trials_count_2026": 13,
-    "chembl_bioactivity_count": 433,
-    "patent_count_since_2020": 70
-  },
-  {
-    "chemical": "5-METHYLCYTOSINE",
-    "plant_species": "Camellia sinensis",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 6261,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 24
-  },
-  {
-    "chemical": "CODEINE",
-    "plant_species": "Argemone mexicana",
-    "application": "Analgesic",
-    "dosage": "22.5 orl rat",
-    "pubmed_mentions_2026": 6218,
-    "clinical_trials_count_2026": 72,
-    "chembl_bioactivity_count": 305,
-    "patent_count_since_2020": 8
-  },
-  {
-    "chemical": "LYSOPHOSPHATIDYLCHOLINE",
-    "plant_species": "Angelica sinensis",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 6210,
-    "clinical_trials_count_2026": 1,
-    "chembl_bioactivity_count": 6,
-    "patent_count_since_2020": 8
-  },
-  {
-    "chemical": "GIBBERELLIN",
-    "plant_species": "Hordeum vulgare",
-    "application": "Cicatrizant",
-    "dosage": null,
-    "pubmed_mentions_2026": 6157,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 21
-  },
-  {
-    "chemical": "HAEMATOXYLIN",
-    "plant_species": "Haematoxylum campechianum",
-    "application": "Aldose-Reductase-Inhibitor",
-    "dosage": null,
-    "pubmed_mentions_2026": 6154,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 129,
-    "patent_count_since_2020": 1
-  },
-  {
-    "chemical": "ERGOSTEROL",
-    "plant_species": "Abelmoschus moschatus",
-    "application": "Antiflu",
-    "dosage": null,
-    "pubmed_mentions_2026": 6114,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 106,
-    "patent_count_since_2020": 12
-  },
-  {
-    "chemical": "XYLAN",
-    "plant_species": "Althaea officinalis",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 6108,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 21
-  },
-  {
-    "chemical": "TRITERPENE",
-    "plant_species": "Thevetia peruviana",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 6106,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 36
-  },
-  {
-    "chemical": "FLAVONE",
-    "plant_species": "Ammi visnaga",
-    "application": "Allergenic",
-    "dosage": null,
-    "pubmed_mentions_2026": 6093,
-    "clinical_trials_count_2026": 1,
-    "chembl_bioactivity_count": 333,
-    "patent_count_since_2020": 24
-  },
-  {
-    "chemical": "NIACIN",
-    "plant_species": "Abelmoschus esculentus",
-    "application": "Allergenic",
-    "dosage": null,
-    "pubmed_mentions_2026": 6087,
-    "clinical_trials_count_2026": 137,
-    "chembl_bioactivity_count": 2545,
-    "patent_count_since_2020": 24
-  },
-  {
-    "chemical": "ARABINOSIDE",
-    "plant_species": "Daucus carota",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 6071,
-    "clinical_trials_count_2026": 29,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "TERPENE",
-    "plant_species": "Satureja montana",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 6059,
-    "clinical_trials_count_2026": 2,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 262
-  },
-  {
-    "chemical": "NEODYMIUM",
-    "plant_species": "Carya ovata",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 6052,
-    "clinical_trials_count_2026": 10,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 164
-  },
-  {
-    "chemical": "(+)-CAMPHENE",
-    "plant_species": "Cinnamomum camphora",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 6026,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 1,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "DISACCHARIDES",
-    "plant_species": "Panax ginseng",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 5995,
-    "clinical_trials_count_2026": 1,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 49
-  },
-  {
-    "chemical": "(+)-PINENE",
-    "plant_species": "Alpinia galanga",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 5762,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "(-)-PINENE",
-    "plant_species": "Mentha pulegium",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 5726,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "OCHRATOXIN-A",
-    "plant_species": "Triticum aestivum",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 5718,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "CARBAZOLE",
-    "plant_species": "Murraya koenigii",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 5717,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 49,
-    "patent_count_since_2020": 145
-  },
-  {
-    "chemical": "GLYCOSIDASE",
-    "plant_species": "Theobroma cacao",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 5693,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 27
-  },
-  {
-    "chemical": "5'-CYCLIC-AMP",
-    "plant_species": "Lentinus edodes",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 5691,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "ETHYL-ESTER",
-    "plant_species": "Acacia farnesiana",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 5681,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "PAPAVERINE",
-    "plant_species": "Papaver bracteatum",
-    "application": "Antianginal",
-    "dosage": null,
-    "pubmed_mentions_2026": 5591,
-    "clinical_trials_count_2026": 16,
-    "chembl_bioactivity_count": 2206,
-    "patent_count_since_2020": 2
-  },
-  {
-    "chemical": "EPIGALLOCATECHIN-GALLATE",
-    "plant_species": "Camellia sinensis",
-    "application": "Antitumor",
-    "dosage": null,
-    "pubmed_mentions_2026": 5586,
-    "clinical_trials_count_2026": 4,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "PINENE",
-    "plant_species": "Artemisia absinthium",
-    "application": "Antiseptic",
-    "dosage": null,
-    "pubmed_mentions_2026": 5568,
-    "clinical_trials_count_2026": 2,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 47
-  },
-  {
-    "chemical": "PROTEINASE-INHIBITOR",
-    "plant_species": "Cucurbita pepo",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 5563,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "(+)-MENTHOL",
-    "plant_species": "Mentha pulegium",
-    "application": "Antiacetylcholinesterase",
-    "dosage": "IC50=2 mM",
-    "pubmed_mentions_2026": 5543,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 7,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "(-)-MENTHOL",
-    "plant_species": "Mentha arvensis var. piperascens",
-    "application": "Pesticide",
-    "dosage": null,
-    "pubmed_mentions_2026": 5485,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "DELTA-9-TETRAHYDROCANNABINOL",
-    "plant_species": "Cannabis sativa",
-    "application": "Antiangiogenic",
-    "dosage": null,
-    "pubmed_mentions_2026": 5419,
-    "clinical_trials_count_2026": 11,
-    "chembl_bioactivity_count": 436,
-    "patent_count_since_2020": 3
-  },
-  {
-    "chemical": "RUBISCO",
-    "plant_species": "Nicotiana tabacum",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 5323,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 24
-  },
-  {
-    "chemical": "CYSTATHIONINE",
-    "plant_species": "Equisetum arvense",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 5304,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 24
-  },
-  {
-    "chemical": "FLAVONOLS",
-    "plant_species": "Camellia sinensis",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 5285,
-    "clinical_trials_count_2026": 2,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 4
-  },
-  {
-    "chemical": "BETA-SITOSTEROL",
-    "plant_species": "Abelmoschus esculentus",
-    "application": "Androgenic",
-    "dosage": null,
-    "pubmed_mentions_2026": 5284,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 334,
-    "patent_count_since_2020": 2
-  },
-  {
-    "chemical": "SQUALENE",
-    "plant_species": "Alliaria petiolata",
-    "application": "Antitumor",
-    "dosage": null,
-    "pubmed_mentions_2026": 5274,
-    "clinical_trials_count_2026": 3,
-    "chembl_bioactivity_count": 20,
-    "patent_count_since_2020": 29
-  },
-  {
-    "chemical": "MANNAN",
-    "plant_species": "Aloe vera",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 5264,
-    "clinical_trials_count_2026": 3,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 29
-  },
-  {
-    "chemical": "STRYCHNINE",
-    "plant_species": "Argyreia nervosa",
-    "application": "Analeptic",
-    "dosage": null,
-    "pubmed_mentions_2026": 5211,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 370,
-    "patent_count_since_2020": 1
-  },
-  {
-    "chemical": "EUROPIUM",
-    "plant_species": "Anacardium occidentale",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 5199,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 88
-  },
-  {
-    "chemical": "EPHEDRINE",
-    "plant_species": "Aconitum napellus",
-    "application": "Adrenergic",
-    "dosage": null,
-    "pubmed_mentions_2026": 5168,
-    "clinical_trials_count_2026": 95,
-    "chembl_bioactivity_count": 140,
-    "patent_count_since_2020": 13
-  },
-  {
-    "chemical": "GLUCOSIDES",
-    "plant_species": "Maclura pomifera",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 5165,
-    "clinical_trials_count_2026": 5,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 9
-  },
-  {
-    "chemical": "PHORBOL-ESTERS",
-    "plant_species": "Chamaesyce hypericifolia",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 5158,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "NITROGENASE",
-    "plant_species": "Glycine max",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 5153,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 9
-  },
-  {
-    "chemical": "NARINGENIN",
-    "plant_species": "Acacia farnesiana",
-    "application": "Aldose-Reductase-Inhibitor",
-    "dosage": "IC25=1 uM",
-    "pubmed_mentions_2026": 5142,
-    "clinical_trials_count_2026": 4,
-    "chembl_bioactivity_count": 454,
-    "patent_count_since_2020": 8
-  },
-  {
-    "chemical": "L-(-)-TYROSINE",
-    "plant_species": "Citrullus lanatus",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 5125,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "L(+)-TYROSINE",
-    "plant_species": "Cytisus scoparius",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 5125,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "(-)-CAMPHOR",
-    "plant_species": "Artemisia salsoloides",
-    "application": "Insect-Repellent",
-    "dosage": null,
-    "pubmed_mentions_2026": 5114,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 545,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "ISOQUINOLINE",
-    "plant_species": "Papaver somniferum",
-    "application": "FLavor",
-    "dosage": "FEMA 0.2-4",
-    "pubmed_mentions_2026": 5056,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 23,
-    "patent_count_since_2020": 59
-  },
-  {
-    "chemical": "ESTRIOL",
-    "plant_species": "Glycyrrhiza glabra",
-    "application": "Estrogenic",
-    "dosage": "500 ug/day/orl/wmn",
-    "pubmed_mentions_2026": 5051,
-    "clinical_trials_count_2026": 30,
-    "chembl_bioactivity_count": 945,
-    "patent_count_since_2020": 5
-  },
-  {
-    "chemical": "ZYMOGEN",
-    "plant_species": "Ricinus communis",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 5042,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 3
-  },
-  {
-    "chemical": "DISULFIDES",
-    "plant_species": "Allium sativum var. sativum",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 5030,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 21
-  },
-  {
-    "chemical": "ROBIN",
-    "plant_species": "Robinia pseudoacacia",
-    "application": "Ametic",
-    "dosage": null,
-    "pubmed_mentions_2026": 4989,
-    "clinical_trials_count_2026": 1,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 99
-  },
-  {
-    "chemical": "THYMOL",
-    "plant_species": "Achillea millefolium",
-    "application": "Allergenic",
-    "dosage": null,
-    "pubmed_mentions_2026": 4985,
-    "clinical_trials_count_2026": 6,
-    "chembl_bioactivity_count": 328,
-    "patent_count_since_2020": 42
-  },
-  {
-    "chemical": "HOMOSERINE",
-    "plant_species": "Ginkgo biloba",
-    "application": "Antisickling",
-    "dosage": null,
-    "pubmed_mentions_2026": 4947,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 4,
-    "patent_count_since_2020": 24
-  },
-  {
-    "chemical": "2-NONENAL",
-    "plant_species": "Citrus limon",
-    "application": "Insectifuge",
-    "dosage": null,
-    "pubmed_mentions_2026": 4892,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 22,
-    "patent_count_since_2020": 4
-  },
-  {
-    "chemical": "PICROTOXIN",
-    "plant_species": "Anamirta cocculus",
-    "application": "Anticonvulsant",
-    "dosage": null,
-    "pubmed_mentions_2026": 4874,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 24,
-    "patent_count_since_2020": 1
-  },
-  {
-    "chemical": "(+)-LINALOOL",
-    "plant_species": "Agathosma betulina",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 4828,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "(-)-LINALOOL",
-    "plant_species": "Laurus nobilis",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 4828,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 4,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "MENTHOL",
-    "plant_species": "Achillea millefolium",
-    "application": "CNS-Depressant",
-    "dosage": null,
-    "pubmed_mentions_2026": 4820,
-    "clinical_trials_count_2026": 100,
-    "chembl_bioactivity_count": 118,
-    "patent_count_since_2020": 103
-  },
-  {
-    "chemical": "LINALOOL",
-    "plant_species": "Acacia farnesiana",
-    "application": "Allergenic",
-    "dosage": null,
-    "pubmed_mentions_2026": 4770,
-    "clinical_trials_count_2026": 1,
-    "chembl_bioactivity_count": 143,
-    "patent_count_since_2020": 39
-  },
-  {
-    "chemical": "CELLOBIOSE",
-    "plant_species": "Annona muricata",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 4767,
-    "clinical_trials_count_2026": 2,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 16
-  },
-  {
-    "chemical": "OCTANE",
-    "plant_species": "Capsicum annuum",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 4752,
-    "clinical_trials_count_2026": 2,
-    "chembl_bioactivity_count": 8,
-    "patent_count_since_2020": 184
-  },
-  {
-    "chemical": "N-BUTANOL",
-    "plant_species": "Carica papaya",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 4698,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 16
-  },
-  {
-    "chemical": "PHYSOSTIGMINE",
-    "plant_species": "Hippomane mancinella",
-    "application": "Antialzheimeran",
-    "dosage": null,
-    "pubmed_mentions_2026": 4657,
-    "clinical_trials_count_2026": 9,
-    "chembl_bioactivity_count": 908,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "1-BUTANOL",
-    "plant_species": "Annona cherimola",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 4611,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 18
-  },
-  {
-    "chemical": "COUMARIC-ACID",
-    "plant_species": "Citrus sinensis",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 4599,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "FLAVOPROTEIN",
-    "plant_species": "Alocasia macrorrhiza",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 4567,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 5
-  },
-  {
-    "chemical": "ZEAXANTHIN",
-    "plant_species": "Actinidia chinensis",
-    "application": "Anticancer (Breast)",
-    "dosage": null,
-    "pubmed_mentions_2026": 4563,
-    "clinical_trials_count_2026": 24,
-    "chembl_bioactivity_count": 4,
-    "patent_count_since_2020": 21
-  },
-  {
-    "chemical": "ZEARALENONE",
-    "plant_species": "Zea mays",
-    "application": "Anabolic",
-    "dosage": null,
-    "pubmed_mentions_2026": 4546,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 153,
-    "patent_count_since_2020": 11
-  },
-  {
-    "chemical": "DAIDZEIN",
-    "plant_species": "Cicer arietinum",
-    "application": "Antialcoholic",
-    "dosage": null,
-    "pubmed_mentions_2026": 4540,
-    "clinical_trials_count_2026": 3,
-    "chembl_bioactivity_count": 424,
-    "patent_count_since_2020": 6
-  },
-  {
-    "chemical": "TANTALUM",
-    "plant_species": "Anacardium occidentale",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 4523,
-    "clinical_trials_count_2026": 4,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 571
-  },
-  {
-    "chemical": "VANILLIN",
-    "plant_species": "Ananas comosus",
-    "application": "Allelochemic",
-    "dosage": "IC50=4.26 mM",
-    "pubmed_mentions_2026": 4509,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 231,
-    "patent_count_since_2020": 65
-  },
-  {
-    "chemical": "L-LEUCINE",
-    "plant_species": "Dianthus barbatus",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 4453,
-    "clinical_trials_count_2026": 23,
-    "chembl_bioactivity_count": 108,
-    "patent_count_since_2020": 11
-  },
-  {
-    "chemical": "PYRAZINE",
-    "plant_species": "Brassica oleracea var. gongylodes",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 4451,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 4,
-    "patent_count_since_2020": 86
-  },
-  {
-    "chemical": "IODIDES",
-    "plant_species": "Feijoa sellowiana",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 4446,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 9
-  },
-  {
-    "chemical": "ELLAGIC-ACID",
-    "plant_species": "Acacia farnesiana",
-    "application": "ACE-Inhibitor",
-    "dosage": "IC50=5 mM/l",
-    "pubmed_mentions_2026": 4444,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "ALUMINUM-OXIDE",
-    "plant_species": "Gossypium sp",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 4430,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 6
-  },
-  {
-    "chemical": "BENZOPHENONE",
-    "plant_species": "Brassica oleracea var. capitata l. var. capitata",
-    "application": "FLavor",
-    "dosage": "FEMA 1-2",
-    "pubmed_mentions_2026": 4390,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 48,
-    "patent_count_since_2020": 54
-  },
-  {
-    "chemical": "DI-(2-ETHYLHEXYL)-PHTHALATE",
-    "plant_species": "Aloe vera",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 4381,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "FLUORENE",
-    "plant_species": "Zea mays",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 4324,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 8,
-    "patent_count_since_2020": 112
-  },
-  {
-    "chemical": "(+)-ALPHA-PINENE",
-    "plant_species": "Foeniculum vulgare",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 4315,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "(-)-ALPHA-PINENE",
-    "plant_species": "Hedeoma pulegioides",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 4315,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "CYANIDIN",
-    "plant_species": "Abutilon theophrasti",
-    "application": "Allelochemic",
-    "dosage": "IC90=1 mM",
-    "pubmed_mentions_2026": 4302,
-    "clinical_trials_count_2026": 2,
-    "chembl_bioactivity_count": 60,
-    "patent_count_since_2020": 3
-  },
-  {
-    "chemical": "VITAMIN-D-3",
-    "plant_species": "Medicago sativa subsp. sativa",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 4299,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "METHYL-JASMONATE",
-    "plant_species": "Jasminum officinale",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 4261,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "BETA-ALANINE",
-    "plant_species": "Elytrigia repens",
-    "application": "Avicide",
-    "dosage": null,
-    "pubmed_mentions_2026": 4253,
-    "clinical_trials_count_2026": 20,
-    "chembl_bioactivity_count": 39,
-    "patent_count_since_2020": 7
-  },
-  {
-    "chemical": "ALPHA-PINENE",
-    "plant_species": "Abies alba",
-    "application": "Allelochemic",
-    "dosage": null,
-    "pubmed_mentions_2026": 4248,
-    "clinical_trials_count_2026": 1,
-    "chembl_bioactivity_count": 63,
-    "patent_count_since_2020": 15
-  },
-  {
-    "chemical": "GALANIN",
-    "plant_species": "Panax ginseng",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 4239,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 17,
-    "patent_count_since_2020": 4
-  },
-  {
-    "chemical": "EPIGALLOCATECHIN-3-GALLATE",
-    "plant_species": "Punica granatum",
-    "application": "Antiproliferant",
-    "dosage": null,
-    "pubmed_mentions_2026": 4220,
-    "clinical_trials_count_2026": 10,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 18
-  },
-  {
-    "chemical": "(-)-EPIGALLOCATECHIN-3-GALLATE",
-    "plant_species": "Camellia sinensis",
-    "application": "Antiangiogenic",
-    "dosage": null,
-    "pubmed_mentions_2026": 4216,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "DIGOXIGENIN",
-    "plant_species": "Digitalis lanata",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 4155,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 73,
-    "patent_count_since_2020": 5
-  },
-  {
-    "chemical": "PHYTOHAEMAGGLUTININ",
-    "plant_species": "Phaseolus vulgaris subsp. var. vulgaris",
-    "application": "Anticancer",
-    "dosage": null,
-    "pubmed_mentions_2026": 4151,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 1
-  },
-  {
-    "chemical": "ALPHA-GALACTOSIDASE",
-    "plant_species": "Trigonella foenum-graecum",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 4121,
-    "clinical_trials_count_2026": 6,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 17
-  },
-  {
-    "chemical": "METHYL-ETHER",
-    "plant_species": "Rosmarinus officinalis",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 4118,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 1
-  },
-  {
-    "chemical": "XYLITOL",
-    "plant_species": "Allium cepa",
-    "application": "Anticariogenic?",
-    "dosage": null,
-    "pubmed_mentions_2026": 4103,
-    "clinical_trials_count_2026": 81,
-    "chembl_bioactivity_count": 34,
-    "patent_count_since_2020": 84
-  },
-  {
-    "chemical": "INDOL",
-    "plant_species": "Citrus aurantium",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 4088,
-    "clinical_trials_count_2026": 1,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 98
-  },
-  {
-    "chemical": "GUTTA-PERCHA",
-    "plant_species": "Eucommia ulmoides",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 4079,
-    "clinical_trials_count_2026": 3,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 3
-  },
-  {
-    "chemical": "GLIADIN",
-    "plant_species": "Triticum aestivum",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 4076,
-    "clinical_trials_count_2026": 1,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 14
-  },
-  {
-    "chemical": "TRYPTAMINE",
-    "plant_species": "Citrullus lanatus",
-    "application": "Hypertensive",
-    "dosage": null,
-    "pubmed_mentions_2026": 4056,
-    "clinical_trials_count_2026": 1,
-    "chembl_bioactivity_count": 125,
-    "patent_count_since_2020": 21
-  },
-  {
-    "chemical": "CINNAMIC-ACID",
-    "plant_species": "Aloe vera",
-    "application": "Allergenic",
-    "dosage": null,
-    "pubmed_mentions_2026": 4044,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "(-)-CARYOPHYLLENE",
-    "plant_species": "Agastache rugosa",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 4037,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "CARYOPHYLLENE",
-    "plant_species": "Achillea millefolium",
-    "application": "Aldose-Reductase-Inhibitor",
-    "dosage": null,
-    "pubmed_mentions_2026": 4005,
-    "clinical_trials_count_2026": 4,
-    "chembl_bioactivity_count": 23,
-    "patent_count_since_2020": 35
-  },
-  {
-    "chemical": "DIGITONIN",
-    "plant_species": "Acacia nilotica",
-    "application": "Anticarcinomic",
-    "dosage": null,
-    "pubmed_mentions_2026": 3997,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 1509,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "CAMPHOR",
-    "plant_species": "Achillea millefolium",
-    "application": "Allelopathic",
-    "dosage": null,
-    "pubmed_mentions_2026": 3988,
-    "clinical_trials_count_2026": 4,
-    "chembl_bioactivity_count": 283,
-    "patent_count_since_2020": 34
-  },
-  {
-    "chemical": "TUBOCURARINE",
-    "plant_species": "Chondrodendron tomentosum",
-    "application": "Anaphylactic",
-    "dosage": "(antidote=Neostigmine)",
-    "pubmed_mentions_2026": 3930,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 49,
-    "patent_count_since_2020": 0
-  },
-  {
-    "chemical": "ISOPRENE",
-    "plant_species": "Citrus sinensis",
-    "application": null,
-    "dosage": null,
-    "pubmed_mentions_2026": 3910,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 185
-  },
-  {
-    "chemical": "PSORALEN",
-    "plant_species": "Aegle marmelos",
-    "application": "Antileukodermic",
-    "dosage": null,
-    "pubmed_mentions_2026": 3909,
-    "clinical_trials_count_2026": 2,
-    "chembl_bioactivity_count": 91,
-    "patent_count_since_2020": 2
   }
 ]
