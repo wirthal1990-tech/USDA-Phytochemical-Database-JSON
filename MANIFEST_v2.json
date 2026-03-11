@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "export_timestamp": "2026-03-11T12:32:03.467767+00:00",
+  "record_count": 104388,
+  "unique_chemicals": 24771,
+  "unique_species": 2315,
+  "fields": [
+    "chemical",
+    "plant_species",
+    "application",
+    "dosage",
+    "pubmed_mentions_2026",
+    "clinical_trials_count_2026",
+    "chembl_bioactivity_count",
+    "patent_count_since_2020"
+  ],
+  "sha256_json": "c762a5b4769c78fc4ea63b4d6cf54d51109ac37bb0a01c4ce378668466f4878f",
+  "sha256_parquet": "38f8387612e5ee584d0d11b21c02c89a5850500d723c34bbe4bcacd6d6fe51b0",
+  "json_size_bytes": 23252364,
+  "parquet_size_bytes": 997578,
+  "null_counts": {
+    "chemical": 0,
+    "plant_species": 0,
+    "application": 47324,
+    "dosage": 90340,
+    "pubmed_mentions_2026": 0,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 0
+  },
+  "enrichment_statistics": {
+    "pubmed_mentions_2026": {
+      "min": -1,
+      "max": 3280238,
+      "mean": 63676.14,
+      "non_zero_count": 84493,
+      "non_zero_pct": 80.94
+    },
+    "clinical_trials_count_2026": {
+      "min": 0,
+      "max": 6181,
+      "mean": 104.92,
+      "non_zero_count": 35268,
+      "non_zero_pct": 33.79
+    },
+    "chembl_bioactivity_count": {
+      "min": 0,
+      "max": 7679,
+      "mean": 83.69,
+      "non_zero_count": 35185,
+      "non_zero_pct": 33.71
+    },
+    "patent_count_since_2020": {
+      "min": 0,
+      "max": 866143,
+      "mean": 846.41,
+      "non_zero_count": 48295,
+      "non_zero_pct": 46.26
+    }
+  }
+}
