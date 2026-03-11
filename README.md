@@ -125,7 +125,7 @@ Normalising and cross-referencing 24,771 phytochemicals against four authoritati
 | QA, assertions, null-count validation | 6h | $510 |
 | **Total** | **48–60h** | **~$4,080–$5,100** |
 
-**This dataset: €699 one-time. No subscription. No API calls. Instant download.**
+**This dataset: €699 one-time. No subscription. No API calls. Full dataset delivered via email within 24h after purchase. See ethno-api.com.**
 
 ## Why This Dataset Exists
 
@@ -147,6 +147,8 @@ df.head()
 ```
 
 ### PyArrow — Parquet (full dataset, after purchase)
+
+Full dataset delivered via email within 24h after purchase. See ethno-api.com.
 
 ```python
 import pyarrow.parquet as pq
