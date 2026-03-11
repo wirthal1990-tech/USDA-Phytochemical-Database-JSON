@@ -72,7 +72,7 @@ dataset_info:
 
 [**Free 400-Row Sample ↓**](#quickstart) · [**Single Entity €699 →**](https://buy.stripe.com/00w6oGgFh58v6Toeqsebu02?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) · [**Team €1.349 →**](https://buy.stripe.com/dRm7sK9cP1Wj0v06Y0ebu03?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) · [**Enterprise €1.699 →**](https://buy.stripe.com/dRm28q0Gj1WjdhM6Y0ebu04?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03)
 
-> **Enrichment status (March 2026):** PubMed counts are complete and final. ChEMBL bioactivity enrichment is ~26 % done (ETA: mid-March 2026). ClinicalTrials and PatentsView layers follow. The free sample contains real PubMed data; remaining layers show representative placeholders until each run completes.
+> **Enrichment status (March 2026):** PubMed counts are complete and final. ChEMBL bioactivity enrichment is ~27 % done (ETA: ~25 March 2026). ClinicalTrials and PatentsView layers follow. The free sample contains real PubMed data; remaining layers show representative placeholders until each run completes.
 
 </div>
 
@@ -217,7 +217,7 @@ three enrichment fields (`clinical_trials_count_2026`, `chembl_bioactivity_count
 `patent_count_since_2020`) contain representative placeholder values pending
 completion of the full enrichment run.
 
-> **Enrichment status (March 2026):** PubMed counts are complete and final. ChEMBL bioactivity enrichment is ~26 % done (ETA: mid-March 2026). ClinicalTrials and PatentsView layers follow. The free sample contains real PubMed data; remaining layers show representative placeholders until each run completes.
+> **Enrichment status (March 2026):** PubMed counts are complete and final. ChEMBL bioactivity enrichment is ~27 % done (ETA: ~25 March 2026). ClinicalTrials and PatentsView layers follow. The free sample contains real PubMed data; remaining layers show representative placeholders until each run completes.
 
 ## File Manifest
 
