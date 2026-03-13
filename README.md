@@ -57,6 +57,7 @@ dataset_info:
   config_name: default
 ---
 
+> ⚡ **Early Access — First 10 buyers: 57 % off.** Single €299 · Team €549 · Enterprise €899. [→ ethno-api.com](https://ethno-api.com)
 
 <div align="center">
 
@@ -219,8 +220,8 @@ The free 400-row sample contains real, final enrichment values across all four l
 | `ethno_sample_400.json` | 108 KB | JSON | Free (this repo) |
 | `ethno_sample_400.parquet` | 20 KB | Parquet | Free (this repo) |
 | `quickstart.ipynb` | 9 KB | Notebook | Free (this repo) |
-| `ethno_dataset_2026_v2.json` | ~18 MB | JSON | Included in all tiers |
-| `ethno_dataset_2026_v2.parquet` | ~900 KB | Parquet | Included in all tiers |
+| `ethno_dataset_2026_v2.json` | ~23 MB | JSON | Included in all tiers |
+| `ethno_dataset_2026_v2.parquet` | ~975 KB | Parquet | Included in all tiers |
 | `MANIFEST_v2.json` (SHA-256) | ~1 KB | JSON | Included in all tiers |
 | `duckdb_queries.sql` (20 Queries) | ~13 KB | SQL | Team + Enterprise |
 | `compound_priority_score.py` | ~5 KB | Python | Team + Enterprise |
@@ -241,7 +242,7 @@ All enrichment layers are derived from authoritative, publicly accessible scient
 | [ChEMBL](https://www.ebi.ac.uk/chembl/) | March 2026 | Compound-level bioactivity measurement depth |
 | [USPTO PatentsView](https://patentsview.org/) | March 2026 | Compound-level commercial IP activity score |
 
-Enrichment methodology and source code are available to **Enterprise** license holders upon request under **NDA**.
+Enrichment methodology is documented in [`METHODOLOGY.md`](METHODOLOGY.md). Source code is available to **Enterprise** license holders upon request under **NDA**.
 
 ## Use Cases
 
