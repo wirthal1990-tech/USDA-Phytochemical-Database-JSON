@@ -71,7 +71,7 @@ dataset_info:
 [![Format](https://img.shields.io/badge/Format-JSON%20%2B%20Parquet-orange)](https://ethno-api.com)
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Dataset-yellow)](https://huggingface.co/datasets/wirthal1990-tech/USDA-Phytochemical-Database-JSON)
 
-[**Free 400-Row Sample ↓**](#quickstart) · [**Single Entity €699 →**](https://buy.stripe.com/00w6oGgFh58v6Toeqsebu02?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) · [**Team €1.349 →**](https://buy.stripe.com/dRm7sK9cP1Wj0v06Y0ebu03?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) · [**Enterprise €1.699 →**](https://buy.stripe.com/dRm28q0Gj1WjdhM6Y0ebu04?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03)
+[**Free 400-Row Sample ↓**](#quickstart) · [⚡ **Single €299 Early Bird →**](https://buy.stripe.com/7sY9AS1KncAX5Pk0zCebu06?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) · [⚡ **Team €549 Early Bird →**](https://buy.stripe.com/14AdR8bkX8kHelQ0zCebu07?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) · [⚡ **Enterprise €899 Early Bird →**](https://buy.stripe.com/fZu00iex930nelQ824ebu08?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03)
 
 > **Enrichment status (March 2026):** All four enrichment layers (PubMed, ClinicalTrials.gov, ChEMBL, PatentsView) are **complete and final**. The free 400-row sample contains real enrichment values.
 
@@ -104,9 +104,9 @@ dataset_info:
 
 | Tier | Price | Includes | Purchase |
 |------|-------|----------|----------|
-| **Single Entity** | **€699** netto | JSON + Parquet + SHA-256 Manifest. 1 juristische Person, interne Nutzung. Perpetual license. | [**Buy Now →**](https://buy.stripe.com/00w6oGgFh58v6Toeqsebu02?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) |
-| **Team** | **€1.349** netto | Alles aus Single + `duckdb_queries.sql` (20 Queries, 5 Kategorien) + `compound_priority_score.py` + 4 Pre-computed Views (Top-500 nach PubMed, Trials, Patent-Dichte, Anti-Inflammatory Panel). Unbegrenzte interne Nutzer einer juristischen Person. | [**Buy Now →**](https://buy.stripe.com/dRm7sK9cP1Wj0v06Y0ebu03?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) |
-| **Enterprise** | **€1.699** netto | Alles aus Team + `snowflake_load.sql` + `chromadb_ingest.py` + `pinecone_ingest.py` + `embedding_guide.md` (ClinicalBERT, RAG-Pipelines) + Compound Opportunity Matrix + Clinical Pipeline Gaps CSV + Pre-chunked RAG JSONL. Multi-Entity / Konzernnutzung, interne Produktintegration erlaubt. | [**Buy Now →**](https://buy.stripe.com/dRm28q0Gj1WjdhM6Y0ebu04?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) |
+| **Single Entity** | ⚡ **€299** netto (Early Bird, reg. €699) | JSON + Parquet + SHA-256 Manifest. 1 juristische Person, interne Nutzung. Perpetual license. | [⚡ **Buy Now →**](https://buy.stripe.com/7sY9AS1KncAX5Pk0zCebu06?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) |
+| **Team** | ⚡ **€549** netto (Early Bird, reg. €1.349) | Alles aus Single + `duckdb_queries.sql` (20 Queries, 5 Kategorien) + `compound_priority_score.py` + 4 Pre-computed Views (Top-500 nach PubMed, Trials, Patent-Dichte, Anti-Inflammatory Panel). Unbegrenzte interne Nutzer einer juristischen Person. | [⚡ **Buy Now →**](https://buy.stripe.com/14AdR8bkX8kHelQ0zCebu07?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) |
+| **Enterprise** | ⚡ **€899** netto (Early Bird, reg. €1.699) | Alles aus Team + `snowflake_load.sql` + `chromadb_ingest.py` + `pinecone_ingest.py` + `embedding_guide.md` (ClinicalBERT, RAG-Pipelines) + Compound Opportunity Matrix + Clinical Pipeline Gaps CSV + Pre-chunked RAG JSONL. Multi-Entity / Konzernnutzung, interne Produktintegration erlaubt. | [⚡ **Buy Now →**](https://buy.stripe.com/fZu00iex930nelQ824ebu08?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) |
 
 > Gemäß § 19 UStG wird keine Umsatzsteuer berechnet. Alle Preise netto. One-time purchase — keine Subscription, keine wiederkehrenden Kosten.
 
@@ -120,7 +120,7 @@ Normalising and cross-referencing **24,771 phytochemicals** across multiple auth
 |------|------:|---------------:|
 | USDA cleaning + normalization + enrichment + exports + QA | **48–60h** | **~$4,080–$5,100** |
 
-**This dataset: €699 one-time. No subscription. No API calls. Full dataset delivered via email within 24h after purchase. See ethno-api.com.**
+**This dataset: €299 Early Bird (regular €699). No subscription. No API calls. Download link sent instantly after payment. Valid for 72 hours. See ethno-api.com.**
 
 ---
 
@@ -145,7 +145,7 @@ df.head()
 
 ### PyArrow — Parquet (full dataset, after purchase)
 
-Full dataset delivered via email within 24h after purchase. See ethno-api.com.
+Download link delivered instantly after payment (valid 72h). See ethno-api.com.
 
 ```python
 import pyarrow.parquet as pq
@@ -263,9 +263,9 @@ The free sample (`ethno_sample_400.json`) uses the v2.0 schema with final enrich
 ## License & Commercial Access
 
 - **Free 400-row sample**: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — use for evaluation, academic research, and prototyping.
-- **Single Entity License — €699** one-time: [**Buy →**](https://buy.stripe.com/00w6oGgFh58v6Toeqsebu02?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) — 1 legal entity, internal use, perpetual. No redistribution.
-- **Team License — €1.349** one-time: [**Buy →**](https://buy.stripe.com/dRm7sK9cP1Wj0v06Y0ebu03?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) — all employees of 1 legal entity, unlimited internal users, includes analytics toolkit.
-- **Enterprise License — €1.699** one-time: [**Buy →**](https://buy.stripe.com/dRm28q0Gj1WjdhM6Y0ebu04?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) — multi-entity / group use, internal product integration rights, full RAG integration toolkit.
+- **Single Entity License — €299 Early Bird** (reg. €699) one-time: [⚡ **Buy →**](https://buy.stripe.com/7sY9AS1KncAX5Pk0zCebu06?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) — 1 legal entity, internal use, perpetual. No redistribution.
+- **Team License — €549 Early Bird** (reg. €1.349) one-time: [⚡ **Buy →**](https://buy.stripe.com/14AdR8bkX8kHelQ0zCebu07?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) — all employees of 1 legal entity, unlimited internal users, includes analytics toolkit.
+- **Enterprise License — €899 Early Bird** (reg. €1.699) one-time: [⚡ **Buy →**](https://buy.stripe.com/fZu00iex930nelQ824ebu08?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) — multi-entity / group use, internal product integration rights, full RAG integration toolkit.
 
 > Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.
 
