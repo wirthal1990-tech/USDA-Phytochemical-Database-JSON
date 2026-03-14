@@ -102,7 +102,7 @@
 
 ## Noise Exclusion
 
-117 compounds classified as noise and excluded from the enriched dataset.
+117 compounds classified as noise (including generic biochemical terms like PROTEIN, PROTEINS, WATER, LEAD, GLUCOSE with >500K PubMed matches that are not specific phytochemicals) and excluded from the enriched dataset.
 
 **Exclusion criteria:**
 - Solvents (e.g., ACETONE, ETHANOL, METHANOL)
