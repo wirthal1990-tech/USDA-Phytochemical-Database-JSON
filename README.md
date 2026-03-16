@@ -70,6 +70,7 @@ dataset_info:
 [![Full Dataset](https://img.shields.io/badge/Full%20Dataset-104%2C388%20rows-blue)](https://ethno-api.com)
 [![Format](https://img.shields.io/badge/Format-JSON%20%2B%20Parquet-orange)](https://ethno-api.com)
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Dataset-yellow)](https://huggingface.co/datasets/wirthal1990-tech/USDA-Phytochemical-Database-JSON)
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.19053087.svg)](https://zenodo.org/records/19053087)
 
 [**Free 400-Row Sample ↓**](#quickstart) · [⚡ **Single €299 Early Bird →**](https://buy.stripe.com/7sY9AS1KncAX5Pk0zCebu06?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) · [⚡ **Team €549 Early Bird →**](https://buy.stripe.com/14AdR8bkX8kHelQ0zCebu07?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) · [⚡ **Enterprise €899 Early Bird →**](https://buy.stripe.com/fZu00iex930nelQ824ebu08?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03)
 
@@ -275,6 +276,12 @@ This dataset includes bioactivity count data (`chembl_bioactivity_count` field) 
 
 ## Citation
 
+If you use this dataset in your research, please cite:
+
+```
+Wirth, A. (2026). USDA Phytochemical Database — Enriched v2.0 (Sample). Zenodo. https://doi.org/10.5281/zenodo.19053087
+```
+
 ```bibtex
 @misc{ethno_api_v2_2026,
   title     = {USDA Phytochemical \& Ethnobotanical Database --- Enriched v2.0},
@@ -282,9 +289,12 @@ This dataset includes bioactivity count data (`chembl_bioactivity_count` field) 
   year      = {2026},
   publisher = {Ethno-API},
   url       = {https://ethno-api.com},
+  doi       = {10.5281/zenodo.19053087},
   note      = {104,388 records, 24,771 unique chemicals, 2,315 plant species, 8-column schema with PubMed, ClinicalTrials, ChEMBL, and PatentsView enrichment}
 }
 ```
+
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.19053087.svg)](https://zenodo.org/records/19053087)
 
 ## Contact
 
