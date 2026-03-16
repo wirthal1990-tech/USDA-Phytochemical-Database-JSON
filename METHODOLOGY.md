@@ -68,6 +68,8 @@
 - **Checkpoint:** `chembl_checkpoint.json` — every 100 compounds
 - **Error handling:** `-1` logged for API failures (see `chembl_errors.log`)
 
+> **Attribution:** ChEMBL data is from https://www.ebi.ac.uk/chembl/ (ChEMBL v35), licensed under CC BY-SA 3.0. Attribution required for downstream redistribution.
+
 ### 4. PatentsView (USPTO API v1)
 
 - **Endpoint:** `https://api.patentsview.org/patents/query`

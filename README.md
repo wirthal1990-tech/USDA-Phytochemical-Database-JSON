@@ -260,6 +260,10 @@ Enrichment methodology is documented in [`METHODOLOGY.md`](METHODOLOGY.md). Sour
 
 The free sample (`ethno_sample_400.json`) uses the v2.0 schema with final enrichment values across all four layers.
 
+## Data Attribution
+
+This dataset includes bioactivity count data (`chembl_bioactivity_count` field) derived from [ChEMBL v35](https://www.ebi.ac.uk/chembl/), licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Buyers who redistribute this field downstream must comply with ChEMBL attribution requirements.
+
 ## License & Commercial Access
 
 - **Free 400-row sample**: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — use for evaluation, academic research, and prototyping.
