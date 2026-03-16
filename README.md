@@ -82,9 +82,12 @@ dataset_info:
 
 | Records | Compounds | Species | Enrichment Layers |
 |--------:|----------:|--------:|------------------:|
-| **104,388** | **24,771** | **2,315** | **4** |
+| **76,907** | **24,771** | **2,315** | **4** |
 
 ---
+
+
+> **Data Quality:** Dataset was audit-validated on 2026-03-16. Original 104,388 records cleaned to 76,907 by removing macronutrients (WATER, GLUCOSE etc.) and exact duplicates. [Audit report available on request.]
 
 ## Schema (v2.0)
 
@@ -192,7 +195,7 @@ df.head()
 ```
 
 > **Note:** The `split="sample"` loads `ethno_sample_400.json` (400 rows, 8 columns).
-> The full 104,388-row dataset is available at [ethno-api.com](https://ethno-api.com).
+> The full 76,907-row dataset is available at [ethno-api.com](https://ethno-api.com).
 
 ## Sample Record
 
@@ -211,7 +214,7 @@ Below is a real record from the dataset — QUERCETIN, one of the most-studied p
 }
 ```
 
-All 8 fields are populated for all 104,388 records in the full dataset.
+All 8 fields are populated for all 76,907 records in the full dataset.
 The free 400-row sample contains real, final enrichment values across all four layers.
 
 ## File Manifest
@@ -256,8 +259,8 @@ Enrichment methodology is documented in [`METHODOLOGY.md`](METHODOLOGY.md). Sour
 
 | Version | Records | Schema | Status |
 |---------|--------:|--------|--------|
-| v1.0 | 104,388 | 5 columns (USDA baseline) | Deprecated |
-| **v2.0** | **104,388** | **8 columns (+ PubMed, ClinicalTrials, ChEMBL, Patents)** | **Current** |
+| v1.0 | 76,907 | 5 columns (USDA baseline) | Deprecated |
+| **v2.0** | **76,907** | **8 columns (+ PubMed, ClinicalTrials, ChEMBL, Patents)** | **Current** |
 
 The free sample (`ethno_sample_400.json`) uses the v2.0 schema with final enrichment values across all four layers.
 
@@ -290,7 +293,7 @@ Wirth, A. (2026). USDA Phytochemical Database — Enriched v2.0 (Sample). Zenodo
   publisher = {Ethno-API},
   url       = {https://ethno-api.com},
   doi       = {10.5281/zenodo.19053087},
-  note      = {104,388 records, 24,771 unique chemicals, 2,315 plant species, 8-column schema with PubMed, ClinicalTrials, ChEMBL, and PatentsView enrichment}
+  note      = {76,907 records, 24,771 unique chemicals, 2,315 plant species, 8-column schema with PubMed, ClinicalTrials, ChEMBL, and PatentsView enrichment}
 }
 ```
 
