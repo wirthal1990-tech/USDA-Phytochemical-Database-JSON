@@ -67,7 +67,7 @@ dataset_info:
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/Sample-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![Sample](https://img.shields.io/badge/Sample-400%20rows-brightgreen)](https://huggingface.co/datasets/wirthal1990-tech/USDA-Phytochemical-Database-JSON)
-[![Full Dataset](https://img.shields.io/badge/Full%20Dataset-104%2C388%20rows-blue)](https://ethno-api.com)
+[![Full Dataset](https://img.shields.io/badge/Full%20Dataset-76%2C907%20rows-blue)](https://ethno-api.com)
 [![Format](https://img.shields.io/badge/Format-JSON%20%2B%20Parquet-orange)](https://ethno-api.com)
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Dataset-yellow)](https://huggingface.co/datasets/wirthal1990-tech/USDA-Phytochemical-Database-JSON)
 [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.19053087.svg)](https://zenodo.org/records/19053087)
@@ -82,7 +82,7 @@ dataset_info:
 
 | Records | Compounds | Species | Enrichment Layers |
 |--------:|----------:|--------:|------------------:|
-| **76,907** | **24,771** | **2,315** | **4** |
+| **76,907** | **24,746** | **2,313** | **4** |
 
 ---
 
@@ -95,8 +95,8 @@ dataset_info:
 |--------|------|-------|-------------|
 | `chemical` | `string` | 0% | Standardised compound name (USDA Duke’s nomenclature) |
 | `plant_species` | `string` | 0% | Binomial Latin species name |
-| `application` | `string` | ~40% | Traditional medicinal application (e.g. “Antiinflammatory”) |
-| `dosage` | `string` | ~55% | Reported dosage, concentration, or IC50 value |
+| `application` | `string` | ~50% | Traditional medicinal application (e.g. “Antiinflammatory”) |
+| `dosage` | `string` | ~87% | Reported dosage, concentration, or IC50 value |
 | `pubmed_mentions_2026` | `int32` | 0% | Total PubMed publications mentioning this compound (March 2026 snapshot) |
 | `clinical_trials_count_2026` | `int32` | 0% | ClinicalTrials.gov study count per compound (March 2026) |
 | `chembl_bioactivity_count` | `int32` | 0% | ChEMBL documented bioactivity measurement count |
@@ -118,7 +118,7 @@ dataset_info:
 
 ## Why Not Build This Yourself?
 
-Normalising and cross-referencing **24,771 phytochemicals** across multiple authoritative sources is not a weekend project.
+Normalising and cross-referencing **24,746 phytochemicals** across multiple authoritative sources is not a weekend project.
 
 | Scope | Effort | Cost @ $85/hr |
 |------|------:|---------------:|
@@ -214,7 +214,7 @@ Below is a real record from the dataset — QUERCETIN, one of the most-studied p
 }
 ```
 
-All 8 fields are populated for all 76,907 records in the full dataset.
+All 76,907 records contain all 8 schema fields. The 4 enrichment columns are always non-null; `application` (~50% null) and `dosage` (~87% null) reflect USDA source gaps.
 The free 400-row sample contains real, final enrichment values across all four layers.
 
 ## File Manifest
@@ -224,8 +224,8 @@ The free 400-row sample contains real, final enrichment values across all four l
 | `ethno_sample_400.json` | 108 KB | JSON | Free (this repo) |
 | `ethno_sample_400.parquet` | 20 KB | Parquet | Free (this repo) |
 | `quickstart.ipynb` | 9 KB | Notebook | Free (this repo) |
-| `ethno_dataset_2026_v2.json` | ~23 MB | JSON | Included in all tiers |
-| `ethno_dataset_2026_v2.parquet` | ~975 KB | Parquet | Included in all tiers |
+| `ethno_dataset_2026_v2.json` | ~16 MB | JSON | Included in all tiers |
+| `ethno_dataset_2026_v2.parquet` | ~800 KB | Parquet | Included in all tiers |
 | `MANIFEST_v2.json` (SHA-256) | ~1 KB | JSON | Included in all tiers |
 | `duckdb_queries.sql` (20 Queries) | ~13 KB | SQL | Team + Enterprise |
 | `compound_priority_score.py` | ~5 KB | Python | Team + Enterprise |
@@ -240,7 +240,7 @@ All enrichment layers are derived from authoritative, publicly accessible scient
 
 | Source | Snapshot | What it contributes |
 |--------|----------|---------------------|
-| [USDA Dr. Duke’s Phytochemical and Ethnobotanical Databases](https://phytochem.nal.usda.gov/) | 2026 | Canonical plant–compound–application baseline across 2,315 species |
+| [USDA Dr. Duke’s Phytochemical and Ethnobotanical Databases](https://phytochem.nal.usda.gov/) | 2026 | Canonical plant–compound–application baseline across 2,313 species |
 | [NCBI PubMed](https://pubmed.ncbi.nlm.nih.gov/) | March 2026 | Compound-level publication evidence score |
 | [ClinicalTrials.gov](https://clinicaltrials.gov/) | March 2026 | Compound-level clinical research activity score |
 | [ChEMBL](https://www.ebi.ac.uk/chembl/) | March 2026 | Compound-level bioactivity measurement depth |
@@ -259,7 +259,7 @@ Enrichment methodology is documented in [`METHODOLOGY.md`](METHODOLOGY.md). Sour
 
 | Version | Records | Schema | Status |
 |---------|--------:|--------|--------|
-| v1.0 | 76,907 | 5 columns (USDA baseline) | Deprecated |
+| v1.0 | 104,388 | 5 columns (USDA baseline) | Deprecated |
 | **v2.0** | **76,907** | **8 columns (+ PubMed, ClinicalTrials, ChEMBL, Patents)** | **Current** |
 
 The free sample (`ethno_sample_400.json`) uses the v2.0 schema with final enrichment values across all four layers.
@@ -293,7 +293,7 @@ Wirth, A. (2026). USDA Phytochemical Database — Enriched v2.0 (Sample). Zenodo
   publisher = {Ethno-API},
   url       = {https://ethno-api.com},
   doi       = {10.5281/zenodo.19053087},
-  note      = {76,907 records, 24,771 unique chemicals, 2,315 plant species, 8-column schema with PubMed, ClinicalTrials, ChEMBL, and PatentsView enrichment}
+  note      = {76,907 records, 24,746 unique chemicals, 2,313 plant species, 8-column schema with PubMed, ClinicalTrials, ChEMBL, and PatentsView enrichment}
 }
 ```
 

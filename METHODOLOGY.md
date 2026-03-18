@@ -1,6 +1,6 @@
 # Methodology — Ethno-API Phytochemical Dataset v2.0
 
-> **Schema v2.0 · 104,388 records · 24,771 compounds · 2,315 species · 8 fields**
+> **Schema v2.0 · 76,907 records · 24,746 compounds · 2,313 species · 8 fields**
 
 ---
 
@@ -22,8 +22,8 @@
 |---|---|---|---|
 | `chemical` | string | 0 | Compound name (natural key, from USDA) |
 | `plant_species` | string | 0 | Botanical species name (natural key, from USDA) |
-| `application` | string | 47,324 | Documented bioactivity / therapeutic use |
-| `dosage` | string | 90,340 | Documented dosage from literature |
+| `application` | string | 38,149 | Documented bioactivity / therapeutic use |
+| `dosage` | string | 67,132 | Documented dosage from literature |
 | `pubmed_mentions_2026` | Int64 | 0 | PubMed publication mention count (title/abstract search, 2026) |
 | `clinical_trials_count_2026` | Int64 | 0 | ClinicalTrials.gov study count mentioning compound |
 | `chembl_bioactivity_count` | Int64 | 0 | ChEMBL bioactivity assay count |
@@ -33,12 +33,12 @@
 
 | Field | Non-zero % | Min | Max | Mean |
 |---|---|---|---|---|
-| `pubmed_mentions_2026` | 80.9% | -1 | 3,280,238 | 63,676 |
-| `clinical_trials_count_2026` | 33.8% | 0 | 6,181 | 105 |
-| `chembl_bioactivity_count` | 33.7% | 0 | 7,679 | 84 |
-| `patent_count_since_2020` | 46.3% | 0 | 866,143 | 846 |
+| `pubmed_mentions_2026` | 78.4% | 0 | 349,640 | 8,646 |
+| `clinical_trials_count_2026` | 24.2% | 0 | 4,094 | 12 |
+| `chembl_bioactivity_count` | 31.9% | 0 | 7,679 | 85 |
+| `patent_count_since_2020` | 37.2% | 0 | 866,143 | 165 |
 
-*Note: `pubmed_mentions_2026 = -1` indicates an API error during enrichment (logged, not retried).*
+*Note: Noise compounds (WATER, PROTEIN, GLUCOSE, etc.) and exact duplicates removed in DQA audit (2026-03-16). Post-DQA min is 0.*
 
 ---
 
@@ -56,7 +56,7 @@
 - **Endpoint:** `https://clinicaltrials.gov/api/v2/studies`
 - **Query logic:** Free-text search for compound name across study titles and interventions
 - **Rate limiting:** 5 requests/second, checkpoint every 100 compounds
-- **Runtime:** ~2-3 hours for 24,771 unique compounds
+- **Runtime:** ~2-3 hours for 24,746 unique compounds
 - **Checkpoint:** `ct_checkpoint.json` — enables resume after interruption
 
 ### 3. ChEMBL (REST API v35)
@@ -96,7 +96,7 @@
 
 4. **Species names** — USDA synonyms are not always current binomial nomenclature. Some legacy names may not match modern taxonomic databases (e.g., NCBI Taxonomy, GBIF).
 
-5. **PubMed `-1` values** — indicate API errors during enrichment. These are a small fraction and are logged but not retried in the current pipeline.
+5. **PubMed `-1` values** — historical API errors were present in pre-DQA data. Post-DQA (2026-03-16), all `-1` values have been removed along with noise compounds.
 
 6. **Patent counts (PatentsView)** — limited to US patents only. International patents (WIPO, EPO) are not included.
 
@@ -104,7 +104,7 @@
 
 ## Noise Exclusion
 
-117 compounds classified as noise (including generic biochemical terms like PROTEIN, PROTEINS, WATER, LEAD, GLUCOSE with >500K PubMed matches that are not specific phytochemicals) and excluded from the enriched dataset.
+117 compounds classified as noise (including generic biochemical terms like PROTEIN, PROTEINS, WATER, LEAD, GLUCOSE with inflated PubMed matches that are not specific phytochemicals) were identified. 24 of these were present in the dataset and removed during the DQA audit (2026-03-16), eliminating 11,744 records.
 
 **Exclusion criteria:**
 - Solvents (e.g., ACETONE, ETHANOL, METHANOL)
@@ -148,7 +148,7 @@ All enrichment scripts are available in the repository:
 | Version | Date | Fields | Records | Changes |
 |---|---|---|---|---|
 | v1.0 | 2026-01 | 5 (chemical, plant_species, application, dosage, pubmed_mentions_2026) | 104,388 | Initial release with PubMed enrichment |
-| v2.0 | 2026-03 | 8 (+clinical_trials_count_2026, chembl_bioactivity_count, patent_count_since_2020) | 104,388 | 4-source enrichment, noise exclusion (117 compounds removed from enrichment), checkpoint system |
+| v2.0 | 2026-03 | 8 (+clinical_trials_count_2026, chembl_bioactivity_count, patent_count_since_2020) | 76,907 | 4-source enrichment, DQA audit (noise compounds + duplicates removed: 104,388 → 76,907), checkpoint system |
 
 ---
 
@@ -156,7 +156,7 @@ All enrichment scripts are available in the repository:
 
 | File | Size | SHA-256 |
 |---|---|---|
-| `ethno_dataset_2026.json` | 23.3 MB | `c762a5b4769c78fc4ea63b4d6cf54d51109ac37bb0a01c4ce378668466f4878f` |
-| `ethno_dataset_2026.parquet` | 975 KB | `38f8387612e5ee584d0d11b21c02c89a5850500d723c34bbe4bcacd6d6fe51b0` |
+| `ethno_dataset_2026_v2.json` | 16.3 MB | `cf517675c263eefb96c18a74a0238d0e142067eda2175259fde10db66a081bc3` |
+| `ethno_dataset_2026_v2.parquet` | 800 KB | `cd152dd830f769a8e86c2661f0650f20bd936452835d6ee4cad60549068c7b40` |
 
-Export timestamp: `2026-03-11T12:32:03.467767+00:00`
+Export timestamp: `2026-03-16T21:10:00+00:00` (post-DQA)
