@@ -5,7 +5,7 @@ language_creators:
 - found
 language:
 - en
-license: cc-by-nc-4.0
+license: cc-by-4.0
 multilinguality: monolingual
 pretty_name: "USDA Phytochemical & Ethnobotanical Database — Enriched v2.0"
 size_categories:
@@ -65,7 +65,7 @@ dataset_info:
 
 **The only phytochemical dataset combining USDA botanical records, PubMed citation counts, ClinicalTrials.gov study counts, ChEMBL bioactivity scores, and USPTO patent density — in production-ready JSON + Parquet.**
 
-[![License: CC BY-NC 4.0](https://img.shields.io/badge/Sample-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+[![License: CC BY 4.0](https://img.shields.io/badge/Sample-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Sample](https://img.shields.io/badge/Sample-400%20rows-brightgreen)](https://huggingface.co/datasets/wirthal1990-tech/USDA-Phytochemical-Database-JSON)
 [![Full Dataset](https://img.shields.io/badge/Full%20Dataset-76%2C907%20rows-blue)](https://ethno-api.com)
 [![Format](https://img.shields.io/badge/Format-JSON%20%2B%20Parquet-orange)](https://ethno-api.com)
@@ -270,7 +270,7 @@ This dataset includes bioactivity count data (`chembl_bioactivity_count` field) 
 
 ## License & Commercial Access
 
-- **Free 400-row sample**: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — use for evaluation, academic research, and prototyping.
+- **Free 400-row sample**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — use for evaluation, academic research, and prototyping.
 - **Single Entity License — €299 Early Bird** (reg. €699) one-time: [⚡ **Buy →**](https://buy.stripe.com/7sY9AS1KncAX5Pk0zCebu06?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) — 1 legal entity, internal use, perpetual. No redistribution.
 - **Team License — €549 Early Bird** (reg. €1.349) one-time: [⚡ **Buy →**](https://buy.stripe.com/14AdR8bkX8kHelQ0zCebu07?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) — all employees of 1 legal entity, unlimited internal users, includes analytics toolkit.
 - **Enterprise License — €899 Early Bird** (reg. €1.699) one-time: [⚡ **Buy →**](https://buy.stripe.com/fZu00iex930nelQ824ebu08?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) — multi-entity / group use, internal product integration rights, full RAG integration toolkit.

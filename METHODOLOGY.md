@@ -137,7 +137,7 @@ All enrichment scripts are available in the repository:
 
 - **Base USDA data:** Public Domain (U.S. Government work)
 - **Enrichment layer + compiled dataset:**
-  - Free 400-row sample: CC BY-NC 4.0
+  - Free 400-row sample: CC BY 4.0
   - Full dataset: Commercial license (single-entity, team, or enterprise)
 - **Enrichment scripts:** Available in this repository for transparency
 
