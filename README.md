@@ -61,6 +61,16 @@ dataset_info:
 
 <div align="center">
 
+## Citation
+
+If you use this dataset in your research, please cite:
+
+```
+Wirth, A. (2026). USDA Phytochemical Database — Enriched v2.0 (Sample). Zenodo. https://doi.org/10.5281/zenodo.19053087
+```
+
+---
+
 # USDA Phytochemical & Ethnobotanical Database — Enriched v2.0
 
 **The only phytochemical dataset combining USDA botanical records, PubMed citation counts, ClinicalTrials.gov study counts, ChEMBL bioactivity scores, and USPTO patent density — in production-ready JSON + Parquet.**
@@ -277,14 +287,6 @@ This dataset includes bioactivity count data (`chembl_bioactivity_count` field) 
 
 > Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.
 
-## Citation
-
-If you use this dataset in your research, please cite:
-
-```
-Wirth, A. (2026). USDA Phytochemical Database — Enriched v2.0 (Sample). Zenodo. https://doi.org/10.5281/zenodo.19053087
-```
-
 ```bibtex
 @misc{ethno_api_v2_2026,
   title     = {USDA Phytochemical \& Ethnobotanical Database --- Enriched v2.0},
@@ -304,6 +306,9 @@ Wirth, A. (2026). USDA Phytochemical Database — Enriched v2.0 (Sample). Zenodo
 - **Website**: [ethno-api.com](https://ethno-api.com)
 - **Email**: founder@ethno-api.com
 - **GitHub**: [@wirthal1990-tech](https://github.com/wirthal1990-tech)
+
+If this dataset saved you time, a GitHub star helps 
+others find it. ⭐
 
 ---
 
