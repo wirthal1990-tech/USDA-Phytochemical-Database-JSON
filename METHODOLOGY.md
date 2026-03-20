@@ -1,6 +1,6 @@
-# Methodology — Ethno-API Phytochemical Dataset v2.0
+# Methodology — Ethno-API Phytochemical Dataset v2.1
 
-> **Schema v2.0 · 76,907 records · 24,746 compounds · 2,313 species · 8 fields**
+> **Schema v2.1 · 76,907 records · 24,746 compounds · 2,313 species · 10 fields**
 
 ---
 
@@ -13,10 +13,11 @@
 | ClinicalTrials.gov | API v2, accessed 2026-01 | Public Domain (NLM) |
 | ChEMBL | v35 REST API, accessed 2026-02 | CC BY-SA 3.0 |
 | PatentsView (USPTO) | API v1, patents since 2020-01-01 | Public Domain (USPTO) |
+| PubChem (NCBI) | PUG REST API, accessed 2026-03 | Public Domain (NCBI) |
 
 ---
 
-## Schema v2.0
+## Schema v2.1
 
 | Field | Type | Null Count | Description |
 |---|---|---|---|
@@ -28,6 +29,8 @@
 | `clinical_trials_count_2026` | Int64 | 0 | ClinicalTrials.gov study count mentioning compound |
 | `chembl_bioactivity_count` | Int64 | 0 | ChEMBL bioactivity assay count |
 | `patent_count_since_2020` | Int64 | 0 | US patent count (USPTO PatentsView, since 2020-01-01) |
+| `pubchem_cid` | Int64 | 21,690 | PubChem Compound ID (CID) |
+| `canonical_smiles` | string | 21,690 | Canonical SMILES string (PubChem) |
 
 **Enrichment coverage:**
 
@@ -149,6 +152,7 @@ All enrichment scripts are available in the repository:
 |---|---|---|---|---|
 | v1.0 | 2026-01 | 5 (chemical, plant_species, application, dosage, pubmed_mentions_2026) | 104,388 | Initial release with PubMed enrichment |
 | v2.0 | 2026-03 | 8 (+clinical_trials_count_2026, chembl_bioactivity_count, patent_count_since_2020) | 76,907 | 4-source enrichment, DQA audit (noise compounds + duplicates removed: 104,388 → 76,907), checkpoint system |
+| v2.1 | 2026-03 | 10 (+pubchem_cid, canonical_smiles) | 76,907 | PubChem CID + SMILES enrichment (10,484 chemicals resolved, 71.8% record coverage) |
 
 ---
 
@@ -158,5 +162,6 @@ All enrichment scripts are available in the repository:
 |---|---|---|
 | `ethno_dataset_2026_v2.json` | 16.3 MB | `cf517675c263eefb96c18a74a0238d0e142067eda2175259fde10db66a081bc3` |
 | `ethno_dataset_2026_v2.parquet` | 800 KB | `cd152dd830f769a8e86c2661f0650f20bd936452835d6ee4cad60549068c7b40` |
+| `ethno_dataset_2026_v2.1_FINAL.json` | 24.5 MB | `ae86ba33d76273dc52330ca5d75234d93f8a6d3a8db106186d39470a3c1a0db0` |
 
 Export timestamp: `2026-03-16T21:10:00+00:00` (post-DQA)
