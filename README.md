@@ -287,7 +287,8 @@ Enrichment methodology is documented in [`METHODOLOGY.md`](METHODOLOGY.md). Sour
 | Version | Records | Schema | Status |
 |---------|--------:|--------|--------|
 | v1.0 | 104,388 | 5 columns (USDA baseline) | Deprecated |
-| **v2.0** | **76,907** | **8 columns (+ PubMed, ClinicalTrials, ChEMBL, Patents)** | **Current** |
+| v2.0 | 76,907 | 8 columns (+ PubMed, ClinicalTrials, ChEMBL, Patents) | Superseded |
+| **v2.1** | **76,907** | **10 columns (+ PubChem CID, Canonical SMILES)** | **Current** |
 
 The free sample (`ethno_sample_400.json`) uses the v2.0 schema with final enrichment values across all four layers.
 
@@ -324,7 +325,7 @@ Ethno-API is the deterministic answer to these pipeline requirements.
 
 ```bibtex
 @misc{ethno_api_v2_2026,
-  title     = {USDA Phytochemical \& Ethnobotanical Database --- Enriched v2.0},
+  title     = {USDA Phytochemical \& Ethnobotanical Database --- Enriched v2.1},
   author    = {Wirth, Alexander},
   year      = {2026},
   publisher = {Ethno-API},
