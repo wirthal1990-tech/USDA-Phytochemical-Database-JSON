@@ -1,9 +1,15 @@
 {
-  "schema_version": "2.0",
-  "export_timestamp": "2026-03-16T21:10:00+00:00",
+  "schema_version": "2.1",
+  "export_timestamp": "2026-03-20T00:00:00Z",
   "record_count": 76907,
   "unique_chemicals": 24746,
   "unique_species": 2313,
+  "sha256_json": "ae86ba33d76273dc52330ca5d75234d93f8a6d3a8db106186d39470a3c1a0db0",
+  "sha256_parquet": "5b1050529c3e2f372f4910b5647724b6449064c3aa3ae9ece103176293919b87",
+  "file_sizes": {
+    "json_mb": 24.5,
+    "parquet_kb": 1194.7
+  },
   "fields": [
     "chemical",
     "plant_species",
@@ -12,53 +18,29 @@
     "pubmed_mentions_2026",
     "clinical_trials_count_2026",
     "chembl_bioactivity_count",
-    "patent_count_since_2020"
+    "patent_count_since_2020",
+    "pubchem_cid",
+    "canonical_smiles"
   ],
-  "sha256_json": "cf517675c263eefb96c18a74a0238d0e142067eda2175259fde10db66a081bc3",
-  "sha256_parquet": "cd152dd830f769a8e86c2661f0650f20bd936452835d6ee4cad60549068c7b40",
-  "json_size_bytes": 17125604,
-  "parquet_size_bytes": 819511,
   "null_counts": {
-    "chemical": 0,
-    "plant_species": 0,
     "application": 38149,
     "dosage": 67132,
-    "pubmed_mentions_2026": 0,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0
+    "pubchem_cid": 21690,
+    "canonical_smiles": 21690
   },
   "enrichment_statistics": {
-    "pubmed_mentions_2026": {
-      "min": 0,
-      "max": 349640,
-      "mean": 8645.7,
-      "non_zero_count": 60266,
-      "non_zero_pct": 78.36
-    },
-    "clinical_trials_count_2026": {
-      "min": 0,
-      "max": 4094,
-      "mean": 11.69,
-      "non_zero_count": 18575,
-      "non_zero_pct": 24.15
-    },
-    "chembl_bioactivity_count": {
-      "min": 0,
-      "max": 7679,
-      "mean": 85.26,
-      "non_zero_count": 24560,
-      "non_zero_pct": 31.93
-    },
-    "patent_count_since_2020": {
-      "min": 0,
-      "max": 866143,
-      "mean": 165.47,
-      "non_zero_count": 28577,
-      "non_zero_pct": 37.16
-    }
+    "pubchem_cid_filled": 55217,
+    "canonical_smiles_filled": 55217,
+    "pubchem_fill_rate_pct": 71.8
   },
-  "dqa_audit_date": "2026-03-16",
-  "dqa_status": "PASSED",
-  "dqa_note": "Removed 24 noise compounds (11,744 records) + 1 numeric chemical + 15,736 exact duplicates. 104,388 -> 76,907."
+  "data_sources": [
+    "USDA Dr. Duke Phytochemical and Ethnobotanical Databases",
+    "NCBI PubMed (E-utilities API, 2026 snapshot)",
+    "ClinicalTrials.gov (API v2, 2026 snapshot)",
+    "ChEMBL v35 REST API",
+    "USPTO PatentsView (2020-2026)",
+    "PubChem REST API (CID + CanonicalSMILES, 2026)"
+  ],
+  "license": "CC BY 4.0",
+  "zenodo_doi": "10.5281/zenodo.19053087"
 }
