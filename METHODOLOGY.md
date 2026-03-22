@@ -29,8 +29,8 @@
 | `clinical_trials_count_2026` | Int64 | 0 | ClinicalTrials.gov study count mentioning compound |
 | `chembl_bioactivity_count` | Int64 | 0 | ChEMBL bioactivity assay count |
 | `patent_count_since_2020` | Int64 | 0 | US patent count (USPTO PatentsView, since 2020-01-01) |
-| `pubchem_cid` | Int64 | 14,254 | PubChem Compound ID (CID) — 42.4% of unique compounds resolved |
-| `canonical_smiles` | string | 14,254 | Canonical SMILES string (PubChem) — 42.4% of unique compounds resolved |
+| `pubchem_cid` | Int64 | 14,262 | PubChem Compound ID (CID) — 42.4% of unique compounds resolved |
+| `canonical_smiles` | string | 14,262 | Canonical SMILES string (PubChem) — 42.4% of unique compounds resolved |
 
 **Enrichment coverage:**
 
