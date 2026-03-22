@@ -7,7 +7,7 @@ language:
 - en
 license: cc-by-4.0
 multilinguality: monolingual
-pretty_name: "USDA Phytochemical & Ethnobotanical Database — Enriched v2.1"
+pretty_name: "USDA Phytochemical & Ethnobotanical Database — Enriched v2.2"
 size_categories:
 - 100K<n<1M
 source_datasets:
@@ -70,12 +70,12 @@ dataset_info:
 If you use this dataset in your research, please cite:
 
 ```
-Wirth, A. (2026). USDA Phytochemical Database — Enriched v2.1 (Sample). Zenodo. https://doi.org/10.5281/zenodo.19053087
+Wirth, A. (2026). USDA Phytochemical Database — Enriched v2.2 (Sample). Zenodo. https://doi.org/10.5281/zenodo.19053087
 ```
 
 ---
 
-# USDA Phytochemical & Ethnobotanical Database — Enriched v2.1
+# USDA Phytochemical & Ethnobotanical Database — Enriched v2.2
 
 **The only phytochemical dataset combining USDA botanical records, PubMed citation counts, ClinicalTrials.gov study counts, ChEMBL bioactivity scores, USPTO patent density, and PubChem CID/SMILES — in production-ready JSON + Parquet.**
 
@@ -111,7 +111,7 @@ The full IP Discrepancy Report, including Freedom-to-Operate indicators and comp
 
 ---
 
-## Schema (v2.1)
+## Schema (v2.2)
 
 | Column | Type | Nulls | Description |
 |--------|------|-------|-------------|
@@ -123,8 +123,8 @@ The full IP Discrepancy Report, including Freedom-to-Operate indicators and comp
 | `clinical_trials_count_2026` | `int32` | 0% | ClinicalTrials.gov study count per compound (March 2026) |
 | `chembl_bioactivity_count` | `int32` | 0% | ChEMBL documented bioactivity measurement count |
 | `patent_count_since_2020` | `int32` | 0% | US patents since 2020-01-01 mentioning compound (USPTO PatentsView) |
-| `pubchem_cid` | `int64` | ~28% | PubChem Compound ID (CID) — resolved via PubChem PUG REST (March 2026) |
-| `canonical_smiles` | `string` | ~28% | Canonical SMILES notation — molecular structure from PubChem |
+| `pubchem_cid` | `int64` | ~58% | PubChem Compound ID (CID) — resolved via PubChem PUG REST (March 2026) |
+| `canonical_smiles` | `string` | ~58% | Canonical SMILES notation — molecular structure from PubChem (42.4% of unique compounds resolved) |
 
 ---
 
@@ -240,7 +240,7 @@ Below is a real record from the dataset — QUERCETIN, one of the most-studied p
 }
 ```
 
-All 76,907 records contain all 10 schema fields. The 4 enrichment columns are always non-null; `pubchem_cid` and `canonical_smiles` are filled for 71.8% of records (10,484 unique chemicals resolved via PubChem); `application` (~50% null) and `dosage` (~87% null) reflect USDA source gaps.
+All 76,907 records contain all 10 schema fields. The 4 enrichment columns are always non-null; `pubchem_cid` and `canonical_smiles` are filled for 42.4% of unique compounds (10,484 of 24,746 resolved via PubChem PUG REST); `application` (~50% null) and `dosage` (~87% null) reflect USDA source gaps. Unresolved compounds are phytochemical trivial names, mixture descriptions, or non-specific ethnobotanical terms not indexed in PubChem by name.
 The free 400-row sample contains real, final enrichment values across all four layers.
 
 ## File Manifest
@@ -288,7 +288,8 @@ Enrichment methodology is documented in [`METHODOLOGY.md`](METHODOLOGY.md). Sour
 |---------|--------:|--------|--------|
 | v1.0 | 104,388 | 5 columns (USDA baseline) | Deprecated |
 | v2.0 | 76,907 | 8 columns (+ PubMed, ClinicalTrials, ChEMBL, Patents) | Superseded |
-| **v2.1** | **76,907** | **10 columns (+ PubChem CID, Canonical SMILES)** | **Current** |
+| v2.1 | 76,907 | 10 columns (+ PubChem CID, Canonical SMILES) | Superseded |
+| **v2.2** | **76,907** | **10 columns (stereo-prefix CT normalization, corrected SMILES coverage)** | **Current** |
 
 The free sample (`ethno_sample_400.json`) uses the v2.0 schema with final enrichment values across all four layers.
 
@@ -325,13 +326,13 @@ Ethno-API is the deterministic answer to these pipeline requirements.
 
 ```bibtex
 @misc{ethno_api_v2_2026,
-  title     = {USDA Phytochemical \& Ethnobotanical Database --- Enriched v2.1},
+  title     = {USDA Phytochemical \& Ethnobotanical Database --- Enriched v2.2},
   author    = {Wirth, Alexander},
   year      = {2026},
   publisher = {Ethno-API},
   url       = {https://ethno-api.com},
   doi       = {10.5281/zenodo.19053087},
-  note      = {76,907 records, 24,746 unique chemicals, 2,313 plant species, 8-column schema with PubMed, ClinicalTrials, ChEMBL, and PatentsView enrichment}
+  note      = {76,907 records, 24,746 unique chemicals, 2,313 plant species, 10-column schema with PubMed, ClinicalTrials, ChEMBL, PatentsView, PubChem CID/SMILES enrichment}
 }
 ```
 
