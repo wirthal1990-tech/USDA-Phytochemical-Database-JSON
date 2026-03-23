@@ -61,7 +61,7 @@ dataset_info:
   config_name: default
 ---
 
-> ⚡ **Early Access — First 10 buyers: 57 % off.** Single €299 · Team €549 · Enterprise €899. [→ ethno-api.com](https://ethno-api.com)
+> **Full dataset available:** Single €699 · Team €1,349 · Enterprise €1,699. [→ ethno-api.com](https://ethno-api.com)
 
 <div align="center">
 
@@ -70,7 +70,7 @@ dataset_info:
 If you use this dataset in your research, please cite:
 
 ```
-Wirth, A. (2026). USDA Phytochemical Database — Enriched v2.2 (Sample). Zenodo. https://doi.org/10.5281/zenodo.19053087
+Wirth, A. (2026). USDA Phytochemical Database — Enriched v2.2 (Sample). Zenodo. https://doi.org/10.5281/zenodo.15083493
 ```
 
 ---
@@ -84,11 +84,11 @@ Wirth, A. (2026). USDA Phytochemical Database — Enriched v2.2 (Sample). Zenodo
 [![Full Dataset](https://img.shields.io/badge/Full%20Dataset-76%2C907%20rows-blue)](https://ethno-api.com)
 [![Format](https://img.shields.io/badge/Format-JSON%20%2B%20Parquet-orange)](https://ethno-api.com)
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Dataset-yellow)](https://huggingface.co/datasets/wirthal1990-tech/USDA-Phytochemical-Database-JSON)
-[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.19053087.svg)](https://zenodo.org/records/19053087)
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.15083493.svg)](https://zenodo.org/records/15083493)
 
-[**Free 400-Row Sample ↓**](#quickstart) · [⚡ **Single €299 Early Bird →**](https://buy.stripe.com/7sY9AS1KncAX5Pk0zCebu06?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) · [⚡ **Team €549 Early Bird →**](https://buy.stripe.com/14AdR8bkX8kHelQ0zCebu07?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) · [⚡ **Enterprise €899 Early Bird →**](https://buy.stripe.com/fZu00iex930nelQ824ebu08?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03)
+[**Free 400-Row Sample ↓**](#quickstart) · [**Single €699 →**](https://buy.stripe.com/7sY9AS1KncAX5Pk0zCebu06?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) · [**Team €1,349 →**](https://buy.stripe.com/14AdR8bkX8kHelQ0zCebu07?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) · [**Enterprise €1,699 →**](mailto:founder@ethno-api.com)
 
-> **Enrichment status (March 2026):** All four enrichment layers (PubMed, ClinicalTrials.gov, ChEMBL, PatentsView) are **complete and final**. The free 400-row sample contains real enrichment values.
+> **Enrichment status (March 2026):** All five enrichment layers (PubMed, ClinicalTrials.gov, ChEMBL, PatentsView, PubChem) are **complete and final**. The free 400-row sample contains real enrichment values.
 
 </div>
 
@@ -96,7 +96,7 @@ Wirth, A. (2026). USDA Phytochemical Database — Enriched v2.2 (Sample). Zenodo
 
 | Records | Compounds | Species | Enrichment Layers |
 |--------:|----------:|--------:|------------------:|
-| **76,907** | **24,746** | **2,313** | **4** |
+| **76,907** | **24,746** | **2,313** | **5** |
 
 ---
 
@@ -132,9 +132,9 @@ The full IP Discrepancy Report, including Freedom-to-Operate indicators and comp
 
 | Tier | Price | Includes | Purchase |
 |------|-------|----------|----------|
-| **Single Entity** | ⚡ **€299** netto (Early Bird, reg. €699) | JSON + Parquet + SHA-256 Manifest. 1 juristische Person, interne Nutzung. Perpetual license. | [⚡ **Buy Now →**](https://buy.stripe.com/7sY9AS1KncAX5Pk0zCebu06?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) |
-| **Team** | ⚡ **€549** netto (Early Bird, reg. €1.349) | Alles aus Single + `duckdb_queries.sql` (20 Queries, 5 Kategorien) + `compound_priority_score.py` + 4 Pre-computed Views (Top-500 nach PubMed, Trials, Patent-Dichte, Anti-Inflammatory Panel). Unbegrenzte interne Nutzer einer juristischen Person. | [⚡ **Buy Now →**](https://buy.stripe.com/14AdR8bkX8kHelQ0zCebu07?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) |
-| **Enterprise** | ⚡ **€899** netto (Early Bird, reg. €1.699) | Alles aus Team + `snowflake_load.sql` + `chromadb_ingest.py` + `pinecone_ingest.py` + `embedding_guide.md` (ClinicalBERT, RAG-Pipelines) + Compound Opportunity Matrix + Clinical Pipeline Gaps CSV + Pre-chunked RAG JSONL. Multi-Entity / Konzernnutzung, interne Produktintegration erlaubt. | [⚡ **Buy Now →**](https://buy.stripe.com/fZu00iex930nelQ824ebu08?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) |
+| **Single Entity** | **€699** netto | JSON + Parquet + SHA-256 Manifest. 1 juristische Person, interne Nutzung. Perpetual license. | [**Buy Now →**](https://buy.stripe.com/7sY9AS1KncAX5Pk0zCebu06?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) |
+| **Team** | **€1,349** netto | Alles aus Single + `duckdb_queries.sql` (20 Queries, 5 Kategorien) + `compound_priority_score.py` + 4 Pre-computed Views (Top-500 nach PubMed, Trials, Patent-Dichte, Anti-Inflammatory Panel). Unbegrenzte interne Nutzer einer juristischen Person. | [**Buy Now →**](https://buy.stripe.com/14AdR8bkX8kHelQ0zCebu07?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) |
+| **Enterprise** | **€1,699** netto | Alles aus Team + `snowflake_load.sql` + `chromadb_ingest.py` + `pinecone_ingest.py` + `embedding_guide.md` (ClinicalBERT, RAG-Pipelines) + Compound Opportunity Matrix + Clinical Pipeline Gaps CSV + Pre-chunked RAG JSONL. Multi-Entity / Konzernnutzung, interne Produktintegration erlaubt. | [**Contact →**](mailto:founder@ethno-api.com) |
 
 > Gemäß § 19 UStG wird keine Umsatzsteuer berechnet. Alle Preise netto. One-time purchase — keine Subscription, keine wiederkehrenden Kosten.
 
@@ -148,7 +148,7 @@ Normalising and cross-referencing **24,746 phytochemicals** across multiple auth
 |------|------:|---------------:|
 | USDA cleaning + normalization + enrichment + exports + QA | **48–60h** | **~$4,080–$5,100** |
 
-**This dataset: €299 Early Bird (regular €699). No subscription. No API calls. Download link sent instantly after payment. Valid for 72 hours. See ethno-api.com.**
+**This dataset: €699. No subscription. No API calls. Download link sent instantly after payment. Valid for 72 hours. See ethno-api.com.**
 
 ---
 
@@ -240,8 +240,8 @@ Below is a real record from the dataset — QUERCETIN, one of the most-studied p
 }
 ```
 
-All 76,907 records contain all 10 schema fields. The 4 enrichment columns are always non-null; `pubchem_cid` and `canonical_smiles` are filled for 42.4% of unique compounds (10,484 of 24,746 resolved via PubChem PUG REST); `application` (~50% null) and `dosage` (~87% null) reflect USDA source gaps. Unresolved compounds are phytochemical trivial names, mixture descriptions, or non-specific ethnobotanical terms not indexed in PubChem by name.
-The free 400-row sample contains real, final enrichment values across all four layers.
+All 76,907 records contain all 10 schema fields. The 4 integer enrichment columns (`pubmed_mentions_2026`, `clinical_trials_count_2026`, `chembl_bioactivity_count`, `patent_count_since_2020`) are always non-null; `pubchem_cid` and `canonical_smiles` are filled for 42.4% of unique compounds (10,484 of 24,746 resolved via PubChem PUG REST); `application` (~50% null) and `dosage` (~87% null) reflect USDA source gaps. Unresolved compounds are phytochemical trivial names, mixture descriptions, or non-specific ethnobotanical terms not indexed in PubChem by name.
+The free 400-row sample contains real, final enrichment values across all five layers.
 
 ## File Manifest
 
@@ -250,8 +250,8 @@ The free 400-row sample contains real, final enrichment values across all four l
 | `ethno_sample_400.json` | 108 KB | JSON | Free (this repo) |
 | `ethno_sample_400.parquet` | 20 KB | Parquet | Free (this repo) |
 | `quickstart.ipynb` | 9 KB | Notebook | Free (this repo) |
-| `ethno_dataset_2026_v2.json` | ~16 MB | JSON | Included in all tiers |
-| `ethno_dataset_2026_v2.parquet` | ~800 KB | Parquet | Included in all tiers |
+| `ethno_dataset_2026_v2.2.json` | ~25 MB | JSON | Included in all tiers |
+| `ethno_dataset_2026_v2.2.parquet` | ~1.2 MB | Parquet | Included in all tiers |
 | `MANIFEST_v2.json` (SHA-256) | ~1 KB | JSON | Included in all tiers |
 | `duckdb_queries.sql` (20 Queries) | ~13 KB | SQL | Team + Enterprise |
 | `compound_priority_score.py` | ~5 KB | Python | Team + Enterprise |
@@ -287,11 +287,11 @@ Enrichment methodology is documented in [`METHODOLOGY.md`](METHODOLOGY.md). Sour
 | Version | Records | Schema | Status |
 |---------|--------:|--------|--------|
 | v1.0 | 104,388 | 5 columns (USDA baseline) | Deprecated |
-| v2.0 | 76,907 | 8 columns (+ PubMed, ClinicalTrials, ChEMBL, Patents) | Superseded |
+| v2.0 | 76,907 | 8 columns (+ PubMed, ClinicalTrials, ChEMBL, Patents) | Deprecated |
 | v2.1 | 76,907 | 10 columns (+ PubChem CID, Canonical SMILES) | Superseded |
 | **v2.2** | **76,907** | **10 columns (stereo-prefix CT normalization, corrected SMILES coverage)** | **Current** |
 
-The free sample (`ethno_sample_400.json`) uses the v2.0 schema with final enrichment values across all four layers.
+The free sample (`ethno_sample_400.json`) uses the v2.2 schema with final enrichment values across all five layers.
 
 ## Data Attribution
 
@@ -318,9 +318,9 @@ Ethno-API is the deterministic answer to these pipeline requirements.
 ## License & Commercial Access
 
 - **Free 400-row sample**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — use for evaluation, academic research, and prototyping.
-- **Single Entity License — €299 Early Bird** (reg. €699) one-time: [⚡ **Buy →**](https://buy.stripe.com/7sY9AS1KncAX5Pk0zCebu06?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) — 1 legal entity, internal use, perpetual. No redistribution.
-- **Team License — €549 Early Bird** (reg. €1.349) one-time: [⚡ **Buy →**](https://buy.stripe.com/14AdR8bkX8kHelQ0zCebu07?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) — all employees of 1 legal entity, unlimited internal users, includes analytics toolkit.
-- **Enterprise License — €899 Early Bird** (reg. €1.699) one-time: [⚡ **Buy →**](https://buy.stripe.com/fZu00iex930nelQ824ebu08?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) — multi-entity / group use, internal product integration rights, full RAG integration toolkit.
+- **Single Entity License — €699** one-time: [**Buy →**](https://buy.stripe.com/7sY9AS1KncAX5Pk0zCebu06?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) — 1 legal entity, internal use, perpetual. No redistribution.
+- **Team License — €1,349** one-time: [**Buy →**](https://buy.stripe.com/14AdR8bkX8kHelQ0zCebu07?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) — all employees of 1 legal entity, unlimited internal users, includes analytics toolkit.
+- **Enterprise License — €1,699** one-time: [**Contact →**](mailto:founder@ethno-api.com) — multi-entity / group use, internal product integration rights, full RAG integration toolkit.
 
 > Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.
 
@@ -331,12 +331,12 @@ Ethno-API is the deterministic answer to these pipeline requirements.
   year      = {2026},
   publisher = {Ethno-API},
   url       = {https://ethno-api.com},
-  doi       = {10.5281/zenodo.19053087},
+  doi       = {10.5281/zenodo.15083493},
   note      = {76,907 records, 24,746 unique chemicals, 2,313 plant species, 10-column schema with PubMed, ClinicalTrials, ChEMBL, PatentsView, PubChem CID/SMILES enrichment}
 }
 ```
 
-[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.19053087.svg)](https://zenodo.org/records/19053087)
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.15083493.svg)](https://zenodo.org/records/15083493)
 
 ## Contact
 

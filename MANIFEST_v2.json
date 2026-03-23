@@ -1,13 +1,13 @@
 {
-  "schema_version": "2.1",
-  "export_timestamp": "2026-03-20T00:00:00Z",
+  "schema_version": "2.2",
+  "export_timestamp": "2026-03-22T14:29:03Z",
   "record_count": 76907,
   "unique_chemicals": 24746,
   "unique_species": 2313,
-  "sha256_json": "ae86ba33d76273dc52330ca5d75234d93f8a6d3a8db106186d39470a3c1a0db0",
-  "sha256_parquet": "5b1050529c3e2f372f4910b5647724b6449064c3aa3ae9ece103176293919b87",
+  "sha256_json": "7cb5719f9763f84f1cb8176b462d51fd9df5750e7cfa78e497263b7631ebba13",
+  "sha256_parquet": "118d28bf08b784868b60fc1445a0fdd6817d5d8a492015c51d975cf8e8e5a132",
   "file_sizes": {
-    "json_mb": 24.5,
+    "json_mb": 25.4,
     "parquet_kb": 1194.7
   },
   "fields": [
@@ -42,5 +42,5 @@
     "PubChem REST API (CID + CanonicalSMILES, 2026)"
   ],
   "license": "CC BY 4.0",
-  "zenodo_doi": "10.5281/zenodo.19053087"
+  "zenodo_doi": "10.5281/zenodo.15083493"
 }

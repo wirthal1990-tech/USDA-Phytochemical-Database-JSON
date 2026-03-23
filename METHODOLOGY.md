@@ -87,7 +87,7 @@
 
 ### 5. Merge & Export (`master_export_v2.py`)
 
-- Merges all 4 enrichment outputs + PubChem SMILES/CID into unified dataset
+- Merges all 5 enrichment outputs (PubMed, ClinicalTrials, ChEMBL, Patents, PubChem SMILES/CID) into unified dataset
 - Exports: JSON (indent=2), Parquet (Snappy compressed), MANIFEST (SHA-256 checksums + statistics)
 - 3-pass verification: record count, schema validation, checksum match
 
@@ -168,7 +168,7 @@ All enrichment scripts are available in the repository:
 | Version | Date | Fields | Records | Changes |
 |---|---|---|---|---|
 | v1.0 | 2026-01 | 5 (chemical, plant_species, application, dosage, pubmed_mentions_2026) | 104,388 | Initial release with PubMed enrichment |
-| v2.0 | 2026-03 | 8 (+clinical_trials_count_2026, chembl_bioactivity_count, patent_count_since_2020) | 76,907 | 4-source enrichment, DQA audit (noise compounds + duplicates removed: 104,388 → 76,907), checkpoint system |
+| v2.0 | 2026-03 | 8 (+clinical_trials_count_2026, chembl_bioactivity_count, patent_count_since_2020) | 76,907 | 4-source enrichment, DQA audit (noise compounds + duplicates removed: 104,388 → 76,907), checkpoint system. Superseded by v2.1/v2.2. |
 | v2.1 | 2026-03 | 10 (+pubchem_cid, canonical_smiles) | 76,907 | PubChem CID + SMILES enrichment (10,484 chemicals resolved, 71.8% record coverage — corrected to 42.4% in v2.2) |
 | v2.2 | 2026-03 | 10 (same schema) | 76,907 | Stereo-prefix normalization for CT matching (+2 compounds), corrected SMILES coverage reporting (42.4% of unique chemicals), local CT XML matching replaces API |
 
@@ -181,6 +181,8 @@ All enrichment scripts are available in the repository:
 | `ethno_dataset_2026_v2.json` | 16.3 MB | `cf517675c263eefb96c18a74a0238d0e142067eda2175259fde10db66a081bc3` |
 | `ethno_dataset_2026_v2.parquet` | 800 KB | `cd152dd830f769a8e86c2661f0650f20bd936452835d6ee4cad60549068c7b40` |
 | `ethno_dataset_2026_v2.1_FINAL.json` | 24.5 MB | `ae86ba33d76273dc52330ca5d75234d93f8a6d3a8db106186d39470a3c1a0db0` |
+| `ethno_dataset_2026_v2.2.json` | 25.4 MB | `7cb5719f9763f84f1cb8176b462d51fd9df5750e7cfa78e497263b7631ebba13` |
+| `ethno_dataset_2026_v2.2.parquet` | 1.2 MB | `118d28bf08b784868b60fc1445a0fdd6817d5d8a492015c51d975cf8e8e5a132` |
 | `ethno_dataset_2026_v2.2.json` | 25.4 MB | `7cb5719f9763f84f1cb8176b462d51fd9df5750e7cfa78e497263b7631ebba13` |
 | `ethno_dataset_2026_v2.2.parquet` | 1.2 MB | `118d28bf08b784868b60fc1445a0fdd6817d5d8a492015c51d975cf8e8e5a132` |
 
