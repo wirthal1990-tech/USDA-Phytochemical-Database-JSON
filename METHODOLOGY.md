@@ -1,6 +1,6 @@
-# Methodology — Ethno-API Phytochemical Dataset v2.2
+# Methodology — Ethno-API Phytochemical Dataset v2.3
 
-> **Schema v2.2 · 76,907 records · 24,746 compounds · 2,313 species · 10 fields**
+> **Schema v2.3 · 76,907 records · 24,746 compounds · 2,313 species · 10 fields**
 
 ---
 
@@ -17,7 +17,7 @@
 
 ---
 
-## Schema v2.2
+## Schema v2.3
 
 | Field | Type | Null Count | Description |
 |---|---|---|---|
@@ -29,8 +29,8 @@
 | `clinical_trials_count_2026` | Int64 | 0 | ClinicalTrials.gov study count mentioning compound |
 | `chembl_bioactivity_count` | Int64 | 0 | ChEMBL bioactivity assay count |
 | `patent_count_since_2020` | Int64 | 0 | US patent count (USPTO PatentsView, since 2020-01-01) |
-| `pubchem_cid` | Int64 | 14,262 | PubChem Compound ID (CID) — 42.4% of unique compounds resolved |
-| `canonical_smiles` | string | 14,262 | Canonical SMILES string (PubChem) — 42.4% of unique compounds resolved |
+| `pubchem_cid` | Int64 | 13,265 | PubChem Compound ID (CID) — 46.4% of unique compounds resolved |
+| `canonical_smiles` | string | 13,265 | Canonical SMILES string (PubChem) — 46.4% of unique compounds resolved |
 
 **Enrichment coverage:**
 
@@ -96,13 +96,29 @@
 - **Endpoint:** `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/{name}/JSON`
 - **Query logic:** Name-to-CID resolution, returns `CID` + `CanonicalSMILES`
 - **Queries:** 24,746 unique compound names
-- **Resolved:** 10,484 compounds (42.4% of unique chemicals)
-- **Unresolved:** 14,262 compounds (null in schema)
+- **Resolved:** 11,481 compounds (46.4% of unique chemicals)
+- **Unresolved:** 13,265 compounds (null in schema)
 - **Rate limit:** 0.35s between requests, checkpoint-resumable
 - **Runtime:** 3.2 hours (24,746 queries)
 - **Output fields:** `canonical_smiles`, `pubchem_cid`
 
-> **Why 57.6% are null:** Phytochemical trivial names (e.g. "TANNIN", "RESIN"), plant mixture descriptions (e.g. "ESSENTIAL OIL"), and non-specific ethnobotanical terms are not indexed in PubChem's compound database by name. These are inherent limitations of the source data, not pipeline failures.
+> **Why 53.6% are null:** Phytochemical trivial names (e.g. "TANNIN", "RESIN"), plant mixture descriptions (e.g. "ESSENTIAL OIL"), and non-specific ethnobotanical terms are not indexed in PubChem's compound database by name. These are inherent limitations of the source data, not pipeline failures.
+
+### 7. CTS Synonym Enrichment (v2.3)
+
+- **Goal:** Reduce the null-rate for `pubchem_cid` and `canonical_smiles` through systematic name variant resolution
+- **Candidates:** 14,197 compounds without PubChem CID (after excluding truncated names and length < 3)
+- **CTS API test:** UC Davis Chemical Translation Service tested first — **0% yield** for all ethnobotanical trivial names → CTS not suitable for this nomenclature
+- **PubChem PUG-REST name variants:** 4 variants per compound:
+  1. Original (e.g. `GALACTURONIC-ACID`)
+  2. Hyphens → spaces (`galacturonic acid`)
+  3. Lowercase (`galacturonic-acid`)
+  4. Lowercase + spaces (`galacturonic acid`)
+- **Checkpoint system:** Resume-safe, persisted every 100 API calls
+- **Runtime:** ~3.5 hours at ~4.5 req/s
+- **Result:** 997 unique compounds newly resolved (7.0% of candidates), 2,741 records improved
+- **Coverage improvement:** 42.4% → **46.4%** unique compounds (10,484 → 11,481), 71.8% → **75.4%** records (55,217 → 57,958)
+- **Remaining nulls:** 13,265 unique compounds (53.6%) are genuinely unresolvable — collective nouns (tannins, phytosterols, mucilage), historical herbal medicine names without PubChem entries, unresolved USDA Dr. Duke nomenclature from the 1980s/90s
 
 ---
 
@@ -171,6 +187,7 @@ All enrichment scripts are available in the repository:
 | v2.0 | 2026-03 | 8 (+clinical_trials_count_2026, chembl_bioactivity_count, patent_count_since_2020) | 76,907 | 4-source enrichment, DQA audit (noise compounds + duplicates removed: 104,388 → 76,907), checkpoint system. Superseded by v2.1/v2.2. |
 | v2.1 | 2026-03 | 10 (+pubchem_cid, canonical_smiles) | 76,907 | PubChem CID + SMILES enrichment (10,484 chemicals resolved, 71.8% record coverage — corrected to 42.4% in v2.2) |
 | v2.2 | 2026-03 | 10 (same schema) | 76,907 | Stereo-prefix normalization for CT matching (+2 compounds), corrected SMILES coverage reporting (42.4% of unique chemicals), local CT XML matching replaces API |
+| **v2.3** | **2026-03** | **10 (same schema)** | **76,907** | **CTS synonym enrichment: 997 compounds resolved via PubChem name variants (hyphen→space normalization), PubChem CID coverage 42.4%→46.4% unique / 71.8%→75.4% records** |
 
 ---
 
@@ -186,4 +203,7 @@ All enrichment scripts are available in the repository:
 | `ethno_dataset_2026_v2.2.json` | 25.4 MB | `7cb5719f9763f84f1cb8176b462d51fd9df5750e7cfa78e497263b7631ebba13` |
 | `ethno_dataset_2026_v2.2.parquet` | 1.2 MB | `118d28bf08b784868b60fc1445a0fdd6817d5d8a492015c51d975cf8e8e5a132` |
 
-Export timestamp: `2026-03-22T14:29:03Z` (v2.2 final)
+| `ethno_dataset_2026_v2.3.json` | 25.6 MB | `956cd7b08d279792e132629ce608ab72eb9249b09ac84ed9c60bd108acb5057e` |
+| `ethno_dataset_2026_v2.3.parquet` | 1,211 KB | `4b7351048db025cbf575b4538e66afd70729c327b8a0b48ead87d5546a39762e` |
+
+Export timestamp: `2026-03-25T12:00:00Z` (v2.3 final)
