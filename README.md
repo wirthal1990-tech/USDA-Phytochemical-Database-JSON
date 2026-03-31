@@ -70,7 +70,7 @@ dataset_info:
 If you use this dataset in your research, please cite:
 
 ```
-Wirth, A. (2026). USDA Phytochemical Database — Enriched v2.3 (Sample). Zenodo. https://doi.org/10.5281/zenodo.19053087
+Wirth, A. (2026). USDA Phytochemical Database — Enriched v2.3 (Sample). Zenodo. https://doi.org/10.5281/zenodo.19265853
 ```
 
 ---
@@ -84,7 +84,7 @@ Wirth, A. (2026). USDA Phytochemical Database — Enriched v2.3 (Sample). Zenodo
 [![Full Dataset](https://img.shields.io/badge/Full%20Dataset-76%2C907%20rows-blue)](https://ethno-api.com)
 [![Format](https://img.shields.io/badge/Format-JSON%20%2B%20Parquet-orange)](https://ethno-api.com)
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Dataset-yellow)](https://huggingface.co/datasets/wirthal1990-tech/USDA-Phytochemical-Database-JSON)
-[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.15083493.svg)](https://zenodo.org/records/15083493)
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.19265853.svg)](https://zenodo.org/records/19265853)
 
 [**Free 400-Row Sample ↓**](#quickstart) · [**Single €699 →**](https://buy.stripe.com/7sY9AS1KncAX5Pk0zCebu06?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) · [**Team €1,349 →**](https://buy.stripe.com/14AdR8bkX8kHelQ0zCebu07?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) · [**Enterprise €1,699 →**](mailto:founder@ethno-api.com?subject=Enterprise%20License%20Inquiry)
 
@@ -332,12 +332,12 @@ Ethno-API is the deterministic answer to these pipeline requirements.
   year      = {2026},
   publisher = {Ethno-API},
   url       = {https://ethno-api.com},
-  doi       = {10.5281/zenodo.15083493},
+  doi       = {10.5281/zenodo.19265853},
   note      = {76,907 records, 24,746 unique chemicals, 2,313 plant species, 10-column schema with PubMed, ClinicalTrials, ChEMBL, PatentsView, PubChem CID/SMILES enrichment}
 }
 ```
 
-[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.15083493.svg)](https://zenodo.org/records/15083493)
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.19265853.svg)](https://zenodo.org/records/19265853)
 
 ## Contact
 

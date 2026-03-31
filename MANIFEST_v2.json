@@ -1,15 +1,11 @@
 {
-  "schema_version": "2.2",
-  "export_timestamp": "2026-03-22T14:29:03Z",
+  "schema_version": "2.3",
+  "dataset_version": "v2.3",
+  "export_timestamp": "2026-03-26T12:10:52.554582Z",
   "record_count": 76907,
   "unique_chemicals": 24746,
   "unique_species": 2313,
-  "sha256_json": "7cb5719f9763f84f1cb8176b462d51fd9df5750e7cfa78e497263b7631ebba13",
-  "sha256_parquet": "118d28bf08b784868b60fc1445a0fdd6817d5d8a492015c51d975cf8e8e5a132",
-  "file_sizes": {
-    "json_mb": 25.4,
-    "parquet_kb": 1194.7
-  },
+  "field_count": 10,
   "fields": [
     "chemical",
     "plant_species",
@@ -22,16 +18,45 @@
     "pubchem_cid",
     "canonical_smiles"
   ],
+  "enrichment_sources": [
+    "PubMed (NCBI E-utilities)",
+    "ClinicalTrials.gov v2 API",
+    "ChEMBL v35 REST API",
+    "USPTO PatentsView",
+    "PubChem PUG-REST + CTS"
+  ],
   "null_counts": {
+    "chemical": 0,
+    "plant_species": 0,
     "application": 38149,
     "dosage": 67132,
-    "pubchem_cid": 21690,
-    "canonical_smiles": 21690
+    "pubmed_mentions_2026": 0,
+    "clinical_trials_count_2026": 0,
+    "chembl_bioactivity_count": 0,
+    "patent_count_since_2020": 0,
+    "pubchem_cid": 18949,
+    "canonical_smiles": 18949
   },
+  "smiles_coverage": "75.4%",
+  "cid_coverage": "75.4%",
   "enrichment_statistics": {
-    "pubchem_cid_filled": 55217,
-    "canonical_smiles_filled": 55217,
-    "pubchem_fill_rate_pct": 71.8
+    "pubchem_cid_filled": 57958,
+    "canonical_smiles_filled": 57958,
+    "pubchem_fill_rate_pct": 75.4,
+    "smiles_fill_rate_pct": 75.4
+  },
+  "v2.3_changelog": {
+    "cts_worker_resolved": 997,
+    "records_improved": 2741,
+    "cts_candidates_total": 14197,
+    "cts_resolution_rate_pct": 7.0,
+    "method": "PubChem PUG-REST name-to-CID (v4 worker, checkpoint-resumable)"
+  },
+  "sha256_json": "956cd7b08d279792e132629ce608ab72eb9249b09ac84ed9c60bd108acb5057e",
+  "sha256_parquet": "4b7351048db025cbf575b4538e66afd70729c327b8a0b48ead87d5546a39762e",
+  "file_sizes": {
+    "json_mb": 25.6,
+    "parquet_kb": 1211.3
   },
   "data_sources": [
     "USDA Dr. Duke Phytochemical and Ethnobotanical Databases",
@@ -42,5 +67,5 @@
     "PubChem REST API (CID + CanonicalSMILES, 2026)"
   ],
   "license": "CC BY 4.0",
-  "zenodo_doi": "10.5281/zenodo.15083493"
+  "zenodo_doi": "10.5281/zenodo.19265853"
 }
