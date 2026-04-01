@@ -22,6 +22,11 @@ tags:
 pretty_name: USDA Phytochemical & Ethnobotanical Database — Enriched v2.3
 size_categories:
   - 10K<n<100K
+configs:
+  - config_name: default
+    data_files:
+      - split: train
+        path: ethno_sample_400.parquet
 dataset_info:
   features:
     - name: chemical
@@ -33,23 +38,23 @@ dataset_info:
     - name: dosage
       dtype: string
     - name: pubmed_mentions_2026
-      dtype: int32
+      dtype: int64
     - name: clinical_trials_count_2026
-      dtype: int32
+      dtype: int64
     - name: chembl_bioactivity_count
-      dtype: int32
+      dtype: int64
     - name: patent_count_since_2020
-      dtype: int32
+      dtype: int64
     - name: pubchem_cid
       dtype: float64
     - name: canonical_smiles
       dtype: string
   splits:
     - name: train
-      num_bytes: 26843545
-      num_examples: 76907
-  download_size: 26843545
-  dataset_size: 26843545
+      num_bytes: 21261
+      num_examples: 400
+  download_size: 21261
+  dataset_size: 21261
 ---
 
 > **Production-grade phytochemical data.** Single €699 · Team €1,349 · Enterprise €1,699. [→ ethno-api.com](https://ethno-api.com)
