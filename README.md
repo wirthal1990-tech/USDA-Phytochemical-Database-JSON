@@ -82,7 +82,7 @@ Wirth, A. (2026). USDA Phytochemical Database — Enriched v2.3 (Sample). Zenodo
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Dataset-yellow)](https://huggingface.co/datasets/wirthal1990-tech/USDA-Phytochemical-Database-JSON)
 [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.19265853.svg)](https://zenodo.org/records/19265853)
 
-[**Free 400-Row Sample ↓**](#quickstart) · [**Single €699 →**](https://buy.stripe.com/7sY9AS1KncAX5Pk0zCebu06?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) · [**Team €1,349 →**](https://buy.stripe.com/14AdR8bkX8kHelQ0zCebu07?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) · [**Enterprise €1,699 →**](mailto:founder@ethno-api.com?subject=Enterprise%20License%20Inquiry)
+[**Free 400-Row Sample ↓**](#quickstart) · [**Single €699 →**](https://buy.stripe.com/00w6oGgFh58v6Toeqsebu02?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) · [**Team €1,349 →**](https://buy.stripe.com/dRm7sK9cP1Wj0v06Y0ebu03?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) · [**Enterprise €1,699 →**](https://buy.stripe.com/dRm28q0Gj1WjdhM6Y0ebu04?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03)
 
 > **Enrichment status (March 2026):** All four enrichment layers (PubMed, ClinicalTrials.gov, ChEMBL, PatentsView) are **complete and final**. v2.3 adds CTS synonym enrichment (PubChem CID coverage: 75.4%). The free 400-row sample contains real enrichment values.
 
@@ -128,9 +128,9 @@ The full IP Discrepancy Report, including patent-literature gap indicators and c
 
 | Tier | Price | Includes | Purchase |
 |------|-------|----------|----------|
-| **Single Entity** | **€699** netto | JSON + Parquet + SHA-256 Manifest. 1 juristische Person, interne Nutzung. Perpetual license. | [**Buy Now →**](https://buy.stripe.com/7sY9AS1KncAX5Pk0zCebu06?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) |
-| **Team** | **€1,349** netto | Alles aus Single + `duckdb_queries.sql` (20 Queries, 5 Kategorien) + `compound_priority_score.py` + 4 Pre-computed Views (Top-500 nach PubMed, Trials, Patent-Dichte, Anti-Inflammatory Panel). Unbegrenzte interne Nutzer einer juristischen Person. | [**Buy Now →**](https://buy.stripe.com/14AdR8bkX8kHelQ0zCebu07?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) |
-| **Enterprise** | **€1,699** netto | Alles aus Team + `snowflake_load.sql` + `chromadb_ingest.py` + `pinecone_ingest.py` + `embedding_guide.md` (ClinicalBERT, RAG-Pipelines) + Compound Opportunity Matrix + Clinical Pipeline Gaps CSV + Pre-chunked RAG JSONL. Multi-Entity / Konzernnutzung, interne Produktintegration erlaubt. | [**Contact →**](mailto:founder@ethno-api.com?subject=Enterprise%20License%20Inquiry) |
+| **Single Entity** | **€699** netto | JSON + Parquet + SHA-256 Manifest. 1 juristische Person, interne Nutzung. Perpetual license. | [**Buy Now →**](https://buy.stripe.com/00w6oGgFh58v6Toeqsebu02?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) |
+| **Team** | **€1,349** netto | Alles aus Single + `duckdb_queries.sql` (20 Queries, 5 Kategorien) + `compound_priority_score.py` + 4 Pre-computed Views (Top-500 nach PubMed, Trials, Patent-Dichte, Anti-Inflammatory Panel). Unbegrenzte interne Nutzer einer juristischen Person. | [**Buy Now →**](https://buy.stripe.com/dRm7sK9cP1Wj0v06Y0ebu03?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) |
+| **Enterprise** | **€1,699** netto | Alles aus Team + `snowflake_load.sql` + `chromadb_ingest.py` + `pinecone_ingest.py` + `embedding_guide.md` (ClinicalBERT, RAG-Pipelines) + Compound Opportunity Matrix + Clinical Pipeline Gaps CSV + Pre-chunked RAG JSONL. Multi-Entity / Konzernnutzung, interne Produktintegration erlaubt. | [**Buy Now →**](https://buy.stripe.com/dRm28q0Gj1WjdhM6Y0ebu04?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) |
 
 > Gemäß § 19 UStG wird keine Umsatzsteuer berechnet. Alle Preise netto. One-time purchase — keine Subscription, keine wiederkehrenden Kosten.
 
@@ -315,9 +315,9 @@ Ethno-API is the deterministic answer to these pipeline requirements.
 ## License & Commercial Access
 
 - **Free 400-row sample**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — use for evaluation, academic research, and prototyping.
-- **Single Entity License — €699** one-time: [**Buy →**](https://buy.stripe.com/7sY9AS1KncAX5Pk0zCebu06?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) — 1 legal entity, internal use, perpetual. No redistribution.
-- **Team License — €1,349** one-time: [**Buy →**](https://buy.stripe.com/14AdR8bkX8kHelQ0zCebu07?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) — all employees of 1 legal entity, unlimited internal users, includes analytics toolkit.
-- **Enterprise License — €1,699** one-time: [**Contact →**](mailto:founder@ethno-api.com?subject=Enterprise%20License%20Inquiry) — multi-entity / group use, internal product integration rights, full RAG integration toolkit.
+- **Single Entity License — €699** one-time: [**Buy →**](https://buy.stripe.com/00w6oGgFh58v6Toeqsebu02?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) — 1 legal entity, internal use, perpetual. No redistribution.
+- **Team License — €1,349** one-time: [**Buy →**](https://buy.stripe.com/dRm7sK9cP1Wj0v06Y0ebu03?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) — all employees of 1 legal entity, unlimited internal users, includes analytics toolkit.
+- **Enterprise License — €1,699** one-time: [**Buy Now →**](https://buy.stripe.com/dRm28q0Gj1WjdhM6Y0ebu04?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) — multi-entity / group use, internal product integration rights, full RAG integration toolkit.
 
 > Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.
 
