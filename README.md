@@ -292,7 +292,7 @@ Enrichment methodology is documented in [`METHODOLOGY.md`](METHODOLOGY.md). Sour
 | v2.2 | 76,907 | 10 columns (stereo-prefix CT normalization, corrected SMILES coverage) | Superseded |
 | **v2.3** | **76,907** | **10 columns (CTS synonym enrichment — PubChem CID coverage 75.4%)** | **Current** |
 
-The free sample (`ethno_sample_400.json`) uses the v2.2 schema with final enrichment values across all five layers.
+The free sample (`ethno_sample_400.json`) uses the v2.3 schema with final enrichment values across all five layers.
 
 ## Data Attribution
 
