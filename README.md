@@ -1,38 +1,32 @@
 ---
-annotations_creators:
-- machine-generated
-language_creators:
-- found
-language:
-- en
 license: cc-by-4.0
-multilinguality: monolingual
-pretty_name: "USDA Phytochemical & Ethnobotanical Database — Enriched v2.3"
-size_categories:
-- 100K<n<1M
-source_datasets:
-- original
 task_categories:
-- tabular-classification
-- feature-extraction
-- text-classification
-- question-answering
+  - tabular-classification
+  - text-retrieval
+  - feature-extraction
+language:
+  - en
 tags:
-- phytochemistry
-- ethnobotany
-- drug-discovery
-- natural-products
-- chemoinformatics
-- bioactivity
-- clinical-trials
-- patents
-- rag
-- mlops
-- parquet
-- pubmed
-- usda
-- llm-grounding
-- biotech
+  - phytochemistry
+  - drug-discovery
+  - natural-products
+  - ethnobotany
+  - cheminformatics
+  - pubmed
+  - clinical-trials
+  - patents
+  - smiles
+  - parquet
+  - biology
+  - medical
+pretty_name: USDA Phytochemical & Ethnobotanical Database — Enriched v2.3
+size_categories:
+  - 10K<n<100K
+configs:
+  - config_name: default
+    data_files:
+      - split: train
+        path: ethno_sample_400.parquet
 dataset_info:
   features:
     - name: chemical
@@ -44,21 +38,23 @@ dataset_info:
     - name: dosage
       dtype: string
     - name: pubmed_mentions_2026
-      dtype: int32
-    - name: clinical_trials_count_2026
-      dtype: int32
-    - name: chembl_bioactivity_count
-      dtype: int32
-    - name: patent_count_since_2020
-      dtype: int32
-    - name: pubchem_cid
       dtype: int64
+    - name: clinical_trials_count_2026
+      dtype: int64
+    - name: chembl_bioactivity_count
+      dtype: int64
+    - name: patent_count_since_2020
+      dtype: int64
+    - name: pubchem_cid
+      dtype: float64
     - name: canonical_smiles
       dtype: string
   splits:
-    - name: sample
+    - name: train
+      num_bytes: 21261
       num_examples: 400
-  config_name: default
+  download_size: 21261
+  dataset_size: 21261
 ---
 
 > **Production-grade phytochemical data.** Single €699 · Team €1,349 · Enterprise €1,699. [→ ethno-api.com](https://ethno-api.com)
