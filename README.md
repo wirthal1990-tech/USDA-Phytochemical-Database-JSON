@@ -99,11 +99,13 @@ Wirth, A. (2026). USDA Phytochemical Database — Enriched v2.3 (Sample). Zenodo
 
 > **Data Quality:** Dataset was audit-validated on 2026-03-16. Original 104,388 records cleaned to 76,907 by removing macronutrients (WATER, GLUCOSE etc.) and exact duplicates. [Audit report available on request.]
 
-## The 2026 IP Discrepancy (Patent-Literature Gap)
+## Patent and Literature Signal Layer
 
-Our cross-referencing of USPTO patent filings (since 2020) against PubMed publication density revealed a significant set of compounds with high commercial IP activity but near-zero academic coverage — a pattern we term "Patent-Literature Gap." Specifically, 15 compounds exceeded 5 patent filings since 2020 yet appeared in fewer than 50 PubMed publications as of March 2026, indicating a measurable gap between commercial interest and public research attention.
+v2.3.1 includes compound-level patent and literature signals across 24,746 unique chemicals. Each compound carries a `patent_count_since_2020` (USPTO PatentsView) and `pubmed_mentions_2026` (NCBI E-utilities) field, enabling independent prioritization analysis.
 
-The full IP Discrepancy Report, including patent-literature gap indicators and compound-level scoring, is available at [ethno-api.com](https://ethno-api.com).
+A new `compound_type` column classifies all entries as `discrete_phytochemical`, `substance_class`, `complex_mixture`, `inorganic_element`, or `generic_ambiguous`. A `patent_count_method` column documents the query methodology per compound (including known limitations for name-based queries on generic terms).
+
+Full methodology is documented in `METHODOLOGY.md`. Known limitations are listed in `MANIFEST_v2.json` under `known_limitations`.
 
 ---
 
@@ -120,7 +122,9 @@ The full IP Discrepancy Report, including patent-literature gap indicators and c
 | `chembl_bioactivity_count` | `int32` | 0% | ChEMBL documented bioactivity measurement count |
 | `patent_count_since_2020` | `int32` | 0% | US patents since 2020-01-01 mentioning compound (USPTO PatentsView) |
 | `pubchem_cid` | `int64` | ~25% | PubChem Compound ID (CID) — resolved via PubChem PUG REST (March 2026) |
-| `canonical_smiles` | `string` | ~25% | Canonical SMILES notation — molecular structure from PubChem (46.4% of unique compounds resolved) |
+| `canonical_smiles` | `string` | ~75% | Canonical SMILES notation — molecular structure from PubChem (75.4% of unique compounds resolved in v2.3) |
+| `compound_type` | `string` | 100% | Classification: `discrete_phytochemical`, `substance_class`, `complex_mixture`, `inorganic_element`, `generic_ambiguous` — added in v2.3.1 |
+| `patent_count_method` | `string` | ~99% | Query methodology: `name_based_with_cid`, `name_based_no_cid`, `name_based_invalidated`, `NULL` — added in v2.3.1 |
 
 ---
 
@@ -236,7 +240,7 @@ Below is a real record from the dataset — QUERCETIN, one of the most-studied p
 }
 ```
 
-All 76,907 records contain all 10 schema fields. The 4 enrichment columns are always non-null; `pubchem_cid` and `canonical_smiles` are filled for 46.4% of unique compounds (11,481 of 24,746 resolved via PubChem PUG REST); `application` (~50% null) and `dosage` (~87% null) reflect USDA source gaps. Unresolved compounds are phytochemical trivial names, mixture descriptions, or non-specific ethnobotanical terms not indexed in PubChem by name.
+All 76,907 records contain all 10 schema fields. The 4 enrichment columns are always non-null; `pubchem_cid` and `canonical_smiles` are filled for 75.4% of unique compounds (18,675 of 24,746 resolved via PubChem PUG REST in v2.3); `application` (~50% null) and `dosage` (~87% null) reflect USDA source gaps. Unresolved compounds are phytochemical trivial names, mixture descriptions, or non-specific ethnobotanical terms not indexed in PubChem by name.
 The free 400-row sample contains real, final enrichment values across all four layers.
 
 ## File Manifest
@@ -286,7 +290,8 @@ Enrichment methodology is documented in [`METHODOLOGY.md`](METHODOLOGY.md). Sour
 | v2.0 | 76,907 | 8 columns (+ PubMed, ClinicalTrials, ChEMBL, Patents) | Deprecated |
 | v2.1 | 76,907 | 10 columns (+ PubChem CID, Canonical SMILES) | Superseded |
 | v2.2 | 76,907 | 10 columns (stereo-prefix CT normalization, corrected SMILES coverage) | Superseded |
-| **v2.3** | **76,907** | **10 columns (CTS synonym enrichment — PubChem CID coverage 75.4%)** | **Current** |
+| v2.3 | 76,907 | 10 columns (CTS synonym enrichment — PubChem CID coverage 75.4%) | Superseded |
+| **v2.3.1** | **76,907** | **12 columns (+compound_type, +patent_count_method, forensic audit corrections)** | **Current** |
 
 The free sample (`ethno_sample_400.json`) uses the v2.3 schema with final enrichment values across all five layers.
 
