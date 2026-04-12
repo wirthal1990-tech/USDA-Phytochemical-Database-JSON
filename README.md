@@ -128,7 +128,7 @@ Full methodology is documented in `METHODOLOGY.md`. Known limitations are listed
 | `pubchem_cid` | `int64` | ~28.2% | PubChem Compound ID (CID) — resolved via PubChem PUG REST (March 2026) |
 | `canonical_smiles` | `string` | ~28.2% | Canonical SMILES notation — molecular structure from PubChem (75.4% of unique compounds resolved in v2.3) |
 | `compound_type` | `string` | 0% | Classification: `discrete_phytochemical`, `substance_class`, `complex_mixture`, `inorganic_element`, `generic_ambiguous` — added in v2.3.1 |
-| `patent_count_method` | `string` | 0% | Query methodology: `name_based_with_cid`, `name_based_no_cid`, `name_based_invalidated`, `NULL` — added in v2.3.1 |
+| `patent_count_method` | `string` | ~0.9% | Query methodology: `name_based_with_cid`, `name_based_no_cid`, `name_based_invalidated`, `NULL` — added in v2.3.1 |
 
 ---
 
@@ -222,7 +222,7 @@ print(f"Records: {len(df)} | Columns: {list(df.columns)}")
 df.head()
 ```
 
-> **Note:** The `split="sample"` loads `ethno_sample_400.json` (400 rows, 12 columns).
+> **Note:** The `split="train"` loads `ethno_sample_400.parquet` (400 rows, 12 columns).
 > The full 76,907-row dataset is available at [ethno-api.com](https://ethno-api.com).
 
 ## Sample Record
@@ -258,7 +258,7 @@ The free 400-row sample contains real, final enrichment values across all five l
 | `quickstart.ipynb` | 9 KB | Notebook | Free (this repo) |
 | `ethno_dataset_2026_v2.3.json` | ~28 MB | JSON | Included in all tiers |
 | `ethno_dataset_2026_v2.3.parquet` | ~1.5 MB | Parquet | Included in all tiers |
-| `MANIFEST_v2.3.json` (SHA-256) | ~1 KB | JSON | Included in all tiers |
+| `MANIFEST_v2.json` (SHA-256) | ~1 KB | JSON | Included in all tiers |
 | `duckdb_queries.sql` (20 Queries) | ~13 KB | SQL | Team + Enterprise |
 | `compound_priority_score.py` | ~5 KB | Python | Team + Enterprise |
 | `snowflake_load.sql` | ~6 KB | SQL | Enterprise |
