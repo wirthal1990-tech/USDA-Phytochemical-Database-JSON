@@ -1,6 +1,6 @@
-# Methodology — Ethno-API Phytochemical Dataset v2.3
+# Methodology — Ethno-API Phytochemical Dataset v2.3.1
 
-> **Schema v2.3 · 76,907 records · 24,746 compounds · 2,313 species · 10 fields**
+> **Schema v2.3.1 · 76,907 records · 24,746 compounds · 2,313 species · 12 fields**
 
 ---
 
@@ -188,6 +188,7 @@ All enrichment scripts are available in the repository:
 | v2.1 | 2026-03 | 10 (+pubchem_cid, canonical_smiles) | 76,907 | PubChem CID + SMILES enrichment (10,484 chemicals resolved, 71.8% record coverage — corrected to 42.4% in v2.2) |
 | v2.2 | 2026-03 | 10 (same schema) | 76,907 | Stereo-prefix normalization for CT matching (+2 compounds), corrected SMILES coverage reporting (42.4% of unique chemicals), local CT XML matching replaces API |
 | **v2.3** | **2026-03** | **10 (same schema)** | **76,907** | **CTS synonym enrichment: 997 compounds resolved via PubChem name variants (hyphen→space normalization), PubChem CID coverage 42.4%→46.4% unique / 71.8%→75.4% records** |
+| **v2.3.1** | **2026-04** | **12 (+compound_type, patent_count_method)** | **76,907** | **CID audit, compound classification, patent method transparency, RESIN/RESINS CID correction, inorganic/generic reclassification** |
 
 ---
 
@@ -204,4 +205,7 @@ All enrichment scripts are available in the repository:
 | `ethno_dataset_2026_v2.3.json` | 25.6 MB | `956cd7b08d279792e132629ce608ab72eb9249b09ac84ed9c60bd108acb5057e` |
 | `ethno_dataset_2026_v2.3.parquet` | 1,211 KB | `4b7351048db025cbf575b4538e66afd70729c327b8a0b48ead87d5546a39762e` |
 
-Export timestamp: `2026-03-25T12:00:00Z` (v2.3 final)
+| `ethno_dataset_2026_v2.3.1.json` | 27.8 MB | `3b042206b5c65ef9b051fff7f891ca09197be447bf715313ff290008b0de2136` |
+| `ethno_dataset_2026_v2.3.1.parquet` | 1,458 KB | `6f72ab8e13437bd04b5a84a22539216191486b477bc4abb009b24ad2ba933910` |
+
+Export timestamp: `2026-04-11T22:47:02Z` (v2.3.1 final)

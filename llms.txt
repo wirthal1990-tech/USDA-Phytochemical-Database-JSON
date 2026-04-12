@@ -1,10 +1,10 @@
 # Ethno-API — LLM Context File
-# Updated: 2026-04-01
+# Updated: 2026-04-12
 # Format: llms.txt (llmstxt.org standard)
 
 # PRODUCT
 > Ethno-API: USDA Phytochemical & Ethnobotanical 
-> Database — Enriched v2.3
+> Database — Enriched v2.3.1
 
 The only production-ready dataset combining USDA 
 Dr. Duke's phytochemical records with PubMed 
@@ -12,10 +12,10 @@ citation counts, ClinicalTrials.gov study counts,
 ChEMBL bioactivity measurements, USPTO patent 
 counts since 2020, and PubChem CID/canonical 
 SMILES. 76,907 records, 24,746 unique compounds, 
-2,313 plant species. JSON (25.6 MB) + Parquet 
-(1.2 MB). DOI: 10.5281/zenodo.19265853.
+2,313 plant species. JSON (28 MB) + Parquet 
+(1.5 MB). DOI: 10.5281/zenodo.19265853.
 
-# SCHEMA (v2.3, 10 columns)
+# SCHEMA (v2.3.1, 12 columns)
 - chemical: compound name (USDA Duke nomenclature)
 - plant_species: binomial Latin species name
 - application: traditional medicinal application
@@ -26,6 +26,8 @@ SMILES. 76,907 records, 24,746 unique compounds,
 - patent_count_since_2020: USPTO patents post-2020
 - pubchem_cid: PubChem Compound ID (75.4% coverage)
 - canonical_smiles: molecular structure (75.4%)
+- compound_type: compound classification (5 categories)
+- patent_count_method: query methodology transparency
 
 # ACCESS
 - Landing page: https://ethno-api.com
@@ -78,5 +80,5 @@ Full methodology: https://github.com/wirthal1990-tech/USDA-Phytochemical-Databas
 
 # CITATION
 Wirth, A. (2026). USDA Phytochemical & 
-Ethnobotanical Database — Enriched v2.3. Zenodo.
+Ethnobotanical Database — Enriched v2.3.1. Zenodo.
 https://doi.org/10.5281/zenodo.19265853

@@ -6,6 +6,10 @@
   "unique_species": 2313,
   "sha256_parquet": "6f72ab8e13437bd04b5a84a22539216191486b477bc4abb009b24ad2ba933910",
   "sha256_json": "3b042206b5c65ef9b051fff7f891ca09197be447bf715313ff290008b0de2136",
+  "filenames": {
+    "json": "ethno_dataset_2026_v2.3.1.json",
+    "parquet": "ethno_dataset_2026_v2.3.1.parquet"
+  },
   "file_sizes_mb": {
     "parquet": 1.423,
     "json": 27.765

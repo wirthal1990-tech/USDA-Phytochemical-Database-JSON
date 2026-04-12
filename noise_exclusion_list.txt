@@ -1,10 +1,10 @@
-# Noise Exclusion List — Ethno-API v2.3
+# Noise Exclusion List — Ethno-API v2.3.1
 # 116 generic/non-phytochemical entries excluded from analytical queries.
 # These are elements, solvents, macronutrients, and generic categories
 # present in the USDA Dr. Duke source but not meaningful for phytochemical analysis.
 #
-# Dataset: v2.3 (76,907 records, 24,746 unique chemicals, 2,313 species)
-# Matching records in v2.3: 5,287 (93 of 116 entries found in dataset)
+# Dataset: v2.3.1 (76,907 records, 24,746 unique chemicals, 2,313 species)
+# Matching records in v2.3.1: 5,287 (93 of 116 entries found in dataset)
 # DOI: 10.5281/zenodo.19265853
 # Last updated: 2026-03-31
 ACETALDEHYDE

@@ -126,7 +126,7 @@ Full methodology is documented in `METHODOLOGY.md`. Known limitations are listed
 | `chembl_bioactivity_count` | `int32` | 0% | ChEMBL documented bioactivity measurement count |
 | `patent_count_since_2020` | `int32` | ~0.9% | US patents since 2020-01-01 mentioning compound (USPTO PatentsView) |
 | `pubchem_cid` | `int64` | ~28.2% | PubChem Compound ID (CID) — resolved via PubChem PUG REST (March 2026) |
-| `canonical_smiles` | `string` | ~28.2% | Canonical SMILES notation — molecular structure from PubChem (75.4% of unique compounds resolved in v2.3) |
+| `canonical_smiles` | `string` | ~28.2% | Canonical SMILES notation — molecular structure from PubChem (75.4% of unique compounds resolved in v2.3/v2.3.1) |
 | `compound_type` | `string` | 0% | Classification: `discrete_phytochemical`, `substance_class`, `complex_mixture`, `inorganic_element`, `generic_ambiguous` — added in v2.3.1 |
 | `patent_count_method` | `string` | ~0.9% | Query methodology: `name_based_with_cid`, `name_based_no_cid`, `name_based_invalidated`, `NULL` — added in v2.3.1 |
 
@@ -136,11 +136,11 @@ Full methodology is documented in `METHODOLOGY.md`. Known limitations are listed
 
 | Tier | Price | Includes | Purchase |
 |------|-------|----------|----------|
-| **Single Entity** | **€699** netto | JSON + Parquet + SHA-256 Manifest. 1 juristische Person, interne Nutzung. Perpetual license. | [**Buy Now →**](https://buy.stripe.com/00w6oGgFh58v6Toeqsebu02?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) |
-| **Team** | **€1,349** netto | Alles aus Single + `duckdb_queries.sql` (20 Queries, 5 Kategorien) + `compound_priority_score.py` + 4 Pre-computed Views (Top-500 nach PubMed, Trials, Patent-Dichte, Anti-Inflammatory Panel). Unbegrenzte interne Nutzer einer juristischen Person. | [**Buy Now →**](https://buy.stripe.com/dRm7sK9cP1Wj0v06Y0ebu03?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) |
-| **Enterprise** | **€1,699** netto | Alles aus Team + `snowflake_load.sql` + `chromadb_ingest.py` + `pinecone_ingest.py` + `embedding_guide.md` (ClinicalBERT, RAG-Pipelines) + Compound Opportunity Matrix + Clinical Pipeline Gaps CSV + Pre-chunked RAG JSONL. Multi-Entity / Konzernnutzung, interne Produktintegration erlaubt. | [**Contact for Enterprise →**](mailto:founder@ethno-api.com?subject=Enterprise%20License%20Inquiry) |
+| **Single Entity** | **€699** net | JSON + Parquet + SHA-256 Manifest. 1 legal entity, internal use. Perpetual license. | [**Buy Now →**](https://buy.stripe.com/00w6oGgFh58v6Toeqsebu02?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) |
+| **Team** | **€1,349** net | Everything in Single + `duckdb_queries.sql` (20 queries, 5 categories) + `compound_priority_score.py` + 4 pre-computed views (Top-500 by PubMed, Trials, Patent Density, Anti-Inflammatory Panel). Unlimited internal users within 1 legal entity. | [**Buy Now →**](https://buy.stripe.com/dRm7sK9cP1Wj0v06Y0ebu03?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) |
+| **Enterprise** | **€1,699** net | Everything in Team + `snowflake_load.sql` + `chromadb_ingest.py` + `pinecone_ingest.py` + `embedding_guide.md` (ClinicalBERT, RAG pipelines) + Compound Opportunity Matrix + Clinical Pipeline Gaps CSV + Pre-chunked RAG JSONL. Multi-entity / group use, internal product integration permitted. | [**Contact for Enterprise →**](mailto:founder@ethno-api.com?subject=Enterprise%20License%20Inquiry) |
 
-> Gemäß § 19 UStG wird keine Umsatzsteuer berechnet. Alle Preise netto. One-time purchase — keine Subscription, keine wiederkehrenden Kosten.
+> No VAT charged (German small business exemption, §19 UStG). All prices net. One-time purchase — no subscription, no recurring costs.
 
 ---
 
@@ -246,18 +246,18 @@ Below is a real record from the dataset — QUERCETIN, one of the most-studied p
 }
 ```
 
-All 76,907 records contain all 12 schema fields. The 4 enrichment columns are always non-null; `pubchem_cid` and `canonical_smiles` are filled for 75.4% of unique compounds (18,675 of 24,746 resolved via PubChem PUG REST in v2.3); `compound_type` and `patent_count_method` are populated for all records; `application` (~50% null) and `dosage` (~87% null) reflect USDA source gaps. Unresolved compounds are phytochemical trivial names, mixture descriptions, or non-specific ethnobotanical terms not indexed in PubChem by name.
+All 76,907 records contain all 12 schema fields. The 4 enrichment columns are always non-null; `pubchem_cid` and `canonical_smiles` are filled for 75.4% of unique compounds (18,675 of 24,746 resolved via PubChem PUG REST in v2.3/v2.3.1); `compound_type` and `patent_count_method` are populated for all records; `application` (~50% null) and `dosage` (~87% null) reflect USDA source gaps. Unresolved compounds are phytochemical trivial names, mixture descriptions, or non-specific ethnobotanical terms not indexed in PubChem by name.
 The free 400-row sample contains real, final enrichment values across all five layers.
 
 ## File Manifest
 
 | File | Size | Format | Access |
 |------|------|--------|--------|
-| `ethno_sample_400.json` | 108 KB | JSON | Free (this repo) |
+| `ethno_sample_400.json` | 179 KB | JSON | Free (this repo) |
 | `ethno_sample_400.parquet` | 20 KB | Parquet | Free (this repo) |
 | `quickstart.ipynb` | 9 KB | Notebook | Free (this repo) |
-| `ethno_dataset_2026_v2.3.json` | ~28 MB | JSON | Included in all tiers |
-| `ethno_dataset_2026_v2.3.parquet` | ~1.5 MB | Parquet | Included in all tiers |
+| `ethno_dataset_2026_v2.3.1.json` | ~28 MB | JSON | Included in all tiers |
+| `ethno_dataset_2026_v2.3.1.parquet` | ~1.5 MB | Parquet | Included in all tiers |
 | `MANIFEST_v2.json` (SHA-256) | ~1 KB | JSON | Included in all tiers |
 | `duckdb_queries.sql` (20 Queries) | ~13 KB | SQL | Team + Enterprise |
 | `compound_priority_score.py` | ~5 KB | Python | Team + Enterprise |
@@ -330,7 +330,7 @@ Ethno-API is the deterministic answer to these pipeline requirements.
 - **Team License — €1,349** one-time: [**Buy →**](https://buy.stripe.com/dRm7sK9cP1Wj0v06Y0ebu03?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) — all employees of 1 legal entity, unlimited internal users, includes analytics toolkit.
 - **Enterprise License — €1,699** one-time: [**Contact for Enterprise →**](mailto:founder@ethno-api.com?subject=Enterprise%20License%20Inquiry) — multi-entity / group use, internal product integration rights, full RAG integration toolkit.
 
-> Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.
+> No VAT charged (German small business exemption, §19 UStG).
 
 ```bibtex
 @misc{ethno_api_v23_2026,
