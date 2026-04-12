@@ -19,7 +19,7 @@ tags:
   - parquet
   - biology
   - medical
-pretty_name: USDA Phytochemical & Ethnobotanical Database — Enriched v2.3
+pretty_name: USDA Phytochemical & Ethnobotanical Database — Enriched v2.3.1
 size_categories:
   - 10K<n<100K
 configs:
@@ -49,6 +49,10 @@ dataset_info:
       dtype: float64
     - name: canonical_smiles
       dtype: string
+    - name: compound_type
+      dtype: string
+    - name: patent_count_method
+      dtype: string
   splits:
     - name: train
       num_bytes: 21261
@@ -66,12 +70,12 @@ dataset_info:
 If you use this dataset in your research, please cite:
 
 ```
-Wirth, A. (2026). USDA Phytochemical Database — Enriched v2.3 (Sample). Zenodo. https://doi.org/10.5281/zenodo.19265853
+Wirth, A. (2026). USDA Phytochemical Database — Enriched v2.3.1 (Sample). Zenodo. https://doi.org/10.5281/zenodo.19265853
 ```
 
 ---
 
-# USDA Phytochemical & Ethnobotanical Database — Enriched v2.3
+# USDA Phytochemical & Ethnobotanical Database — Enriched v2.3.1
 
 **The only phytochemical dataset combining USDA botanical records, PubMed citation counts, ClinicalTrials.gov study counts, ChEMBL bioactivity scores, USPTO patent density, and PubChem CID/SMILES — in production-ready JSON + Parquet.**
 
@@ -84,7 +88,7 @@ Wirth, A. (2026). USDA Phytochemical Database — Enriched v2.3 (Sample). Zenodo
 
 [**Free 400-Row Sample ↓**](#quickstart) · [**Single €699 →**](https://buy.stripe.com/00w6oGgFh58v6Toeqsebu02?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) · [**Team €1,349 →**](https://buy.stripe.com/dRm7sK9cP1Wj0v06Y0ebu03?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) · [**Enterprise — Contact us →**](mailto:founder@ethno-api.com?subject=Enterprise%20License%20Inquiry)
 
-> **Enrichment status (March 2026):** All four enrichment layers (PubMed, ClinicalTrials.gov, ChEMBL, PatentsView) are **complete and final**. v2.3 adds CTS synonym enrichment (PubChem CID coverage: 75.4%). The free 400-row sample contains real enrichment values.
+> **Enrichment status (March 2026):** All five enrichment layers (PubMed, ClinicalTrials.gov, ChEMBL, PatentsView, PubChem) are **complete and final**. v2.3.1 adds compound_type classification and patent_count_method transparency (PubChem CID coverage: 75.4%). The free 400-row sample contains real enrichment values.
 
 </div>
 
@@ -109,7 +113,7 @@ Full methodology is documented in `METHODOLOGY.md`. Known limitations are listed
 
 ---
 
-## Schema (v2.3)
+## Schema (v2.3.1)
 
 | Column | Type | Nulls | Description |
 |--------|------|-------|-------------|
@@ -120,11 +124,11 @@ Full methodology is documented in `METHODOLOGY.md`. Known limitations are listed
 | `pubmed_mentions_2026` | `int32` | 0% | Total PubMed publications mentioning this compound (March 2026 snapshot) |
 | `clinical_trials_count_2026` | `int32` | 0% | ClinicalTrials.gov study count per compound (March 2026) |
 | `chembl_bioactivity_count` | `int32` | 0% | ChEMBL documented bioactivity measurement count |
-| `patent_count_since_2020` | `int32` | 0% | US patents since 2020-01-01 mentioning compound (USPTO PatentsView) |
-| `pubchem_cid` | `int64` | ~25% | PubChem Compound ID (CID) — resolved via PubChem PUG REST (March 2026) |
-| `canonical_smiles` | `string` | ~75% | Canonical SMILES notation — molecular structure from PubChem (75.4% of unique compounds resolved in v2.3) |
-| `compound_type` | `string` | 100% | Classification: `discrete_phytochemical`, `substance_class`, `complex_mixture`, `inorganic_element`, `generic_ambiguous` — added in v2.3.1 |
-| `patent_count_method` | `string` | ~99% | Query methodology: `name_based_with_cid`, `name_based_no_cid`, `name_based_invalidated`, `NULL` — added in v2.3.1 |
+| `patent_count_since_2020` | `int32` | ~0.9% | US patents since 2020-01-01 mentioning compound (USPTO PatentsView) |
+| `pubchem_cid` | `int64` | ~28.2% | PubChem Compound ID (CID) — resolved via PubChem PUG REST (March 2026) |
+| `canonical_smiles` | `string` | ~28.2% | Canonical SMILES notation — molecular structure from PubChem (75.4% of unique compounds resolved in v2.3) |
+| `compound_type` | `string` | 0% | Classification: `discrete_phytochemical`, `substance_class`, `complex_mixture`, `inorganic_element`, `generic_ambiguous` — added in v2.3.1 |
+| `patent_count_method` | `string` | 0% | Query methodology: `name_based_with_cid`, `name_based_no_cid`, `name_based_invalidated`, `NULL` — added in v2.3.1 |
 
 ---
 
@@ -210,7 +214,7 @@ from datasets import load_dataset
 
 ds = load_dataset(
     "wirthal1990-tech/USDA-Phytochemical-Database-JSON",
-    split="sample",
+    split="train",
     trust_remote_code=False
 )
 df = ds.to_pandas()
@@ -218,7 +222,7 @@ print(f"Records: {len(df)} | Columns: {list(df.columns)}")
 df.head()
 ```
 
-> **Note:** The `split="sample"` loads `ethno_sample_400.json` (400 rows, 10 columns).
+> **Note:** The `split="sample"` loads `ethno_sample_400.json` (400 rows, 12 columns).
 > The full 76,907-row dataset is available at [ethno-api.com](https://ethno-api.com).
 
 ## Sample Record
@@ -236,12 +240,14 @@ Below is a real record from the dataset — QUERCETIN, one of the most-studied p
   "chembl_bioactivity_count": 2871,
   "patent_count_since_2020": 73,
   "pubchem_cid": 5280343,
-  "canonical_smiles": "C1=CC(=C(C=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O)O"
+  "canonical_smiles": "C1=CC(=C(C=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O)O",
+  "compound_type": "discrete_phytochemical",
+  "patent_count_method": "name_based_with_cid"
 }
 ```
 
-All 76,907 records contain all 10 schema fields. The 4 enrichment columns are always non-null; `pubchem_cid` and `canonical_smiles` are filled for 75.4% of unique compounds (18,675 of 24,746 resolved via PubChem PUG REST in v2.3); `application` (~50% null) and `dosage` (~87% null) reflect USDA source gaps. Unresolved compounds are phytochemical trivial names, mixture descriptions, or non-specific ethnobotanical terms not indexed in PubChem by name.
-The free 400-row sample contains real, final enrichment values across all four layers.
+All 76,907 records contain all 12 schema fields. The 4 enrichment columns are always non-null; `pubchem_cid` and `canonical_smiles` are filled for 75.4% of unique compounds (18,675 of 24,746 resolved via PubChem PUG REST in v2.3); `compound_type` and `patent_count_method` are populated for all records; `application` (~50% null) and `dosage` (~87% null) reflect USDA source gaps. Unresolved compounds are phytochemical trivial names, mixture descriptions, or non-specific ethnobotanical terms not indexed in PubChem by name.
+The free 400-row sample contains real, final enrichment values across all five layers.
 
 ## File Manifest
 
@@ -250,8 +256,8 @@ The free 400-row sample contains real, final enrichment values across all four l
 | `ethno_sample_400.json` | 108 KB | JSON | Free (this repo) |
 | `ethno_sample_400.parquet` | 20 KB | Parquet | Free (this repo) |
 | `quickstart.ipynb` | 9 KB | Notebook | Free (this repo) |
-| `ethno_dataset_2026_v2.3.json` | ~25 MB | JSON | Included in all tiers |
-| `ethno_dataset_2026_v2.3.parquet` | ~1.2 MB | Parquet | Included in all tiers |
+| `ethno_dataset_2026_v2.3.json` | ~28 MB | JSON | Included in all tiers |
+| `ethno_dataset_2026_v2.3.parquet` | ~1.5 MB | Parquet | Included in all tiers |
 | `MANIFEST_v2.3.json` (SHA-256) | ~1 KB | JSON | Included in all tiers |
 | `duckdb_queries.sql` (20 Queries) | ~13 KB | SQL | Team + Enterprise |
 | `compound_priority_score.py` | ~5 KB | Python | Team + Enterprise |
@@ -293,7 +299,7 @@ Enrichment methodology is documented in [`METHODOLOGY.md`](METHODOLOGY.md). Sour
 | v2.3 | 76,907 | 10 columns (CTS synonym enrichment — PubChem CID coverage 75.4%) | Superseded |
 | **v2.3.1** | **76,907** | **12 columns (+compound_type, +patent_count_method, forensic audit corrections)** | **Current** |
 
-The free sample (`ethno_sample_400.json`) uses the v2.3 schema with final enrichment values across all five layers.
+The free sample (`ethno_sample_400.json`) uses the v2.3.1 schema with final enrichment values across all five layers.
 
 ## Data Attribution
 
@@ -328,13 +334,13 @@ Ethno-API is the deterministic answer to these pipeline requirements.
 
 ```bibtex
 @misc{ethno_api_v23_2026,
-  title     = {USDA Phytochemical \& Ethnobotanical Database --- Enriched v2.3},
+  title     = {USDA Phytochemical \& Ethnobotanical Database --- Enriched v2.3.1},
   author    = {Wirth, Alexander},
   year      = {2026},
   publisher = {Ethno-API},
   url       = {https://ethno-api.com},
   doi       = {10.5281/zenodo.19265853},
-  note      = {76,907 records, 24,746 unique chemicals, 2,313 plant species, 10-column schema with PubMed, ClinicalTrials, ChEMBL, PatentsView, PubChem CID/SMILES enrichment}
+  note      = {76,907 records, 24,746 unique chemicals, 2,313 plant species, 12-column schema with PubMed, ClinicalTrials, ChEMBL, PatentsView, PubChem CID/SMILES enrichment}
 }
 ```
 

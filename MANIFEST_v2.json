@@ -1,71 +1,84 @@
 {
-  "schema_version": "2.3",
-  "dataset_version": "v2.3",
-  "export_timestamp": "2026-03-26T12:10:52.554582Z",
+  "schema_version": "2.3.1",
+  "export_timestamp": "2026-04-11T22:47:02.644641Z",
   "record_count": 76907,
   "unique_chemicals": 24746,
   "unique_species": 2313,
-  "field_count": 10,
-  "fields": [
-    "chemical",
-    "plant_species",
-    "application",
-    "dosage",
-    "pubmed_mentions_2026",
-    "clinical_trials_count_2026",
-    "chembl_bioactivity_count",
-    "patent_count_since_2020",
-    "pubchem_cid",
-    "canonical_smiles"
+  "sha256_parquet": "6f72ab8e13437bd04b5a84a22539216191486b477bc4abb009b24ad2ba933910",
+  "sha256_json": "3b042206b5c65ef9b051fff7f891ca09197be447bf715313ff290008b0de2136",
+  "file_sizes_mb": {
+    "parquet": 1.423,
+    "json": 27.765
+  },
+  "columns": [
+    "chemical", "plant_species", "application", "dosage",
+    "pubmed_mentions_2026", "clinical_trials_count_2026",
+    "chembl_bioactivity_count", "patent_count_since_2020",
+    "pubchem_cid", "canonical_smiles", "compound_type", "patent_count_method"
   ],
-  "enrichment_sources": [
-    "PubMed (NCBI E-utilities)",
-    "ClinicalTrials.gov v2 API",
-    "ChEMBL v35 REST API",
-    "USPTO PatentsView",
-    "PubChem PUG-REST + CTS"
+  "column_count": 12,
+  "changelog": [
+    {
+      "version": "2.3.1",
+      "date": "2026-04-11",
+      "changes": [
+        "Added compound_type column: discrete_phytochemical | substance_class | complex_mixture | inorganic_element | generic_ambiguous",
+        "Added patent_count_method column: transparency for query methodology",
+        "patent_count_since_2020 set to NULL for RESIN, RESINS, INCLUDES, and >5000 patent entries without CID anchor (name-based collision confirmed)",
+        "pubchem_cid set to NULL for RESIN/RESINS: previous CID 133110026 was \u03b1-Copaene (incorrect mapping)",
+        "canonical_smiles set to NULL for RESIN/RESINS (inherited from incorrect CID)",
+        "Patent-Literature-Gap report revised: 30 \u2192 9 compounds after removing non-discrete entries"
+      ]
+    },
+    {
+      "version": "2.3.1-patch",
+      "date": "2026-04-11",
+      "changes": [
+        "N3 forensic validation: 8 gap-compounds reclassified after PubChem CID verification",
+        "SD, ASK, LF, RAA \u2192 generic_ambiguous (abbreviations w/ wrong CID mappings, CID/SMILES NULLed)",
+        "OPC \u2192 substance_class (Oligomeric Proanthocyanidins, wrong CID NULLed)",
+        "NH3 \u2192 inorganic_element (ammonia, CID 222 kept)",
+        "HCN, N-BUTYRALDEHYDE \u2192 generic_ambiguous (CID correct, kept)",
+        "Gap-Report: 9 \u2192 1 (only SORBOSE remains as valid gap-compound)"
+      ]
+    }
   ],
-  "null_counts": {
-    "chemical": 0,
-    "plant_species": 0,
-    "application": 38149,
-    "dosage": 67132,
-    "pubmed_mentions_2026": 0,
-    "clinical_trials_count_2026": 0,
-    "chembl_bioactivity_count": 0,
-    "patent_count_since_2020": 0,
-    "pubchem_cid": 18949,
-    "canonical_smiles": 18949
-  },
-  "smiles_coverage": "75.4%",
-  "cid_coverage": "75.4%",
-  "enrichment_statistics": {
-    "pubchem_cid_filled": 57958,
-    "canonical_smiles_filled": 57958,
-    "pubchem_fill_rate_pct": 75.4,
-    "smiles_fill_rate_pct": 75.4
-  },
-  "v2.3_changelog": {
-    "cts_worker_resolved": 997,
-    "records_improved": 2741,
-    "cts_candidates_total": 14197,
-    "cts_resolution_rate_pct": 7.0,
-    "method": "PubChem PUG-REST name-to-CID (v4 worker, checkpoint-resumable)"
-  },
-  "sha256_json": "956cd7b08d279792e132629ce608ab72eb9249b09ac84ed9c60bd108acb5057e",
-  "sha256_parquet": "4b7351048db025cbf575b4538e66afd70729c327b8a0b48ead87d5546a39762e",
-  "file_sizes": {
-    "json_mb": 25.6,
-    "parquet_kb": 1211.3
-  },
-  "data_sources": [
-    "USDA Dr. Duke Phytochemical and Ethnobotanical Databases",
-    "NCBI PubMed (E-utilities API, 2026 snapshot)",
-    "ClinicalTrials.gov (API v2, 2026 snapshot)",
-    "ChEMBL v35 REST API",
-    "USPTO PatentsView (2020-2026)",
-    "PubChem REST API (CID + CanonicalSMILES, 2026)"
+  "known_limitations": [
+    "patent_count_since_2020 uses name-based text search (patent_title + patent_abstract), not CID-anchored queries",
+    "Generic compound names (resin, gum, acid) produced inflated patent counts \u2014 these are NULL in v2.3.1",
+    "PatentsView API migrated to USPTO ODP (data.uspto.gov) on 2026-03-20; re-enrichment pending API stabilization",
+    "RESIN entries: CID 133110026 (\u03b1-Copaene) was incorrect mapping \u2014 CID and SMILES set to NULL in v2.3.1",
+    "Inorganic elements (Fe, Zn, Si, etc.) included in source database (Duke); flagged as inorganic_element in compound_type",
+    "Primary metabolites (methanol, ethanol, etc.) included in source database; flagged as generic_ambiguous",
+    "PPM/dosage concentration values not validated in this audit \u2014 future scope"
   ],
-  "license": "CC BY 4.0",
-  "zenodo_doi": "10.5281/zenodo.19265853"
+  "field_methodology": {
+    "patent_count_since_2020": {
+      "api": "PatentsView PatentSearch API (Elasticsearch)",
+      "api_status": "Migrated to data.uspto.gov on 2026-03-20",
+      "query_type": "_text_any on patent_title AND patent_abstract",
+      "search_term": "raw compound name (NOT CID-based)",
+      "date_range": "2020-01-01 to enrichment date",
+      "rate_limit": "45 req/min",
+      "known_issue": "Generic names aggregate unrelated patents; affected entries set to NULL in v2.3.1"
+    },
+    "pubmed_mentions_2026": {
+      "api": "NCBI E-utilities ESearch",
+      "query_type": "exact phrase in Title/Abstract [tiab]",
+      "search_term": "compound name (quoted phrase)",
+      "level": "compound-level (same value for all plant rows of same compound)",
+      "protection": "compounds < 4 characters or in blocklist \u2192 0 (not NULL)"
+    },
+    "compound_type": {
+      "values": {
+        "discrete_phytochemical": "Not in any exclusion list \u2014 individual compound from Duke database",
+        "substance_class": "Broad chemical category (flavonoids, alkaloids, tannins, etc.)",
+        "complex_mixture": "Multi-component mixtures (resin, EO, gum, mucilage, pectin, etc.)",
+        "inorganic_element": "Elemental or inorganic (Fe, Zn, Si, etc.)",
+        "generic_ambiguous": "Generic terms with no specific chemical identity (includes, acids, kilocalories, etc.)"
+      },
+      "added_version": "v2.3.1"
+    }
+  },
+  "last_modified": "2026-04-11T23:10:48Z"
 }
