@@ -182,7 +182,7 @@ Download link delivered instantly after payment (valid 72h). See ethno-api.com.
 ```python
 import pyarrow.parquet as pq
 
-table = pq.read_table("ethno_dataset_2026_v2.3.parquet")
+table = pq.read_table("ethno_dataset_2026_v2.3.1.parquet")
 print(f"Schema: {table.schema}")
 print(f"Rows: {table.num_rows}  Memory: {table.nbytes / 1e6:.1f} MB")
 ```
