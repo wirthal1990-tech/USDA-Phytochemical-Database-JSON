@@ -12,8 +12,8 @@ citation counts, ClinicalTrials.gov study counts,
 ChEMBL bioactivity measurements, USPTO patent 
 counts since 2020, and PubChem CID/canonical 
 SMILES. 76,907 records, 24,746 unique compounds, 
-2,313 plant species. JSON (28 MB) + Parquet 
-(1.5 MB). DOI: 10.5281/zenodo.19265853.
+2,313 plant species. JSON (35 MB) + Parquet 
+(1.3 MB). DOI: 10.5281/zenodo.19265853.
 
 # SCHEMA (v2.3.1, 12 columns)
 - chemical: compound name (USDA Duke nomenclature)

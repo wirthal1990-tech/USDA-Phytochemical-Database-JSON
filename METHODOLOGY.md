@@ -205,7 +205,7 @@ All enrichment scripts are available in the repository:
 | `ethno_dataset_2026_v2.3.json` | 25.6 MB | `956cd7b08d279792e132629ce608ab72eb9249b09ac84ed9c60bd108acb5057e` |
 | `ethno_dataset_2026_v2.3.parquet` | 1,211 KB | `4b7351048db025cbf575b4538e66afd70729c327b8a0b48ead87d5546a39762e` |
 
-| `ethno_dataset_2026_v2.3.1.json` | 27.8 MB | `3b042206b5c65ef9b051fff7f891ca09197be447bf715313ff290008b0de2136` |
-| `ethno_dataset_2026_v2.3.1.parquet` | 1,458 KB | `6f72ab8e13437bd04b5a84a22539216191486b477bc4abb009b24ad2ba933910` |
+| `ethno_dataset_2026_v2.3.1.json` | 35.0 MB | `516c567772295178a9f0d23edf408fc8b7ad48b92f8e031df2e6a47488158347` |
+| `ethno_dataset_2026_v2.3.1.parquet` | 1,269 KB | `f2655a99c10a5d2f6c5be4e15cb1a5c0c6060f32384bb647ba5767352112ea6a` |
 
 Export timestamp: `2026-04-11T22:47:02Z` (v2.3.1 final)

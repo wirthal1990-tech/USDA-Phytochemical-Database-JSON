@@ -256,8 +256,8 @@ The free 400-row sample contains real, final enrichment values across all five l
 | `ethno_sample_400.json` | 179 KB | JSON | Free (this repo) |
 | `ethno_sample_400.parquet` | 20 KB | Parquet | Free (this repo) |
 | `quickstart.ipynb` | 9 KB | Notebook | Free (this repo) |
-| `ethno_dataset_2026_v2.3.1.json` | ~28 MB | JSON | Included in all tiers |
-| `ethno_dataset_2026_v2.3.1.parquet` | ~1.5 MB | Parquet | Included in all tiers |
+| `ethno_dataset_2026_v2.3.1.json` | ~35 MB | JSON | Included in all tiers |
+| `ethno_dataset_2026_v2.3.1.parquet` | ~1.3 MB | Parquet | Included in all tiers |
 | `MANIFEST_v2.json` (SHA-256) | ~1 KB | JSON | Included in all tiers |
 | `duckdb_queries.sql` (20 Queries) | ~13 KB | SQL | Team + Enterprise |
 | `compound_priority_score.py` | ~5 KB | Python | Team + Enterprise |

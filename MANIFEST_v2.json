@@ -4,21 +4,29 @@
   "record_count": 76907,
   "unique_chemicals": 24746,
   "unique_species": 2313,
-  "sha256_parquet": "6f72ab8e13437bd04b5a84a22539216191486b477bc4abb009b24ad2ba933910",
-  "sha256_json": "3b042206b5c65ef9b051fff7f891ca09197be447bf715313ff290008b0de2136",
+  "sha256_parquet": "f2655a99c10a5d2f6c5be4e15cb1a5c0c6060f32384bb647ba5767352112ea6a",
+  "sha256_json": "516c567772295178a9f0d23edf408fc8b7ad48b92f8e031df2e6a47488158347",
   "filenames": {
     "json": "ethno_dataset_2026_v2.3.1.json",
     "parquet": "ethno_dataset_2026_v2.3.1.parquet"
   },
   "file_sizes_mb": {
-    "parquet": 1.423,
-    "json": 27.765
+    "parquet": 1.269,
+    "json": 34.957
   },
   "columns": [
-    "chemical", "plant_species", "application", "dosage",
-    "pubmed_mentions_2026", "clinical_trials_count_2026",
-    "chembl_bioactivity_count", "patent_count_since_2020",
-    "pubchem_cid", "canonical_smiles", "compound_type", "patent_count_method"
+    "chemical",
+    "plant_species",
+    "application",
+    "dosage",
+    "pubmed_mentions_2026",
+    "clinical_trials_count_2026",
+    "chembl_bioactivity_count",
+    "patent_count_since_2020",
+    "pubchem_cid",
+    "canonical_smiles",
+    "compound_type",
+    "patent_count_method"
   ],
   "column_count": 12,
   "changelog": [
@@ -29,9 +37,9 @@
         "Added compound_type column: discrete_phytochemical | substance_class | complex_mixture | inorganic_element | generic_ambiguous",
         "Added patent_count_method column: transparency for query methodology",
         "patent_count_since_2020 set to NULL for RESIN, RESINS, INCLUDES, and >5000 patent entries without CID anchor (name-based collision confirmed)",
-        "pubchem_cid set to NULL for RESIN/RESINS: previous CID 133110026 was \u03b1-Copaene (incorrect mapping)",
+        "pubchem_cid set to NULL for RESIN/RESINS: previous CID 133110026 was α-Copaene (incorrect mapping)",
         "canonical_smiles set to NULL for RESIN/RESINS (inherited from incorrect CID)",
-        "Patent-Literature-Gap report revised: 30 \u2192 9 compounds after removing non-discrete entries"
+        "Patent-Literature-Gap report revised: 30 → 9 compounds after removing non-discrete entries"
       ]
     },
     {
@@ -39,22 +47,22 @@
       "date": "2026-04-11",
       "changes": [
         "N3 forensic validation: 8 gap-compounds reclassified after PubChem CID verification",
-        "SD, ASK, LF, RAA \u2192 generic_ambiguous (abbreviations w/ wrong CID mappings, CID/SMILES NULLed)",
-        "OPC \u2192 substance_class (Oligomeric Proanthocyanidins, wrong CID NULLed)",
-        "NH3 \u2192 inorganic_element (ammonia, CID 222 kept)",
-        "HCN, N-BUTYRALDEHYDE \u2192 generic_ambiguous (CID correct, kept)",
-        "Gap-Report: 9 \u2192 1 (only SORBOSE remains as valid gap-compound)"
+        "SD, ASK, LF, RAA → generic_ambiguous (abbreviations w/ wrong CID mappings, CID/SMILES NULLed)",
+        "OPC → substance_class (Oligomeric Proanthocyanidins, wrong CID NULLed)",
+        "NH3 → inorganic_element (ammonia, CID 222 kept)",
+        "HCN, N-BUTYRALDEHYDE → generic_ambiguous (CID correct, kept)",
+        "Gap-Report: 9 → 1 (only SORBOSE remains as valid gap-compound)"
       ]
     }
   ],
   "known_limitations": [
     "patent_count_since_2020 uses name-based text search (patent_title + patent_abstract), not CID-anchored queries",
-    "Generic compound names (resin, gum, acid) produced inflated patent counts \u2014 these are NULL in v2.3.1",
+    "Generic compound names (resin, gum, acid) produced inflated patent counts — these are NULL in v2.3.1",
     "PatentsView API migrated to USPTO ODP (data.uspto.gov) on 2026-03-20; re-enrichment pending API stabilization",
-    "RESIN entries: CID 133110026 (\u03b1-Copaene) was incorrect mapping \u2014 CID and SMILES set to NULL in v2.3.1",
+    "RESIN entries: CID 133110026 (α-Copaene) was incorrect mapping — CID and SMILES set to NULL in v2.3.1",
     "Inorganic elements (Fe, Zn, Si, etc.) included in source database (Duke); flagged as inorganic_element in compound_type",
     "Primary metabolites (methanol, ethanol, etc.) included in source database; flagged as generic_ambiguous",
-    "PPM/dosage concentration values not validated in this audit \u2014 future scope"
+    "PPM/dosage concentration values not validated in this audit — future scope"
   ],
   "field_methodology": {
     "patent_count_since_2020": {
@@ -71,11 +79,11 @@
       "query_type": "exact phrase in Title/Abstract [tiab]",
       "search_term": "compound name (quoted phrase)",
       "level": "compound-level (same value for all plant rows of same compound)",
-      "protection": "compounds < 4 characters or in blocklist \u2192 0 (not NULL)"
+      "protection": "compounds < 4 characters or in blocklist → 0 (not NULL)"
     },
     "compound_type": {
       "values": {
-        "discrete_phytochemical": "Not in any exclusion list \u2014 individual compound from Duke database",
+        "discrete_phytochemical": "Not in any exclusion list — individual compound from Duke database",
         "substance_class": "Broad chemical category (flavonoids, alkaloids, tannins, etc.)",
         "complex_mixture": "Multi-component mixtures (resin, EO, gum, mucilage, pectin, etc.)",
         "inorganic_element": "Elemental or inorganic (Fe, Zn, Si, etc.)",
@@ -84,5 +92,7 @@
       "added_version": "v2.3.1"
     }
   },
-  "last_modified": "2026-04-11T23:10:48Z"
+  "last_modified": "2026-04-11T23:10:48Z",
+  "size_json": 34957429,
+  "size_parquet": 1269220
 }
