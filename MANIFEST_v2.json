@@ -1,98 +1,62 @@
 {
-  "schema_version": "2.3.1",
-  "export_timestamp": "2026-04-11T22:47:02.644641Z",
+  "schema_version": "2.4.0",
+  "dataset_name": "USDA Phytochemical Database \u2014 Enriched",
+  "release_date": "2026-04-18",
   "record_count": 76907,
-  "unique_chemicals": 24746,
+  "unique_compounds": 24746,
   "unique_species": 2313,
-  "sha256_parquet": "f2655a99c10a5d2f6c5be4e15cb1a5c0c6060f32384bb647ba5767352112ea6a",
-  "sha256_json": "516c567772295178a9f0d23edf408fc8b7ad48b92f8e031df2e6a47488158347",
-  "filenames": {
-    "json": "ethno_dataset_2026_v2.3.1.json",
-    "parquet": "ethno_dataset_2026_v2.3.1.parquet"
-  },
-  "file_sizes_mb": {
-    "parquet": 1.269,
-    "json": 34.957
-  },
-  "columns": [
-    "chemical",
-    "plant_species",
-    "application",
-    "dosage",
-    "pubmed_mentions_2026",
-    "clinical_trials_count_2026",
-    "chembl_bioactivity_count",
-    "patent_count_since_2020",
-    "pubchem_cid",
-    "canonical_smiles",
-    "compound_type",
-    "patent_count_method"
-  ],
-  "column_count": 12,
-  "changelog": [
-    {
-      "version": "2.3.1",
-      "date": "2026-04-11",
-      "changes": [
-        "Added compound_type column: discrete_phytochemical | substance_class | complex_mixture | inorganic_element | generic_ambiguous",
-        "Added patent_count_method column: transparency for query methodology",
-        "patent_count_since_2020 set to NULL for RESIN, RESINS, INCLUDES, and >5000 patent entries without CID anchor (name-based collision confirmed)",
-        "pubchem_cid set to NULL for RESIN/RESINS: previous CID 133110026 was α-Copaene (incorrect mapping)",
-        "canonical_smiles set to NULL for RESIN/RESINS (inherited from incorrect CID)",
-        "Patent-Literature-Gap report revised: 30 → 9 compounds after removing non-discrete entries"
-      ]
+  "schema_fields": 16,
+  "null_cid_count": 17616,
+  "null_cid_reduction": "-8% vs v2.3.1",
+  "new_in_v2_4": {
+    "partner_cid": {
+      "filled": 1534,
+      "description": "CID from COCONUT/partner DB crossmatch"
     },
-    {
-      "version": "2.3.1-patch",
-      "date": "2026-04-11",
-      "changes": [
-        "N3 forensic validation: 8 gap-compounds reclassified after PubChem CID verification",
-        "SD, ASK, LF, RAA → generic_ambiguous (abbreviations w/ wrong CID mappings, CID/SMILES NULLed)",
-        "OPC → substance_class (Oligomeric Proanthocyanidins, wrong CID NULLed)",
-        "NH3 → inorganic_element (ammonia, CID 222 kept)",
-        "HCN, N-BUTYRALDEHYDE → generic_ambiguous (CID correct, kept)",
-        "Gap-Report: 9 → 1 (only SORBOSE remains as valid gap-compound)"
-      ]
-    }
-  ],
-  "known_limitations": [
-    "patent_count_since_2020 uses name-based text search (patent_title + patent_abstract), not CID-anchored queries",
-    "Generic compound names (resin, gum, acid) produced inflated patent counts — these are NULL in v2.3.1",
-    "PatentsView API migrated to USPTO ODP (data.uspto.gov) on 2026-03-20; re-enrichment pending API stabilization",
-    "RESIN entries: CID 133110026 (α-Copaene) was incorrect mapping — CID and SMILES set to NULL in v2.3.1",
-    "Inorganic elements (Fe, Zn, Si, etc.) included in source database (Duke); flagged as inorganic_element in compound_type",
-    "Primary metabolites (methanol, ethanol, etc.) included in source database; flagged as generic_ambiguous",
-    "PPM/dosage concentration values not validated in this audit — future scope"
-  ],
-  "field_methodology": {
-    "patent_count_since_2020": {
-      "api": "PatentsView PatentSearch API (Elasticsearch)",
-      "api_status": "Migrated to data.uspto.gov on 2026-03-20",
-      "query_type": "_text_any on patent_title AND patent_abstract",
-      "search_term": "raw compound name (NOT CID-based)",
-      "date_range": "2020-01-01 to enrichment date",
-      "rate_limit": "45 req/min",
-      "known_issue": "Generic names aggregate unrelated patents; affected entries set to NULL in v2.3.1"
+    "inchi_key": {
+      "filled": 157,
+      "description": "InChI Key from crossmatch"
     },
-    "pubmed_mentions_2026": {
-      "api": "NCBI E-utilities ESearch",
-      "query_type": "exact phrase in Title/Abstract [tiab]",
-      "search_term": "compound name (quoted phrase)",
-      "level": "compound-level (same value for all plant rows of same compound)",
-      "protection": "compounds < 4 characters or in blocklist → 0 (not NULL)"
+    "iupac_verified": {
+      "filled": 459,
+      "description": "IUPAC-verified CID"
     },
-    "compound_type": {
-      "values": {
-        "discrete_phytochemical": "Not in any exclusion list — individual compound from Duke database",
-        "substance_class": "Broad chemical category (flavonoids, alkaloids, tannins, etc.)",
-        "complex_mixture": "Multi-component mixtures (resin, EO, gum, mucilage, pectin, etc.)",
-        "inorganic_element": "Elemental or inorganic (Fe, Zn, Si, etc.)",
-        "generic_ambiguous": "Generic terms with no specific chemical identity (includes, acids, kilocalories, etc.)"
-      },
-      "added_version": "v2.3.1"
+    "partner_match_method": {
+      "description": "Matching method used"
     }
   },
-  "last_modified": "2026-04-11T23:10:48Z",
-  "size_json": 34957429,
-  "size_parquet": 1269220
+  "files": {
+    "json": {
+      "filename": "ethno_dataset_2026_v2.4.0.json",
+      "size_bytes": 42391406,
+      "sha256": "2a09be033f2177084908e78d1da40e8ca01b7b036cef6695a77b247988af6497"
+    },
+    "parquet": {
+      "filename": "ethno_dataset_2026_v2.4.0.parquet",
+      "size_bytes": 1296699,
+      "sha256": "47b8f71fb29a0a4995c2f8e3506afd74c6a69433653b34402e4cd76cfcc2fcb8"
+    },
+    "zip_single": {
+      "filename": "ethno_api_v2.4_SINGLE.zip",
+      "sha256": "3e56c7a0499a0092ba3d6d4ad3f4971d6aaeadd598a540577569802086065ac3"
+    },
+    "zip_team": {
+      "filename": "ethno_api_v2.4_TEAM.zip",
+      "sha256": "570ab2ef7a2a838c04c0078bb1bb3733d142b0e20eccfc2a7edb2d1601dcabd0"
+    },
+    "zip_enterprise": {
+      "filename": "ethno_api_v2.4_ENTERPRISE.zip",
+      "sha256": "b426bf2a3ea4e75454d0de7f0f91347c535daa7569f9755305ce78cf4698f36f"
+    }
+  },
+  "enrichment_sources": [
+    "PubChem PUG REST",
+    "ChEMBL v35",
+    "ClinicalTrials.gov API v2",
+    "USPTO PatentsView",
+    "COCONUT (via partner crossmatch)"
+  ],
+  "zenodo_doi": "10.5281/zenodo.19265853",
+  "huggingface": "wirthal1990-tech/USDA-Phytochemical-Database-JSON",
+  "license": "CC BY 4.0"
 }
