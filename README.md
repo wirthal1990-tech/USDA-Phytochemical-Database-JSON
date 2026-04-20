@@ -1,4 +1,4 @@
-yaml_block = """---
+---
 language:
 - en
 license: cc-by-4.0
