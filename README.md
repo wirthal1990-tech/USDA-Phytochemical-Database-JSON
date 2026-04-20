@@ -1,3 +1,28 @@
+yaml = """---
+language:
+- en
+license: cc-by-4.0
+task_categories:
+- tabular-classification
+- text-retrieval
+pretty_name: USDA Phytochemical Database — Enriched v2.4.0
+size_categories:
+- 10K<n<100K
+tags:
+- phytochemistry
+- drug-discovery
+- natural-products
+- pubchem
+- chembl
+- bioactivity
+- parquet
+configs:
+- config_name: default
+  data_files:
+  - split: train
+    path: ethno_sample_400.parquet
+---
+"""
 ---
 language:
 - en
