@@ -28,6 +28,10 @@ SMILES. 76,907 records, 24,746 unique compounds,
 - canonical_smiles: molecular structure (75.4%)
 - compound_type: compound classification (5 categories)
 - patent_count_method: query methodology transparency
+- partner_cid: partner CID candidate for unresolved compounds
+- inchi_key: InChIKey from partner crossmatch when available
+- iupac_verified: IUPAC verification value from partner matching
+- partner_match_method: partner matching method (e.g., name_join, pubchem_name_resolve)
 
 # ACCESS
 - Landing page: https://ethno-api.com
@@ -84,8 +88,8 @@ Ethnobotanical Database — Enriched v2.4.0. Zenodo.
 https://doi.org/10.5281/zenodo.19660107
 
 # New in v2.4.0 — COCONUT/Partner DB Crossmatch
-partner_cid: FLOAT — PubChem CID from COCONUT/partner DB crossmatch (1,534 filled)
-inchi_key: TEXT — InChI Key from crossmatch (157 filled)
-iupac_verified: FLOAT — IUPAC-verified PubChem CID (459 filled)
-partner_match_method: TEXT — Matching method used in crossmatch
-Null-CID reduction: 19,150 → 17,616 (-8% effective, via partner_cid backfill)
+partner_cid: NUMERIC (nullable; sample parquet float64) — partner CID candidate from crossmatch
+inchi_key: FLOAT64 in public sample (sample-only serialization artifact because all values are null; logical type is InChIKey text) — InChI Key from crossmatch
+iupac_verified: TEXT (nullable; sample parquet string) — IUPAC verification value used during matching
+partner_match_method: TEXT (nullable) — matching method used in crossmatch
+Null-CID reduction: 19,150 → 17,616 (-8% effective, release-level claim)

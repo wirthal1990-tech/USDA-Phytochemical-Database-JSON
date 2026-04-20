@@ -47,7 +47,7 @@ dataset_info:
     - name: chembl_bioactivity_count
       dtype: int64
     - name: patent_count_since_2020
-      dtype: int64
+      dtype: float64
     - name: pubchem_cid
       dtype: float64
     - name: canonical_smiles
@@ -59,17 +59,17 @@ dataset_info:
     - name: partner_cid
       dtype: float64
     - name: inchi_key
-      dtype: string
-    - name: iupac_verified
       dtype: float64
+    - name: iupac_verified
+      dtype: string
     - name: partner_match_method
       dtype: string
   splits:
     - name: train
-      num_bytes: 21261
+      num_bytes: 33485
       num_examples: 400
-  download_size: 21261
-  dataset_size: 21261
+  download_size: 33485
+  dataset_size: 33485
 ---
 
 > **Production-grade phytochemical data.** Single €699 · Team €1,349 · Enterprise €1,699. [→ ethno-api.com](https://ethno-api.com)
@@ -120,7 +120,7 @@ v2.4.0 includes compound-level patent and literature signals across 24,746 uniqu
 
 A new `compound_type` column classifies all entries as `discrete_phytochemical`, `substance_class`, `complex_mixture`, `inorganic_element`, or `generic_ambiguous`. A `patent_count_method` column documents the query methodology per compound (including known limitations for name-based queries on generic terms).
 
-Full methodology is documented in `METHODOLOGY.md`. Known limitations are listed in `MANIFEST_v2.json` under `known_limitations`.
+Full methodology and known limitations are documented in `METHODOLOGY.md` and `UPDATE_POLICY.md`.
 
 ---
 
@@ -130,20 +130,20 @@ Full methodology is documented in `METHODOLOGY.md`. Known limitations are listed
 |--------|------|-------|-------------|
 | `chemical` | `string` | 0% | Standardised compound name (USDA Duke's nomenclature) |
 | `plant_species` | `string` | 0% | Binomial Latin species name |
-| `application` | `string` | ~50% | Traditional medicinal application (e.g. "Antiinflammatory") |
-| `dosage` | `string` | ~87% | Reported dosage, concentration, or IC50 value |
-| `pubmed_mentions_2026` | `int32` | 0% | Total PubMed publications mentioning this compound (March 2026 snapshot) |
-| `clinical_trials_count_2026` | `int32` | 0% | ClinicalTrials.gov study count per compound (March 2026) |
-| `chembl_bioactivity_count` | `int32` | 0% | ChEMBL documented bioactivity measurement count |
-| `patent_count_since_2020` | `int32` | ~0.9% | US patents since 2020-01-01 mentioning compound (USPTO PatentsView) |
-| `pubchem_cid` | `int64` | ~28.2% | PubChem Compound ID (CID) — resolved via PubChem PUG REST (March 2026) |
-| `canonical_smiles` | `string` | ~28.2% | Canonical SMILES notation — molecular structure from PubChem (75.4% of unique compounds resolved in v2.4/v2.4.0) |
+| `application` | `string` | 53.25% (sample) | Traditional medicinal application (e.g. "Antiinflammatory") |
+| `dosage` | `string` | 88.0% (sample) | Reported dosage, concentration, or IC50 value |
+| `pubmed_mentions_2026` | `int64` | 0% | Total PubMed publications mentioning this compound (March 2026 snapshot) |
+| `clinical_trials_count_2026` | `int64` | 0% | ClinicalTrials.gov study count per compound (March 2026) |
+| `chembl_bioactivity_count` | `int64` | 0% | ChEMBL documented bioactivity measurement count |
+| `patent_count_since_2020` | `nullable int` | 1.0% (sample) | US patents since 2020-01-01 mentioning compound (USPTO PatentsView) |
+| `pubchem_cid` | `nullable int` | 26.8% (sample) | PubChem Compound ID (CID) — resolved via PubChem PUG REST (March 2026) |
+| `canonical_smiles` | `string` | 26.8% (sample) | Canonical SMILES notation — molecular structure from PubChem |
 | `compound_type` | `string` | 0% | Classification: `discrete_phytochemical`, `substance_class`, `complex_mixture`, `inorganic_element`, `generic_ambiguous` — added in v2.4.0 |
-| `patent_count_method` | `string` | ~0.9% | Query methodology: `name_based_with_cid`, `name_based_no_cid`, `name_based_invalidated`, `NULL` — added in v2.4.0 |
-| `partner_cid` | `int64` | ~98% | Cross-matched PubChem CID from COCONUT/FooDB partner databases — added in v2.4.0 |
-| `inchi_key` | `string` | ~99.4% | InChI key for structural identification — added in v2.4.0 |
-| `iupac_verified` | `int64` | ~99.4% | PubChem CID verified via IUPAC name resolution — added in v2.4.0 |
-| `partner_match_method` | `string` | ~98% | Cross-match methodology: `exact_cid_match`, `iupac_resolution`, `NULL` — added in v2.4.0 |
+| `patent_count_method` | `string` | 0.0% (sample) | Query methodology: `name_based_with_cid`, `name_based_no_cid`, `name_based_invalidated`, `NULL` — added in v2.4.0 |
+| `partner_cid` | `nullable int` | 97.8% (sample) | Cross-matched partner CID candidate for unresolved compounds — added in v2.4.0 |
+| `inchi_key` | `float64 (sample parquet, currently all null)` | 100.0% (sample) | Logical field meaning is InChIKey text when populated — added in v2.4.0 |
+| `iupac_verified` | `nullable string` | 98.8% (sample) | IUPAC verification value used in partner resolution workflow — added in v2.4.0 |
+| `partner_match_method` | `nullable string` | 97.8% (sample) | Cross-match method (e.g., `name_join`, `pubchem_name_resolve`) — added in v2.4.0 |
 
 ---
 
@@ -265,16 +265,16 @@ Below is a real record from the dataset — QUERCETIN, one of the most-studied p
 }
 ```
 
-All 76,907 records contain all 16 schema fields. The 4 enrichment columns are always non-null; `pubchem_cid` and `canonical_smiles` are filled for 75.4% of unique compounds (18,675 of 24,746 resolved via PubChem PUG REST in v2.4/v2.4.0); `compound_type` and `patent_count_method` are populated for all records; `application` (~50% null) and `dosage` (~87% null) reflect USDA source gaps. Unresolved compounds are phytochemical trivial names, mixture descriptions, or non-specific ethnobotanical terms not indexed in PubChem by name.
+All 76,907 records contain all 16 schema fields. In the repo sample (`n=400`), `pubmed_mentions_2026`, `clinical_trials_count_2026`, and `chembl_bioactivity_count` are always non-null; `patent_count_since_2020` has 4 nulls; `pubchem_cid` and `canonical_smiles` are filled in 293/400 rows; `compound_type` and `patent_count_method` are fully populated. `application` (53.25% null in sample) and `dosage` (88.0% null in sample) reflect USDA source gaps. Unresolved compounds are phytochemical trivial names, mixture descriptions, or non-specific ethnobotanical terms not indexed in PubChem by name.
 The free 400-row sample contains real, final enrichment values across all five layers.
 
 ## File Manifest
 
 | File | Size | Format | Access |
 |------|------|--------|--------|
-| `ethno_sample_400.json` | 179 KB | JSON | Free (this repo) |
-| `ethno_sample_400.parquet` | 20 KB | Parquet | Free (this repo) |
-| `quickstart.ipynb` | 9 KB | Notebook | Free (this repo) |
+| `ethno_sample_400.json` | 226,228 bytes | JSON | Free (this repo) |
+| `ethno_sample_400.parquet` | 33,485 bytes | Parquet | Free (this repo) |
+| `quickstart.ipynb` | 10,660 bytes | Notebook | Free (this repo) |
 | `ethno_dataset_2026_v2.4.0.json` | ~41 MB | JSON | Included in all tiers |
 | `ethno_dataset_2026_v2.4.0.parquet` | ~1.3 MB | Parquet | Included in all tiers |
 | `MANIFEST_v2.json` (SHA-256) | ~1 KB | JSON | Included in all tiers |

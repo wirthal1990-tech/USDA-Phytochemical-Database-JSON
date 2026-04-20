@@ -6,19 +6,19 @@ Next scheduled update: Q1 2027.
 
 ## Enrichment Sources
 - PubMed via NCBI E-utilities (esearch)
-- ClinicalTrials.gov API v2
+- ClinicalTrials.gov AllPublicXML local snapshot
 - ChEMBL REST API (with PubChem InChIKey fallback)
 - PatentsView REST API (USPTO)
 - PubChem PUG REST API (CID + Canonical SMILES)
 
 ## Versioning
-Current version: v2.3.1 (April 2026)
+Current version: v2.4.0 (April 2026)
 All versions are tagged in this repository.
 
 ## v2.4.0 Changelog
 - Added partner_cid column (cross-matched PubChem CID from COCONUT/FooDB)
 - Added inchi_key column (InChI key for structural identification)
-- Added iupac_verified column (PubChem CID verified via IUPAC name resolution)
+- Added iupac_verified column (IUPAC verification value from partner matching workflow)
 - Added partner_match_method column (cross-match methodology transparency)
 - Null-CID reduced to 17,616 (-8% vs v2.3.1)
 - Schema expanded from 12 to 16 columns
@@ -47,3 +47,6 @@ Schema changes are announced minimum 30 days in advance via GitHub Discussions.
 
 ## Known Limitations
 See METHODOLOGY.md for full documentation of data quality limitations and noise exclusions.
+
+## Manifest Scope
+`MANIFEST_v2.json` in this repository validates the public 400-row sample artifacts only.
