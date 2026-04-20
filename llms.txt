@@ -88,8 +88,8 @@ Ethnobotanical Database — Enriched v2.4.0. Zenodo.
 https://doi.org/10.5281/zenodo.19660107
 
 # New in v2.4.0 — COCONUT/Partner DB Crossmatch
-partner_cid: NUMERIC (nullable) — partner CID candidate from crossmatch
-inchi_key: TEXT (nullable) — InChI Key from crossmatch
-iupac_verified: TEXT (nullable) — IUPAC verification value used during matching
+partner_cid: NUMERIC (nullable; sample parquet float64) — partner CID candidate from crossmatch
+inchi_key: FLOAT64 in public sample (all-null serialization; logical type InChIKey text) — InChI Key from crossmatch
+iupac_verified: TEXT (nullable; sample parquet string) — IUPAC verification value used during matching
 partner_match_method: TEXT (nullable) — matching method used in crossmatch
 Null-CID reduction: 19,150 → 17,616 (-8% effective, release-level claim)

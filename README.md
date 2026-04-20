@@ -141,7 +141,7 @@ Full methodology and known limitations are documented in `METHODOLOGY.md` and `U
 | `compound_type` | `string` | 0% | Classification: `discrete_phytochemical`, `substance_class`, `complex_mixture`, `inorganic_element`, `generic_ambiguous` — added in v2.4.0 |
 | `patent_count_method` | `string` | ~0.9% | Query methodology: `name_based_with_cid`, `name_based_no_cid`, `name_based_invalidated`, `NULL` — added in v2.4.0 |
 | `partner_cid` | `nullable int` | ~98% | Cross-matched partner CID candidate for unresolved compounds — added in v2.4.0 |
-| `inchi_key` | `nullable string` | ~99.4% | InChI Key from partner crossmatch where available — in the public sample export this column is fully null and may be serialized as numeric-null in Parquet — added in v2.4.0 |
+| `inchi_key` | `float64 (sample parquet, all-null)` | ~99.4% | Logical field meaning is InChIKey text when populated; public sample currently contains only null values, so Parquet serialization is numeric-null — added in v2.4.0 |
 | `iupac_verified` | `nullable string` | ~99.4% | IUPAC verification value used in partner resolution workflow — added in v2.4.0 |
 | `partner_match_method` | `nullable string` | ~98% | Cross-match method (e.g., `name_join`, `pubchem_name_resolve`) — added in v2.4.0 |
 

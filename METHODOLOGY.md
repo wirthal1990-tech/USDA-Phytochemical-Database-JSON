@@ -34,7 +34,7 @@
 | `compound_type` | string | 0 | Compound classification (`discrete_phytochemical`, `substance_class`, `complex_mixture`, `inorganic_element`, `generic_ambiguous`) |
 | `patent_count_method` | string | 0 | Patent query method metadata |
 | `partner_cid` | nullable numeric | 391 | Partner CID candidate used for unresolved compounds |
-| `inchi_key` | nullable string | 400 | InChIKey from partner crossmatch when available |
+| `inchi_key` | float64 (sample parquet, all-null) | 400 | Logical field meaning is InChIKey text when populated; sample export currently serializes all-null values as numeric-null |
 | `iupac_verified` | nullable string | 395 | IUPAC verification value from partner matching workflow |
 | `partner_match_method` | nullable string | 391 | Partner matching method (e.g. `name_join`, `pubchem_name_resolve`) |
 
