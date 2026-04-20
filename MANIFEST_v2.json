@@ -1,62 +1,59 @@
 {
   "schema_version": "2.4.0",
-  "dataset_name": "USDA Phytochemical Database \u2014 Enriched",
-  "release_date": "2026-04-18",
-  "record_count": 76907,
-  "unique_compounds": 24746,
-  "unique_species": 2313,
+  "manifest_scope": "public_repository_sample",
+  "dataset_name": "USDA Phytochemical Database — Enriched (Public Sample)",
+  "release_date": "2026-04-20",
+  "record_count": 400,
+  "unique_compounds": 349,
+  "unique_species": 299,
   "schema_fields": 16,
-  "null_cid_count": 17616,
-  "null_cid_reduction": "-8% vs v2.3.1",
-  "new_in_v2_4": {
-    "partner_cid": {
-      "filled": 1534,
-      "description": "CID from COCONUT/partner DB crossmatch"
-    },
-    "inchi_key": {
-      "filled": 157,
-      "description": "InChI Key from crossmatch"
-    },
-    "iupac_verified": {
-      "filled": 459,
-      "description": "IUPAC-verified CID"
-    },
-    "partner_match_method": {
-      "description": "Matching method used"
-    }
+  "sample_null_counts": {
+    "application": 213,
+    "dosage": 352,
+    "patent_count_since_2020": 4,
+    "pubchem_cid": 107,
+    "canonical_smiles": 107,
+    "partner_cid": 391,
+    "inchi_key": 400,
+    "iupac_verified": 395,
+    "partner_match_method": 391
+  },
+  "field_semantics": {
+    "partner_cid": "Partner CID candidate used for unresolved compounds",
+    "inchi_key": "InChIKey from partner crossmatch when available",
+    "iupac_verified": "IUPAC verification value from partner matching workflow",
+    "partner_match_method": "Partner matching method (e.g. name_join, pubchem_name_resolve)"
   },
   "files": {
-    "json": {
-      "filename": "ethno_dataset_2026_v2.4.0.json",
-      "size_bytes": 42391406,
-      "sha256": "2a09be033f2177084908e78d1da40e8ca01b7b036cef6695a77b247988af6497"
+    "json_sample": {
+      "filename": "ethno_sample_400.json",
+      "size_bytes": 226228,
+      "sha256": "e7cdd6bd5156dd1ff71ce23523923a00b5f9b9931fea566f3a264e7319ccab44"
     },
-    "parquet": {
-      "filename": "ethno_dataset_2026_v2.4.0.parquet",
-      "size_bytes": 1296699,
-      "sha256": "47b8f71fb29a0a4995c2f8e3506afd74c6a69433653b34402e4cd76cfcc2fcb8"
+    "parquet_sample": {
+      "filename": "ethno_sample_400.parquet",
+      "size_bytes": 33485,
+      "sha256": "694fb4e03ef026a97104368c991707553cc9c609e780a2f2f38ec2cef21d8e07"
     },
-    "zip_single": {
-      "filename": "ethno_api_v2.4_SINGLE.zip",
-      "sha256": "3e56c7a0499a0092ba3d6d4ad3f4971d6aaeadd598a540577569802086065ac3"
-    },
-    "zip_team": {
-      "filename": "ethno_api_v2.4_TEAM.zip",
-      "sha256": "570ab2ef7a2a838c04c0078bb1bb3733d142b0e20eccfc2a7edb2d1601dcabd0"
-    },
-    "zip_enterprise": {
-      "filename": "ethno_api_v2.4_ENTERPRISE.zip",
-      "sha256": "b426bf2a3ea4e75454d0de7f0f91347c535daa7569f9755305ce78cf4698f36f"
+    "quickstart_notebook": {
+      "filename": "quickstart.ipynb",
+      "size_bytes": 10660,
+      "sha256": "08b62f1adb2b7b4c7e22a09a51f318da3d849256450db97960b2dce45dc13697"
     }
   },
   "enrichment_sources": [
-    "PubChem PUG REST",
+    "PubMed (NCBI E-utilities)",
+    "ClinicalTrials.gov AllPublicXML local snapshot",
     "ChEMBL v35",
-    "ClinicalTrials.gov API v2",
     "USPTO PatentsView",
-    "COCONUT (via partner crossmatch)"
+    "PubChem PUG REST",
+    "COCONUT partner crossmatch"
   ],
-  "zenodo_doi": "10.5281/zenodo.19265853",
+  "zenodo_doi": "10.5281/zenodo.19660107",
   "huggingface": "wirthal1990-tech/USDA-Phytochemical-Database-JSON",
-  "license": "CC BY 4.0"
+  "license": "CC BY 4.0",
+  "notes": [
+    "This manifest verifies artifacts present in the public repository only.",
+    "Commercial full-release binaries are not stored in this repository and cannot be verified here."
+  ]
 }

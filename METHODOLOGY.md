@@ -10,27 +10,33 @@
 |---|---|---|
 | USDA Dr. Duke's Phytochemical and Ethnobotanical Databases | Archive (2024 retirement snapshot) | Public Domain (USDA) |
 | PubMed / NCBI E-utilities | Accessed 2026-01 via `esearch.fcgi` | Open (NCBI Terms of Use) |
-| ClinicalTrials.gov | API v2, accessed 2026-01 | Public Domain (NLM) |
+| ClinicalTrials.gov | AllPublicXML local snapshot (2026-03) | Public Domain (NLM) |
 | ChEMBL | v35 REST API, accessed 2026-02 | CC BY-SA 3.0 |
 | PatentsView (USPTO) | API v1, patents since 2020-01-01 | Public Domain (USPTO) |
 | PubChem (NCBI) | PUG REST API, accessed 2026-03 | Public Domain (NCBI) |
 
 ---
 
-## Schema v2.4
+## Schema v2.4.0
 
-| Field | Type | Null Count | Description |
+| Field | Type | Sample Null Count (n=400) | Description |
 |---|---|---|---|
 | `chemical` | string | 0 | Compound name (natural key, from USDA) |
 | `plant_species` | string | 0 | Botanical species name (natural key, from USDA) |
-| `application` | string | 38,149 | Documented bioactivity / therapeutic use |
-| `dosage` | string | 67,132 | Documented dosage from literature |
+| `application` | string | 213 | Documented bioactivity / therapeutic use |
+| `dosage` | string | 352 | Documented dosage from literature |
 | `pubmed_mentions_2026` | Int64 | 0 | PubMed publication mention count (title/abstract search, 2026) |
 | `clinical_trials_count_2026` | Int64 | 0 | ClinicalTrials.gov study count mentioning compound |
 | `chembl_bioactivity_count` | Int64 | 0 | ChEMBL bioactivity assay count |
-| `patent_count_since_2020` | Int64 | 0 | US patent count (USPTO PatentsView, since 2020-01-01) |
-| `pubchem_cid` | Int64 | 13,265 | PubChem Compound ID (CID) — 46.4% of unique compounds resolved |
-| `canonical_smiles` | string | 13,265 | Canonical SMILES string (PubChem) — 46.4% of unique compounds resolved |
+| `patent_count_since_2020` | nullable numeric | 4 | US patent count (USPTO PatentsView, since 2020-01-01) |
+| `pubchem_cid` | nullable numeric | 107 | PubChem Compound ID (CID) |
+| `canonical_smiles` | string | 107 | Canonical SMILES string (PubChem) |
+| `compound_type` | string | 0 | Compound classification (`discrete_phytochemical`, `substance_class`, `complex_mixture`, `inorganic_element`, `generic_ambiguous`) |
+| `patent_count_method` | string | 0 | Patent query method metadata |
+| `partner_cid` | nullable numeric | 391 | Partner CID candidate used for unresolved compounds |
+| `inchi_key` | nullable string | 400 | InChIKey from partner crossmatch when available |
+| `iupac_verified` | nullable string | 395 | IUPAC verification value from partner matching workflow |
+| `partner_match_method` | nullable string | 391 | Partner matching method (e.g. `name_join`, `pubchem_name_resolve`) |
 
 **Enrichment coverage:**
 
@@ -188,24 +194,17 @@ All enrichment scripts are available in the repository:
 | v2.1 | 2026-03 | 10 (+pubchem_cid, canonical_smiles) | 76,907 | PubChem CID + SMILES enrichment (10,484 chemicals resolved, 71.8% record coverage — corrected to 42.4% in v2.2) |
 | v2.2 | 2026-03 | 10 (same schema) | 76,907 | Stereo-prefix normalization for CT matching (+2 compounds), corrected SMILES coverage reporting (42.4% of unique chemicals), local CT XML matching replaces API |
 | **v2.4** | **2026-03** | **10 (same schema)** | **76,907** | **CTS synonym enrichment: 997 compounds resolved via PubChem name variants (hyphen→space normalization), PubChem CID coverage 42.4%→46.4% unique / 71.8%→75.4% records** |
-| **v2.4.0** | **2026-04** | **12 (+compound_type, patent_count_method)** | **76,907** | **CID audit, compound classification, patent method transparency, RESIN/RESINS CID correction, inorganic/generic reclassification** |
+| **v2.4.0** | **2026-04** | **16 (+compound_type, patent_count_method, partner_cid, inchi_key, iupac_verified, partner_match_method)** | **76,907** | **CID audit, compound classification, patent method transparency, partner crossmatch fields, RESIN/RESINS CID correction, inorganic/generic reclassification** |
 
 ---
 
-## File Integrity
+## File Integrity (Repository Artifacts)
 
-| File | Size | SHA-256 |
+| File | Size (bytes) | SHA-256 |
 |---|---|---|
-| `ethno_dataset_2026_v2.json` | 16.3 MB | `cf517675c263eefb96c18a74a0238d0e142067eda2175259fde10db66a081bc3` |
-| `ethno_dataset_2026_v2.parquet` | 800 KB | `cd152dd830f769a8e86c2661f0650f20bd936452835d6ee4cad60549068c7b40` |
-| `ethno_dataset_2026_v2.1_FINAL.json` | 24.5 MB | `ae86ba33d76273dc52330ca5d75234d93f8a6d3a8db106186d39470a3c1a0db0` |
-| `ethno_dataset_2026_v2.2.json` | 25.4 MB | `7cb5719f9763f84f1cb8176b462d51fd9df5750e7cfa78e497263b7631ebba13` |
-| `ethno_dataset_2026_v2.2.parquet` | 1.2 MB | `118d28bf08b784868b60fc1445a0fdd6817d5d8a492015c51d975cf8e8e5a132` |
+| `ethno_sample_400.json` | 226228 | `e7cdd6bd5156dd1ff71ce23523923a00b5f9b9931fea566f3a264e7319ccab44` |
+| `ethno_sample_400.parquet` | 33485 | `694fb4e03ef026a97104368c991707553cc9c609e780a2f2f38ec2cef21d8e07` |
+| `quickstart.ipynb` | 10660 | `08b62f1adb2b7b4c7e22a09a51f318da3d849256450db97960b2dce45dc13697` |
+| `MANIFEST_v2.json` | 1883 | `8b5054afd3351a86ac8248bae448f18b3e77028ff605dfc031a2eda7549d150d` |
 
-| `ethno_dataset_2026_v2.4.json` | 25.6 MB | `956cd7b08d279792e132629ce608ab72eb9249b09ac84ed9c60bd108acb5057e` |
-| `ethno_dataset_2026_v2.4.parquet` | 1,211 KB | `4b7351048db025cbf575b4538e66afd70729c327b8a0b48ead87d5546a39762e` |
-
-| `ethno_dataset_2026_v2.4.0.json` | 35.0 MB | `516c567772295178a9f0d23edf408fc8b7ad48b92f8e031df2e6a47488158347` |
-| `ethno_dataset_2026_v2.4.0.parquet` | 1,269 KB | `f2655a99c10a5d2f6c5be4e15cb1a5c0c6060f32384bb647ba5767352112ea6a` |
-
-Export timestamp: `2026-04-11T22:47:02Z` (v2.4.0 final)
+Repo note: Commercial full-release binaries (`ethno_dataset_2026_v2.4.0.*`, ZIP bundles) are not stored in this public sample repository and therefore are not verifiable here.
