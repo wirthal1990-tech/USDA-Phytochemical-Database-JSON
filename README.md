@@ -1,72 +1,61 @@
----
+yaml_block = """---
+language:
+- en
 license: cc-by-4.0
 task_categories:
-  - tabular-classification
-  - text-retrieval
-  - feature-extraction
-language:
-  - en
-tags:
-  - phytochemistry
-  - drug-discovery
-  - natural-products
-  - ethnobotany
-  - cheminformatics
-  - pubmed
-  - clinical-trials
-  - patents
-  - smiles
-  - parquet
-  - biology
-  - medical
-pretty_name: USDA Phytochemical & Ethnobotanical Database — Enriched v2.4.0
+- tabular-classification
+- text-retrieval
+pretty_name: USDA Phytochemical Database — Enriched v2.4.0
 size_categories:
-  - 10K<n<100K
-configs:
-  - config_name: default
-    data_files:
-      - split: train
-        path: ethno_sample_400.parquet
+- 10K<n<100K
+tags:
+- phytochemistry
+- drug-discovery
+- natural-products
+- pubchem
+- chembl
+- bioactivity
+- parquet
 dataset_info:
   features:
-    - name: chemical
-      dtype: string
-    - name: plant_species
-      dtype: string
-    - name: application
-      dtype: string
-    - name: dosage
-      dtype: string
-    - name: pubmed_mentions_2026
-      dtype: int64
-    - name: clinical_trials_count_2026
-      dtype: int64
-    - name: chembl_bioactivity_count
-      dtype: int64
-    - name: patent_count_since_2020
-      dtype: int64
-    - name: pubchem_cid
-      dtype: float64
-    - name: canonical_smiles
-      dtype: string
-    - name: compound_type
-      dtype: string
-    - name: patent_count_method
-      dtype: string
-    - name: partner_cid
-      dtype: float64
-    - name: inchi_key
-      dtype: string
-    - name: iupac_verified
-      dtype: float64
-    - name: partner_match_method
-      dtype: string
+  - name: plant_id
+    dtype: int64
+  - name: plant_species
+    dtype: string
+  - name: common_name
+    dtype: string
+  - name: chemical
+    dtype: string
+  - name: activity
+    dtype: string
+  - name: reference
+    dtype: string
+  - name: pubchem_cid
+    dtype: float64
+  - name: canonical_smiles
+    dtype: string
+  - name: patent_count
+    dtype: float64
+  - name: patent_count_method
+    dtype: string
+  - name: compound_type
+    dtype: string
+  - name: clinical_trials_count
+    dtype: float64
+  - name: partner_cid
+    dtype: float64
+  - name: inchi_key
+    dtype: string
+  - name: iupac_verified
+    dtype: float64
+  - name: partner_match_method
+    dtype: string
   splits:
-    - name: train
-      num_bytes: 21261
-      num_examples: 400
-  download_size: 21261
-  dataset_size: 21261
+  - name: train
+    num_bytes: 1300000
+    num_examples: 76907
+  download_size: 1300000
+  dataset_size: 76907
 ---
 
 > **Production-grade phytochemical data.** Single €699 · Team €1,349 · Enterprise €1,699. [→ ethno-api.com](https://ethno-api.com)
