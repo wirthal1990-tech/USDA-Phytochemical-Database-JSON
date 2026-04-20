@@ -12,7 +12,7 @@ Next scheduled update: Q1 2027.
 - PubChem PUG REST API (CID + Canonical SMILES)
 
 ## Versioning
-Current version: v2.3.1 (April 2026)
+Current version: v2.4.0 (April 2026)
 All versions are tagged in this repository.
 
 ## v2.4.0 Changelog

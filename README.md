@@ -99,7 +99,7 @@ Wirth, A. (2026). USDA Phytochemical Database — Enriched v2.4.0 (Sample). Zeno
 
 [**Free 400-Row Sample ↓**](#quickstart) · [**Single €699 →**](https://buy.stripe.com/00w6oGgFh58v6Toeqsebu02?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) · [**Team €1,349 →**](https://buy.stripe.com/dRm7sK9cP1Wj0v06Y0ebu03?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) · [**Enterprise — Contact us →**](mailto:founder@ethno-api.com?subject=Enterprise%20License%20Inquiry)
 
-> **Enrichment status (March 2026):** All five enrichment layers (PubMed, ClinicalTrials.gov, ChEMBL, PatentsView, PubChem) are **complete and final**. v2.4.0 adds compound_type classification and patent_count_method transparency (PubChem CID coverage: 75.4%). The free 400-row sample contains real enrichment values.
+> **Enrichment status (March 2026):** All five enrichment layers (PubMed, ClinicalTrials.gov, ChEMBL, PatentsView, PubChem) are **complete and final**. v2.4.0 adds COCONUT/partner DB crossmatch fields (partner_cid, inchi_key, iupac_verified, partner_match_method), reducing null-CID count by 8%. The free 400-row sample contains real enrichment values.
 
 </div>
 
@@ -120,7 +120,7 @@ v2.4.0 includes compound-level patent and literature signals across 24,746 uniqu
 
 A new `compound_type` column classifies all entries as `discrete_phytochemical`, `substance_class`, `complex_mixture`, `inorganic_element`, or `generic_ambiguous`. A `patent_count_method` column documents the query methodology per compound (including known limitations for name-based queries on generic terms).
 
-Full methodology is documented in `METHODOLOGY.md`. Known limitations are listed in `MANIFEST_v2.json` under `known_limitations`.
+Full methodology is documented in `METHODOLOGY.md`. Known limitations are documented in `METHODOLOGY.md` under the Known Limitations section.
 
 ---
 
@@ -132,12 +132,12 @@ Full methodology is documented in `METHODOLOGY.md`. Known limitations are listed
 | `plant_species` | `string` | 0% | Binomial Latin species name |
 | `application` | `string` | ~50% | Traditional medicinal application (e.g. "Antiinflammatory") |
 | `dosage` | `string` | ~87% | Reported dosage, concentration, or IC50 value |
-| `pubmed_mentions_2026` | `int32` | 0% | Total PubMed publications mentioning this compound (March 2026 snapshot) |
-| `clinical_trials_count_2026` | `int32` | 0% | ClinicalTrials.gov study count per compound (March 2026) |
-| `chembl_bioactivity_count` | `int32` | 0% | ChEMBL documented bioactivity measurement count |
-| `patent_count_since_2020` | `int32` | ~0.9% | US patents since 2020-01-01 mentioning compound (USPTO PatentsView) |
-| `pubchem_cid` | `int64` | ~28.2% | PubChem Compound ID (CID) — resolved via PubChem PUG REST (March 2026) |
-| `canonical_smiles` | `string` | ~28.2% | Canonical SMILES notation — molecular structure from PubChem (75.4% of unique compounds resolved in v2.4/v2.4.0) |
+| `pubmed_mentions_2026` | `int64` | 0% | Total PubMed publications mentioning this compound (March 2026 snapshot) |
+| `clinical_trials_count_2026` | `int64` | 0% | ClinicalTrials.gov study count per compound (March 2026) |
+| `chembl_bioactivity_count` | `int64` | 0% | ChEMBL documented bioactivity measurement count |
+| `patent_count_since_2020` | `int64` | ~0.9% | US patents since 2020-01-01 mentioning compound (USPTO PatentsView) |
+| `pubchem_cid` | `int64` | ~24.6% | PubChem Compound ID (CID) — resolved via PubChem PUG REST (March 2026) |
+| `canonical_smiles` | `string` | ~24.6% | Canonical SMILES notation — molecular structure from PubChem (75.4% of records resolved in v2.4/v2.4.0) |
 | `compound_type` | `string` | 0% | Classification: `discrete_phytochemical`, `substance_class`, `complex_mixture`, `inorganic_element`, `generic_ambiguous` — added in v2.4.0 |
 | `patent_count_method` | `string` | ~0.9% | Query methodology: `name_based_with_cid`, `name_based_no_cid`, `name_based_invalidated`, `NULL` — added in v2.4.0 |
 | `partner_cid` | `int64` | ~98% | Cross-matched PubChem CID from COCONUT/FooDB partner databases — added in v2.4.0 |
@@ -265,7 +265,7 @@ Below is a real record from the dataset — QUERCETIN, one of the most-studied p
 }
 ```
 
-All 76,907 records contain all 16 schema fields. The 4 enrichment columns are always non-null; `pubchem_cid` and `canonical_smiles` are filled for 75.4% of unique compounds (18,675 of 24,746 resolved via PubChem PUG REST in v2.4/v2.4.0); `compound_type` and `patent_count_method` are populated for all records; `application` (~50% null) and `dosage` (~87% null) reflect USDA source gaps. Unresolved compounds are phytochemical trivial names, mixture descriptions, or non-specific ethnobotanical terms not indexed in PubChem by name.
+All 76,907 records contain all 16 schema fields. The 4 enrichment columns are always non-null; `pubchem_cid` and `canonical_smiles` are filled for 75.4% of records (57,958 of 76,907 records; 46.4% of unique compounds — 11,481 of 24,746 — resolved via PubChem PUG REST in v2.4/v2.4.0); `compound_type` and `patent_count_method` are populated for all records; `application` (~50% null) and `dosage` (~87% null) reflect USDA source gaps. Unresolved compounds are phytochemical trivial names, mixture descriptions, or non-specific ethnobotanical terms not indexed in PubChem by name.
 The free 400-row sample contains real, final enrichment values across all five layers.
 
 ## File Manifest
@@ -317,7 +317,7 @@ Enrichment methodology is documented in [`METHODOLOGY.md`](METHODOLOGY.md). Sour
 | v2.2 | 76,907 | 10 columns (stereo-prefix CT normalization, corrected SMILES coverage) | Superseded |
 | v2.3 | 76,907 | 10 columns (CTS synonym enrichment — PubChem CID coverage 75.4%) | Superseded |
 | v2.3.1 | 76,907 | 12 columns (+compound_type, +patent_count_method, GANODERIC-ACID-G fix) | Superseded |
-| **v2.4.0** | **76,907** | **16 columns (+compound_type, +patent_count_method, forensic audit corrections)** | **Current** |
+| **v2.4.0** | **76,907** | **16 columns (+partner_cid, +inchi_key, +iupac_verified, +partner_match_method, forensic audit corrections)** | **Current** |
 
 The free sample (`ethno_sample_400.json`) uses the v2.4.0 schema with final enrichment values across all five layers.
 

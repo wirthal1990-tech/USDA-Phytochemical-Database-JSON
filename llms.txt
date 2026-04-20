@@ -28,6 +28,10 @@ SMILES. 76,907 records, 24,746 unique compounds,
 - canonical_smiles: molecular structure (75.4%)
 - compound_type: compound classification (5 categories)
 - patent_count_method: query methodology transparency
+- partner_cid: cross-matched PubChem CID from COCONUT/partner DB
+- inchi_key: InChI Key from partner DB crossmatch
+- iupac_verified: IUPAC-verified PubChem CID
+- partner_match_method: crossmatch methodology used
 
 # ACCESS
 - Landing page: https://ethno-api.com

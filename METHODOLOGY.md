@@ -17,7 +17,7 @@
 
 ---
 
-## Schema v2.4
+## Schema v2.4.0
 
 | Field | Type | Null Count | Description |
 |---|---|---|---|
@@ -31,6 +31,12 @@
 | `patent_count_since_2020` | Int64 | 0 | US patent count (USPTO PatentsView, since 2020-01-01) |
 | `pubchem_cid` | Int64 | 13,265 | PubChem Compound ID (CID) — 46.4% of unique compounds resolved |
 | `canonical_smiles` | string | 13,265 | Canonical SMILES string (PubChem) — 46.4% of unique compounds resolved |
+| `compound_type` | string | 0 | Classification: `discrete_phytochemical`, `substance_class`, `complex_mixture`, `inorganic_element`, `generic_ambiguous` |
+| `patent_count_method` | string | ~692 | Query methodology: `name_based_with_cid`, `name_based_no_cid`, `name_based_invalidated`, `NULL` |
+| `partner_cid` | Int64 | 75,373 | Cross-matched PubChem CID from COCONUT/partner DB (1,534 filled) |
+| `inchi_key` | string | 76,750 | InChI Key from partner DB crossmatch (157 filled) |
+| `iupac_verified` | Int64 | 76,448 | IUPAC-verified PubChem CID (459 filled) |
+| `partner_match_method` | string | 75,373 | Matching method used in crossmatch (`exact_cid_match`, `iupac_resolution`, `NULL`) |
 
 **Enrichment coverage:**
 
@@ -104,7 +110,7 @@
 
 > **Why 53.6% are null:** Phytochemical trivial names (e.g. "TANNIN", "RESIN"), plant mixture descriptions (e.g. "ESSENTIAL OIL"), and non-specific ethnobotanical terms are not indexed in PubChem's compound database by name. These are inherent limitations of the source data, not pipeline failures.
 
-### 7. CTS Synonym Enrichment (v2.4)
+### 7. CTS Synonym Enrichment (v2.3)
 
 - **Goal:** Reduce the null-rate for `pubchem_cid` and `canonical_smiles` through systematic name variant resolution
 - **Candidates:** 14,197 compounds without PubChem CID (after excluding truncated names and length < 3)
@@ -187,8 +193,9 @@ All enrichment scripts are available in the repository:
 | v2.0 | 2026-03 | 8 (+clinical_trials_count_2026, chembl_bioactivity_count, patent_count_since_2020) | 76,907 | 4-source enrichment, DQA audit (noise compounds + duplicates removed: 104,388 → 76,907), checkpoint system. Superseded by v2.1/v2.2. |
 | v2.1 | 2026-03 | 10 (+pubchem_cid, canonical_smiles) | 76,907 | PubChem CID + SMILES enrichment (10,484 chemicals resolved, 71.8% record coverage — corrected to 42.4% in v2.2) |
 | v2.2 | 2026-03 | 10 (same schema) | 76,907 | Stereo-prefix normalization for CT matching (+2 compounds), corrected SMILES coverage reporting (42.4% of unique chemicals), local CT XML matching replaces API |
-| **v2.4** | **2026-03** | **10 (same schema)** | **76,907** | **CTS synonym enrichment: 997 compounds resolved via PubChem name variants (hyphen→space normalization), PubChem CID coverage 42.4%→46.4% unique / 71.8%→75.4% records** |
-| **v2.4.0** | **2026-04** | **12 (+compound_type, patent_count_method)** | **76,907** | **CID audit, compound classification, patent method transparency, RESIN/RESINS CID correction, inorganic/generic reclassification** |
+| **v2.3** | **2026-03** | **10 (same schema)** | **76,907** | **CTS synonym enrichment: 997 compounds resolved via PubChem name variants (hyphen→space normalization), PubChem CID coverage 42.4%→46.4% unique / 71.8%→75.4% records** |
+| **v2.3.1** | **2026-03** | **12 (+compound_type, +patent_count_method)** | **76,907** | **CID audit, compound classification, patent method transparency, RESIN/RESINS CID correction, inorganic/generic reclassification** |
+| **v2.4.0** | **2026-04** | **16 (+partner_cid, +inchi_key, +iupac_verified, +partner_match_method)** | **76,907** | **COCONUT/partner DB crossmatch: 1,534 partner CIDs, 157 InChI Keys, 459 IUPAC-verified CIDs added; null-CID reduced 19,150 → 17,616 (-8%)** |
 
 ---
 
@@ -205,7 +212,7 @@ All enrichment scripts are available in the repository:
 | `ethno_dataset_2026_v2.4.json` | 25.6 MB | `956cd7b08d279792e132629ce608ab72eb9249b09ac84ed9c60bd108acb5057e` |
 | `ethno_dataset_2026_v2.4.parquet` | 1,211 KB | `4b7351048db025cbf575b4538e66afd70729c327b8a0b48ead87d5546a39762e` |
 
-| `ethno_dataset_2026_v2.4.0.json` | 35.0 MB | `516c567772295178a9f0d23edf408fc8b7ad48b92f8e031df2e6a47488158347` |
-| `ethno_dataset_2026_v2.4.0.parquet` | 1,269 KB | `f2655a99c10a5d2f6c5be4e15cb1a5c0c6060f32384bb647ba5767352112ea6a` |
+| `ethno_dataset_2026_v2.4.0.json` | 42.4 MB | `2a09be033f2177084908e78d1da40e8ca01b7b036cef6695a77b247988af6497` |
+| `ethno_dataset_2026_v2.4.0.parquet` | 1,267 KB | `47b8f71fb29a0a4995c2f8e3506afd74c6a69433653b34402e4cd76cfcc2fcb8` |
 
-Export timestamp: `2026-04-11T22:47:02Z` (v2.4.0 final)
+Export timestamp: `2026-04-18` (v2.4.0 final — see MANIFEST_v2.json)
