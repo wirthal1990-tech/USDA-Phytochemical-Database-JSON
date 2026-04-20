@@ -56,7 +56,7 @@
     "USPTO PatentsView",
     "COCONUT (via partner crossmatch)"
   ],
-  "zenodo_doi": "10.5281/zenodo.19265853",
+  "zenodo_doi": "10.5281/zenodo.19660107",
   "huggingface": "wirthal1990-tech/USDA-Phytochemical-Database-JSON",
   "license": "CC BY 4.0"
 }
