@@ -1,6 +1,6 @@
 # Methodology — Ethno-API Phytochemical Dataset v2.4.0
 
-> **Schema v2.4.0 · 76,907 records · 24,746 compounds · 2,313 species · 12 fields**
+> **Schema v2.4.0 · 76,907 records · 24,746 compounds · 2,313 species · 16 fields**
 
 ---
 

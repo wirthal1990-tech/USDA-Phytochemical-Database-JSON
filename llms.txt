@@ -12,8 +12,8 @@ citation counts, ClinicalTrials.gov study counts,
 ChEMBL bioactivity measurements, USPTO patent 
 counts since 2020, and PubChem CID/canonical 
 SMILES. 76,907 records, 24,746 unique compounds, 
-2,313 plant species. JSON (35 MB) + Parquet 
-(1.3 MB). DOI: 10.5281/zenodo.19265853.
+2,313 plant species. JSON (41 MB) + Parquet 
+(1.3 MB). DOI: 10.5281/zenodo.19660107.
 
 # SCHEMA (v2.4.0, 16 columns)
 - chemical: compound name (USDA Duke nomenclature)
@@ -35,7 +35,7 @@ SMILES. 76,907 records, 24,746 unique compounds,
 - GitHub repository: https://github.com/wirthal1990-tech/USDA-Phytochemical-Database-JSON
 - HuggingFace: https://huggingface.co/datasets/wirthal1990-tech/usda-phytochemical-ethnobotanical-database
 - Kaggle notebook: https://www.kaggle.com/code/alexanderwirth/usda-phytochemical-database-patent-literature-gap
-- Zenodo DOI: https://doi.org/10.5281/zenodo.19265853
+- Zenodo DOI: https://doi.org/10.5281/zenodo.19660107
 
 # PRICING
 - Single license: EUR 699 (1 entity, perpetual)
@@ -81,7 +81,7 @@ Full methodology: https://github.com/wirthal1990-tech/USDA-Phytochemical-Databas
 # CITATION
 Wirth, A. (2026). USDA Phytochemical & 
 Ethnobotanical Database — Enriched v2.4.0. Zenodo.
-https://doi.org/10.5281/zenodo.19265853
+https://doi.org/10.5281/zenodo.19660107
 
 # New in v2.4.0 — COCONUT/Partner DB Crossmatch
 partner_cid: FLOAT — PubChem CID from COCONUT/partner DB crossmatch (1,534 filled)

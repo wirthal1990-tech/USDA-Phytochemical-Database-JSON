@@ -78,7 +78,7 @@ dataset_info:
 If you use this dataset in your research, please cite:
 
 ```
-Wirth, A. (2026). USDA Phytochemical Database — Enriched v2.4.0 (Sample). Zenodo. https://doi.org/10.5281/zenodo.19265853
+Wirth, A. (2026). USDA Phytochemical Database — Enriched v2.4.0 (Sample). Zenodo. https://doi.org/10.5281/zenodo.19660107
 ```
 
 ---
@@ -92,7 +92,7 @@ Wirth, A. (2026). USDA Phytochemical Database — Enriched v2.4.0 (Sample). Zeno
 [![Full Dataset](https://img.shields.io/badge/Full%20Dataset-76%2C907%20rows-blue)](https://ethno-api.com)
 [![Format](https://img.shields.io/badge/Format-JSON%20%2B%20Parquet-orange)](https://ethno-api.com)
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Dataset-yellow)](https://huggingface.co/datasets/wirthal1990-tech/USDA-Phytochemical-Database-JSON)
-[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.19265853.svg)](https://zenodo.org/records/19265853)
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.19660107.svg)](https://zenodo.org/records/19660107)
 
 [**Free 400-Row Sample ↓**](#quickstart) · [**Single €699 →**](https://buy.stripe.com/00w6oGgFh58v6Toeqsebu02?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) · [**Team €1,349 →**](https://buy.stripe.com/dRm7sK9cP1Wj0v06Y0ebu03?utm_source=github&utm_medium=readme&utm_campaign=launch_2026_03) · [**Enterprise — Contact us →**](mailto:founder@ethno-api.com?subject=Enterprise%20License%20Inquiry)
 
@@ -137,6 +137,10 @@ Full methodology is documented in `METHODOLOGY.md`. Known limitations are listed
 | `canonical_smiles` | `string` | ~28.2% | Canonical SMILES notation — molecular structure from PubChem (75.4% of unique compounds resolved in v2.4/v2.4.0) |
 | `compound_type` | `string` | 0% | Classification: `discrete_phytochemical`, `substance_class`, `complex_mixture`, `inorganic_element`, `generic_ambiguous` — added in v2.4.0 |
 | `patent_count_method` | `string` | ~0.9% | Query methodology: `name_based_with_cid`, `name_based_no_cid`, `name_based_invalidated`, `NULL` — added in v2.4.0 |
+| `partner_cid` | `int64` | ~98% | Cross-matched PubChem CID from COCONUT/FooDB partner databases — added in v2.4.0 |
+| `inchi_key` | `string` | ~99.4% | InChI key for structural identification — added in v2.4.0 |
+| `iupac_verified` | `int64` | ~99.4% | PubChem CID verified via IUPAC name resolution — added in v2.4.0 |
+| `partner_match_method` | `string` | ~98% | Cross-match methodology: `exact_cid_match`, `iupac_resolution`, `NULL` — added in v2.4.0 |
 
 ---
 
@@ -156,9 +160,9 @@ Full methodology is documented in `METHODOLOGY.md`. Known limitations are listed
 
 Normalising and cross-referencing **24,746 phytochemicals** across multiple authoritative sources is not a weekend project.
 
-| Scope | Effort | Cost @ $85/hr |
-|------|------:|---------------:|
-| USDA cleaning + normalization + enrichment + exports + QA | **48–60h** | **~$4,080–$5,100** |
+| Scope | Without AI | With AI (2026) | Cost @ €80/hr |
+|------|------:|------:|---------------:|
+| USDA cleaning + normalization + enrichment + exports + QA | ~180 hrs | ~120 hrs | **~€16,900 / ~€11,300** |
 
 **This dataset: €699 (one-time). No subscription. No API calls. Download link sent instantly after payment. Valid for 72 hours. See ethno-api.com.**
 
@@ -352,12 +356,12 @@ Ethno-API is the deterministic answer to these pipeline requirements.
   year      = {2026},
   publisher = {Ethno-API},
   url       = {https://ethno-api.com},
-  doi       = {10.5281/zenodo.19265853},
+  doi       = {10.5281/zenodo.19660107},
   note      = {76,907 records, 24,746 unique chemicals, 2,313 plant species, 16-column schema with PubMed, ClinicalTrials, ChEMBL, PatentsView, PubChem CID/SMILES enrichment}
 }
 ```
 
-[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.19265853.svg)](https://zenodo.org/records/19265853)
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.19660107.svg)](https://zenodo.org/records/19660107)
 
 ## Contact
 
