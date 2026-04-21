@@ -1,7 +1,7 @@
 # SC Verification v2.4.0 (2026-04-21)
 
 ## Metadata
-- Timestamp (UTC): 2026-04-21T12:33:25Z
+- Timestamp (UTC): 2026-04-21T12:44:45Z
 - Scope:
   - /opt/ethno-api/ethno-enrichment/USDA-Phytochemical-Database-JSON v2
   - /opt/ethno-api/nexus_api/pseo
@@ -38,6 +38,12 @@
 5. Pushes (non-destructive):
    - `git push origin main`
    - `git push hf main`
+6. SC1 incident recovery (post-push):
+  - observed temporary regression: `viewer:false` and first-rows parse error
+  - root cause: README frontmatter `dataset_info.features` had dtype mismatches vs actual parquet schema
+  - fix: aligned dtypes in README for `patent_count_since_2020`, `inchi_key`, `iupac_verified`
+  - commit: `912fd328ff7d6852ca60b258cfc73a666ef37d97`
+  - re-verification: `viewer:true`, `first-rows` returns feature payload
 
 ## Checkpoint 1 - Remote status after correction
 
@@ -129,6 +135,18 @@ Result:
 - Production URLs verified directly via curl.
 - HF datasets-server endpoint verified live.
 - Status: PASS.
+
+## SC1 incident evidence (resolved)
+
+Initial failing evidence:
+- `curl -4 -s "https://datasets-server.huggingface.co/is-valid?dataset=wirthal1990-tech/USDA-Phytochemical-Database-JSON"`
+  returned `{"preview":false,"viewer":false,"search":false,"filter":false,"statistics":false}`
+- `curl -4 -s "https://datasets-server.huggingface.co/first-rows?dataset=wirthal1990-tech/USDA-Phytochemical-Database-JSON&config=default&split=train"`
+  returned parse error for string-to-double conversion.
+
+Resolved evidence:
+- `is-valid` now returns `{"preview":true,"viewer":true,"search":true,"filter":true,"statistics":false}`
+- `first-rows` now returns row/feature payload.
 
 ## Open risks
 - LOW: Full-file SHA comparison against live is unstable because Cloudflare injects per-request challenge token bytes into HTML tail. Marker-level and byte-size checks remain reproducible.
