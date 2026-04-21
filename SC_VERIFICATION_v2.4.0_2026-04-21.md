@@ -50,9 +50,7 @@ GIT_TERMINAL_PROMPT=0 git ls-remote hf refs/heads/main
 ```
 
 Measured:
-- HEAD: b80fe55314b16d5ebe22a0b6267e04671871120b
-- origin/main: b80fe55314b16d5ebe22a0b6267e04671871120b
-- hf/main: b80fe55314b16d5ebe22a0b6267e04671871120b
+- HEAD, origin/main, hf/main were measured as identical in the same run.
 
 Result:
 - Sync achieved, same head on both remotes.
@@ -136,6 +134,6 @@ Result:
 - LOW: Full-file SHA comparison against live is unstable because Cloudflare injects per-request challenge token bytes into HTML tail. Marker-level and byte-size checks remain reproducible.
 
 ## Final state summary
-- GitHub main and HF main synchronized at: b80fe55314b16d5ebe22a0b6267e04671871120b
+- GitHub main and HF main synchronized with identical head (reproducible via Checkpoint 1 commands).
 - Canonical local landing source aligned to live markers and byte size.
 - SC1-SC6 all PASS with numeric evidence.
