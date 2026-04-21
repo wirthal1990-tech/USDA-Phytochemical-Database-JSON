@@ -47,7 +47,7 @@ dataset_info:
     - name: chembl_bioactivity_count
       dtype: int64
     - name: patent_count_since_2020
-      dtype: int64
+      dtype: float64
     - name: pubchem_cid
       dtype: float64
     - name: canonical_smiles
@@ -59,9 +59,9 @@ dataset_info:
     - name: partner_cid
       dtype: float64
     - name: inchi_key
-      dtype: string
-    - name: iupac_verified
       dtype: float64
+    - name: iupac_verified
+      dtype: string
     - name: partner_match_method
       dtype: string
   splits:
