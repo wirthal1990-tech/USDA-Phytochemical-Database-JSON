@@ -300,6 +300,16 @@ All enrichment layers are derived from authoritative, publicly accessible scient
 
 Enrichment methodology is documented in [`METHODOLOGY.md`](METHODOLOGY.md). Source code is available to **Enterprise** license holders upon request under **NDA**.
 
+## Validation & Review
+
+The SMILES Reverse Validation Gate (M3) and the RAG Retrieval Bridge
+were independently reviewed and co-validated by Dominic Fagan (BSc chemistry).
+The chemistry-domain audit surfaced the strictest-verdict-wins verdict-aggregation
+logic and corrected a class of thiol-as-alcohol false positives.
+
+M3 verification stats on v2.4.0: 11,981 validated · 8,370 plausible ·
+37,361 review_required · 45 invalidated · 19,150 insufficient_data.
+
 ## Use Cases
 
 - **RAG Pipelines** — Ground LLM responses with verified phytochemical data. Each record has a PubMed evidence score — use it to weight retrieval results and filter hallucinations.
