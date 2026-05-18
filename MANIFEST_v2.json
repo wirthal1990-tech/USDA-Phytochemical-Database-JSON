@@ -8,7 +8,7 @@
   "schema_fields": 16,
   "null_cid_count": 17616,
   "null_cid_reduction": "-8% vs v2.3.1",
-  "new_in_v2_4": {
+  "new_in_v2_4_0": {
     "partner_cid": {
       "filled": 1534,
       "description": "CID from COCONUT/partner DB crossmatch"
@@ -37,15 +37,15 @@
       "sha256": "47b8f71fb29a0a4995c2f8e3506afd74c6a69433653b34402e4cd76cfcc2fcb8"
     },
     "zip_single": {
-      "filename": "ethno_api_v2.4_SINGLE.zip",
+      "filename": "ethno_api_v2.4.0_SINGLE.zip",
       "sha256": "3e56c7a0499a0092ba3d6d4ad3f4971d6aaeadd598a540577569802086065ac3"
     },
     "zip_team": {
-      "filename": "ethno_api_v2.4_TEAM.zip",
+      "filename": "ethno_api_v2.4.0_TEAM.zip",
       "sha256": "570ab2ef7a2a838c04c0078bb1bb3733d142b0e20eccfc2a7edb2d1601dcabd0"
     },
     "zip_enterprise": {
-      "filename": "ethno_api_v2.4_ENTERPRISE.zip",
+      "filename": "ethno_api_v2.4.0_ENTERPRISE.zip",
       "sha256": "b426bf2a3ea4e75454d0de7f0f91347c535daa7569f9755305ce78cf4698f36f"
     }
   },
@@ -56,7 +56,7 @@
     "USPTO PatentsView",
     "COCONUT (via partner crossmatch)"
   ],
-  "zenodo_doi": "10.5281/zenodo.19265853",
+  "zenodo_doi": "10.5281/zenodo.19660107",
   "huggingface": "wirthal1990-tech/USDA-Phytochemical-Database-JSON",
   "license": "CC BY 4.0"
 }
